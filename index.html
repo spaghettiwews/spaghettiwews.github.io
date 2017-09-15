@@ -14,12 +14,21 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
 	<title>spaghettiwews.github.io</title>
 </head>
 <body>
 <header>
 	<img src="assets/images/logo.png">
 </header>
+
+<div id="th-app">
+	<textarea v-model="name" cols="20" rows="10" value="Hercules"></textarea>
+	<h1 v-on:click="clicked = !clicked" v-bind:class="{clicked: clicked}">{{ name }}</h1>
+</div>
+
 <script type="text/javascript">
   // register sw script in supporting browsers
   if ('serviceWorker' in navigator) {
@@ -30,6 +39,7 @@
     });
   }
 </script>
+<script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="sw.js"></script>
 </body>
 </html>
