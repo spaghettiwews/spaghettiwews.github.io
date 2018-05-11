@@ -1,0 +1,22 @@
+baseurl = "https://wews.co/"
+title = "the blog of spaghettiwews"
+author = "David Hamp-Gonsalves"
+canonifyurls = true
+languagecode = "en"
+theme = "black-and-light"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "the blog of spaghettiwews"
+
+[[menu.main]]
+    name = "About"
+    url  = "#"
+[[menu.main]]
+    name = "Projects"
+    url  = "#"
+[[menu.main]]
+    name = "Resume"
+    url  = "#"
