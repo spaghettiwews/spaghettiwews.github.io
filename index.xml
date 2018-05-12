@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>a blog of spaghettiwews</title>
-    <link>https://www.example.com/</link>
+    <link>https://wews.co/</link>
     <description>Recent content on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 May 2018 12:28:05 +0200</lastBuildDate>
     
-	<atom:link href="https://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wews.co/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello Hugo</title>
-      <link>https://www.example.com/post/hello-hugo/</link>
+      <link>https://wews.co/post/hello-hugo/</link>
       <pubDate>Sat, 12 May 2018 12:28:05 +0200</pubDate>
       
-      <guid>https://www.example.com/post/hello-hugo/</guid>
+      <guid>https://wews.co/post/hello-hugo/</guid>
       <description>Well hello there.</description>
     </item>
     

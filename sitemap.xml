@@ -3,28 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.example.com/post/hello-hugo/</loc>
+    <loc>https://wews.co/post/hello-hugo/</loc>
     <lastmod>2018-05-12T12:28:05+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/categories/</loc>
+    <loc>https://wews.co/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/</loc>
+    <loc>https://wews.co/post/</loc>
     <lastmod>2018-05-12T12:28:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.example.com/tags/</loc>
+    <loc>https://wews.co/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.example.com/</loc>
+    <loc>https://wews.co/</loc>
     <lastmod>2018-05-12T12:28:05+02:00</lastmod>
     <priority>0</priority>
   </url>
