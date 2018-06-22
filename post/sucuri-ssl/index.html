@@ -18,10 +18,10 @@
     <title>
       
       
-         404 Page not found 
+         Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server 
       
     </title>
-    <link rel="canonical" href="">
+    <link rel="canonical" href="https://wews.co/post/sucuri-ssl/">
 
     <style>
   * {
@@ -402,10 +402,77 @@
       </ul>
     </section>
 
-  <section id=not-found>
-    <a href=/>404</a>
-  </section>
+
+<section id=content>
+  <h1> Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server </h1>
+
+  <div id=sub-header>
+    June 2018 · 2 minute read
+  </div>
+
+  <div class="entry-content">
+    
+
+<h3 id="what-s-a-reverse-proxy-well-in-this-context-wikipedia-has-this-to-say"><strong>what&rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:</strong></h3>
+
+<blockquote>
+<p>In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.</p>
+
+<p>In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware.
+&mdash; <a href="https://en.wikipedia.org/wiki/Reverse_proxy">https://en.wikipedia.org/wiki/Reverse_proxy</a></p>
+</blockquote>
+
+<h3 id="what-s-sucuri"><strong>what&rsquo;s sucuri?</strong></h3>
+
+<blockquote>
+<p>it&rsquo;s an example of the above. in oversimplified terms i guess. maybe.
+&mdash; me</p>
+</blockquote>
+
+<h3 id="a-guide-read-a-reminder-for-myself"><strong>a guide (read: a reminder for myself)</strong></h3>
+
+<ol>
+<li>the A records for both domain names <strong>example.com</strong> and <strong>www.example.com</strong> need to point to the IP address provided by sucuri in order for them to be able to generate and install a valid LE cert for the domain</li>
+<li>once that is done, select Partial HTTPS under the HTTPS/SSL tab. Partial SSL because sucuri is reverse proxying to a non-https server. Full HTTPS is for when the hosting server already has an SSL cert installed - then it&rsquo;s an https-to-https connection all the way.</li>
+<li>Next up include the code below in your <strong>wp-config.php</strong> file to prevent the site from going into an infinite redirect loop. Read up more on this here: <a href="https://codex.wordpress.org/Administration_Over_SSL">https://codex.wordpress.org/Administration_Over_SSL</a></li>
+</ol>
+
+<pre><code>/* Handle HTTPS Protocol */
+
+if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
+
+	$_SERVER['HTTPS']='on';
+</code></pre>
+
+<ol>
+<li>change site and home url protocols to https</li>
+<li>lastly, your site will most likely still have some resources being loaded over insecure http. hunt these down and deeeestroy them. just kidding, just search &amp; replace absolute urls with relatives ones where you can. if some http resources still remain after that, figure it out son.</li>
+</ol>
+
+<h3 id="did-you-win"><strong>did you win?</strong></h3>
+
+<p>yes? good! now it&rsquo;s time feel good about yourself for completing this simple task by watching this <a href="https://www.youtube.com/watch?v=JrO46CJd9ns">video</a>  ✌️</p>
+
+<h3 id="more-reading"><strong>more reading</strong></h3>
+
+<ol>
+<li><a href="https://blog.sucuri.net/2016/04/troubleshooting-mixed-content-warnings-https.html">Troubleshooting Mixed Content Warnings with HTTPS - https://blog.sucuri.net/2016/04/troubleshooting-mixed-content-warnings-https.html</a></li>
+<li><a href="https://sucuri.net/guides/how-to-install-ssl-certificate">How to Install an SSL Certificate - https://sucuri.net/guides/how-to-install-ssl-certificate</a></li>
+</ol>
+
+  </div>
+
+  <div id=links>
+    
+      <a class="basic-alignment left" href="https://wews.co/post/hello-hugo/">&laquo; Hello Hugo</a>
+    
+    
+  </div>
+</section>
+
   
 </body>
 </html>
+
+
 
