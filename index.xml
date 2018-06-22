@@ -17,7 +17,8 @@
       <pubDate>Sat, 12 May 2018 12:28:05 +0200</pubDate>
       
       <guid>https://wews.co/post/hello-hugo/</guid>
-      <description>Well hello there.</description>
+      <description>Well hello there. This here is how this started:
+hugo -t black-and-light cd public git add . git commmit -m &amp;quot;initial commit&amp;quot; git push  </description>
     </item>
     
   </channel>
