@@ -9,7 +9,9 @@
     <meta name="referrer" content="no-referrer">
     
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400' rel='stylesheet' type='text/css'>
+    
 
     <link rel="icon" type="image/png" href="https://wews.co/favicon_16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="https://wews.co/favicon_32x32.png" sizes="32x32">
@@ -406,9 +408,11 @@
 <section id=content>
   <h1> Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server </h1>
 
-  <div id=sub-header>
-    June 2018 · 2 minute read
-  </div>
+  
+    <div id=sub-header>
+      June 2018 · 2 minute read
+    </div>
+  
 
   <div class="entry-content">
     
@@ -441,13 +445,23 @@
 
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
 
-	$_SERVER['HTTPS']='on';
+    $_SERVER['HTTPS']='on';
 </code></pre>
 
 <ol>
 <li>change site and home url protocols to https</li>
 <li>lastly, your site will most likely still have some resources being loaded over insecure http. hunt these down and deeeestroy them. just kidding, just search &amp; replace absolute urls with relatives ones where you can. if some http resources still remain after that, figure it out son.</li>
 </ol>
+
+<h3 id="update-29-08-2018"><strong>Update (29/08/2018)</strong></h3>
+
+<p>While playing around with Content Security Policy I stumbled upon the <strong>directive</strong> <code>upgrade-insecure-requests</code> which tells a browser or user agent to load any resources with HTTP URLS over HTTPS instead. This directive is intended for sites that have a large number of HTTP URLs that would otherwise need to be re-written by hand.</p>
+
+<p>So instead of re-writing all those pesky insecure URLs by hand as suggested by an older version of myself, if possible, just use the CSP directive by adding it to your site&rsquo;s headers or by adding the below meta tag to your <code>head</code> section.</p>
+
+<pre><code>// meta tag in the head
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;upgrade-insecure-requests&quot;&gt;
+</code></pre>
 
 <h3 id="did-you-win"><strong>did you win?</strong></h3>
 
@@ -458,6 +472,7 @@ if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
 <ol>
 <li><a href="https://blog.sucuri.net/2016/04/troubleshooting-mixed-content-warnings-https.html">Troubleshooting Mixed Content Warnings with HTTPS - https://blog.sucuri.net/2016/04/troubleshooting-mixed-content-warnings-https.html</a></li>
 <li><a href="https://sucuri.net/guides/how-to-install-ssl-certificate">How to Install an SSL Certificate - https://sucuri.net/guides/how-to-install-ssl-certificate</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests">CSP: upgrade-insecure-requests - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests</a></li>
 </ol>
 
   </div>
