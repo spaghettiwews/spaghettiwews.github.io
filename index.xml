@@ -6,10 +6,20 @@
     <description>Recent content on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 22 Jun 2018 22:10:28 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 15:32:47 +0200</lastBuildDate>
     
 	<atom:link href="https://wews.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A list of open source projects</title>
+      <link>https://wews.co/post/open-source/</link>
+      <pubDate>Sun, 17 Feb 2019 15:32:47 +0200</pubDate>
+      
+      <guid>https://wews.co/post/open-source/</guid>
+      <description>I like well designed software. I also like free things, as I&amp;rsquo;m sure do you. Every now and again these two qualities intersect and I&amp;rsquo;ll stumble upon a free, cool piece of software that I think will be useful to me in the future. Here&amp;rsquo;s a running list of said applications/systems/software:
+ Grafana - The open platform for analytics and monitoring  https://grafana.com/  Wekan - open-source kanban  https://wekan.github.io/  decidim - Free Open-Source participatory democracy for cities and organizations  https://decidim.</description>
+    </item>
     
     <item>
       <title>Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server</title>
