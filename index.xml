@@ -6,10 +6,20 @@
     <description>Recent content on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Feb 2019 15:32:47 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 18 Feb 2019 01:15:45 +0200</lastBuildDate>
     
 	<atom:link href="https://wews.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>On starting a new decade</title>
+      <link>https://wews.co/post/11110/</link>
+      <pubDate>Mon, 18 Feb 2019 01:15:45 +0200</pubDate>
+      
+      <guid>https://wews.co/post/11110/</guid>
+      <description>Came here for some deep philosophical insight? No? Good&amp;hellip; because I have zilch to offer in that department. Here&amp;rsquo;s a gif that depicts my outlook better than I could put in words. Pictures and a thousand words what what.
+   bring it source: matrix revolutions | giphy    </description>
+    </item>
     
     <item>
       <title>A list of open source projects</title>
@@ -17,8 +27,8 @@
       <pubDate>Sun, 17 Feb 2019 15:32:47 +0200</pubDate>
       
       <guid>https://wews.co/post/open-source/</guid>
-      <description>I like well designed software. I also like free things, as I&amp;rsquo;m sure do you. Every now and again these two qualities intersect and I&amp;rsquo;ll stumble upon a free, cool piece of software that I think will be useful to me in the future. Here&amp;rsquo;s a running list of said applications/systems/software:
- Grafana - The open platform for analytics and monitoring  https://grafana.com/  Wekan - open-source kanban  https://wekan.github.io/  decidim - Free Open-Source participatory democracy for cities and organizations  https://decidim.</description>
+      <description>I like well designed software. I also like free things, as I&amp;rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&amp;rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me in the future. While there&amp;rsquo;s a 90% chance that I won&amp;rsquo;t ever use most of these, here&amp;rsquo;s a running list of said applications/systems/software nonetheless:
+ Grafana - The open platform for analytics and monitoring  https://grafana.</description>
     </item>
     
     <item>
