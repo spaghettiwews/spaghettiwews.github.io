@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on a blog of spaghettiwews</title>
+    <link>https://wews.co/page/</link>
+    <description>Recent content in Pages on a blog of spaghettiwews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Feb 2019 21:29:15 +0200</lastBuildDate>
+    
+	<atom:link href="https://wews.co/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Resume</title>
+      <link>https://wews.co/page/resume/</link>
+      <pubDate>Mon, 25 Feb 2019 21:29:15 +0200</pubDate>
+      
+      <guid>https://wews.co/page/resume/</guid>
+      <description>Welington Maposa Education Bachelor of Technology Honours Degree in Computer Science Harare Institute of Technology: August 2008 – May 2012
+ Graduated with Upper Second Class Prize for Best Design Project Senior project: Long Bone Hairline Fracture detection in X-ray images using digital image processing techniques and BPNN.  Skills Languages &amp;amp; Frameworks  HTML, CSS, Javascript, jQuery, RWD, SEO PHP, Python, RESTful APIs, MySql Joomla, Wordpress, Woocommerce, Laravel  Experience Project Manager Webdev Group, Harare: February 2015 - Current</description>
+    </item>
+    
+  </channel>
+</rss>
