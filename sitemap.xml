@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wews.co/cheatsheet/csharp/stringbuilder/</loc>
+    <lastmod>2019-03-10T12:03:26+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wews.co/page/resume/</loc>
     <lastmod>2019-02-25T21:29:15+02:00</lastmod>
   </url>
@@ -33,6 +38,12 @@
   </url>
   
   <url>
+    <loc>https://wews.co/cheatsheet/</loc>
+    <lastmod>2019-03-10T12:03:26+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://wews.co/page/</loc>
     <lastmod>2019-02-25T21:29:15+02:00</lastmod>
     <priority>0</priority>
@@ -51,7 +62,7 @@
   
   <url>
     <loc>https://wews.co/</loc>
-    <lastmod>2019-02-25T21:29:15+02:00</lastmod>
+    <lastmod>2019-03-10T12:03:26+02:00</lastmod>
     <priority>0</priority>
   </url>
   

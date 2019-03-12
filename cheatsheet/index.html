@@ -8,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
-    <meta property="og:url" content="https://wews.co/page/resume/">
+    <meta property="og:url" content="https://wews.co/cheatsheet/">
 
-    <title>Resume - a blog of spaghettiwews</title>
-    <meta property="og:title" content="Resume - a blog of spaghettiwews">
+    <title>Cheatsheets - a blog of spaghettiwews</title>
+    <meta property="og:title" content="Cheatsheets - a blog of spaghettiwews">
     <meta property="og:type" content="article">
     <meta name="description" content="">
 
@@ -35,69 +35,53 @@
       </nav>
 
 
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">Resume</h1>
-      <time class="post-date" datetime="2019-02-25 21:29:15 &#43;0200">25 Feb 2019</time>
-    </header>
-
+<input class="filter" type="text" placeholder="start typing to filter cards... e.g. arrays" value="">
+</div>
+<div class="cheats grid">
     
+    <article>
+        <header><h3>System.Text.StringBuilder</h3></header>
+        <p><strong>Constructor</strong></p>
 
-<h2 id="welington-maposa">Welington Maposa</h2>
+<pre><code class="language-csharp">StringBuilder sb = new StringBuilder();
+StringBuilder sb = new StringBuilder(mystring);
+StringBuilder sb = new StringBuilder(mystring,capacity);
+</code></pre>
 
-<h3 id="education">Education</h3>
+<p><em>mystring</em> – Initial value of StringBuilder object<br/>
+<em>capacity</em> – Initial size (characters) of buffer.</p>
 
-<hr />
+<p><strong>Using StringBuilderMembers</strong></p>
 
-<h5 id="bachelor-of-technology-honours-degree-in-computer-science">Bachelor of Technology Honours Degree in Computer Science</h5>
+<pre><code class="language-csharp">decimal bmi = 22.2M;
+int wt = 168;
+StringBuilder sb = new StringBuilder(&quot;My weight is &quot;);
+sb = sb.Append(wt); // can append number
+sb = sb.Append(&quot; and my bmi is &quot;).Append(bmi);
 
-<p><em>Harare Institute of Technology</em>: December 2008 – June 2012</p>
+// my weight is 168 and my bmi is 22.2
+sb = sb.Replace(&quot;22.2&quot;,&quot;22.4&quot;);
+string s = sb.ToString();
 
-<p><br/></p>
+// Clear and set to new value
+sb.Length = 0;
+sb.Append(&quot;Xanadu&quot;);
+</code></pre>
 
-<h3 id="skills">Skills</h3>
-
-<hr />
-
-<p>Business Analysis, Solution Design, Application Development, Project Management - SDLC, Kanban, Online Payments, Security, Accessibility and Usability, Performance, Research, Recruitment</p>
-
-<p><br/></p>
-
-<h3 id="tech">Tech</h3>
-
-<hr />
-
-<ul>
-<li>PHP, Javascript, Node.js, C#, RESTful APIs, MySql</li>
-<li>Content Management Systems, Woocommerce, Laravel, Shopify</li>
-<li>Git, CI/CD, SSH</li>
-<li>Agile, Waterfall, Object Oriented Design &amp; Development, MVC</li>
-<li>Microsoft Visual Studio, VS Code, Postman, Docker, Virtualbox, Bash, DevTools</li>
-</ul>
-
-<p><br/></p>
-
-<h3 id="experience">Experience</h3>
-
-<hr />
-
-<h5 id="senior-developer">Senior Developer</h5>
-
-<p><em>Webdev Group, Harare</em>: February 2015 - Current</p>
-
-<h5 id="developer">Developer</h5>
-
-<p><em>Webdev Group, Harare</em>: May 2013 - February 2015</p>
-
-<p><br/></p>
-
-<h3 id="personal-projects">Personal projects</h3>
-
-<hr />
-
-
-  </article>
-
+    </article>
+    
+</div>
+<div class="container">
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+    var iso = new Isotope( '.grid', {
+        itemSelector: 'article',
+        layoutMode: 'fitRows',
+        gutter: 10
+    });
+});
+</script>
 
       <footer class="site-footer">
         <span itemscope itemtype="http://schema.org/Person">
@@ -125,3 +109,4 @@
 
   </body>
 </html>
+

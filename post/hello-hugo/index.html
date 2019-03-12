@@ -16,8 +16,9 @@
     <meta name="description" content="">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,700">
-    <link rel="stylesheet" href="https://wews.co/css/highlight.css">
+    
     <link rel="stylesheet" href="https://wews.co/css/journal.css">
+    <link rel="stylesheet" href="https://wews.co//css/prism-onedark.css">
     <link rel="stylesheet" href="https://wews.co//css/custom.css">
     <link href="https://wews.co/index.xml" rel="alternate" type="application/rss+xml" title="a blog of spaghettiwews">
 
@@ -25,7 +26,10 @@
 
   <body>
     <div class="container">
-
+      <header class="site-header">
+        <h1><a href="https://wews.co/">a blog of spaghettiwews</a></h1>
+        <p class="tagline">there is yet insufficient data for a meaningful answer</p>
+      </header>
       <nav class="site-nav">
         <a href="https://wews.co/">Index</a>
       </nav>
@@ -39,7 +43,7 @@
 
     <p>Well hello there. This here is how this started:</p>
 
-<pre><code>hugo -t black-and-light
+<pre><code class="language-bash">hugo -t black-and-light
 cd public
 git add .
 git commmit -m &quot;initial commit&quot;
@@ -70,8 +74,9 @@ git push
       </footer>
     </div>
 
-  <script src="https://wews.co/js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://wews.co//js/prism.js"></script>
+  
+  
 
   </body>
 </html>
