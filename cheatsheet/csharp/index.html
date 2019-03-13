@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta property="og:url" content="https://wews.co/cheatsheet/csharp/">
+
+    <title>C# - a blog of spaghettiwews</title>
+    <meta property="og:title" content="C# - a blog of spaghettiwews">
+    <meta property="og:type" content="article">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,700">
+    
+    <link rel="stylesheet" href="https://wews.co/css/journal.css">
+    <link rel="stylesheet" href="https://wews.co//css/prism-onedark.css">
+    <link rel="stylesheet" href="https://wews.co//css/custom.css">
+    <link href="https://wews.co/index.xml" rel="alternate" type="application/rss+xml" title="a blog of spaghettiwews">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <h1><a href="https://wews.co/">a blog of spaghettiwews</a></h1>
+        <p class="tagline">there is yet insufficient data for a meaningful answer</p>
+      </header>
+      <nav class="site-nav">
+        <a href="https://wews.co/">Index</a>
+      </nav>
+
+
+<input class="filter" type="text" placeholder="start typing to filter cards... e.g. arrays" value="">
+</div>
+<div class="cheats grid">
+    
+    <article>
+        <header><h3>Data Types</h3></header>
+        <table>
+<thead>
+<tr>
+<th>Primitive</th>
+<th>Size</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>string</td>
+<td>2 bytes/char</td>
+<td>s = “reference”;</td>
+</tr>
+
+<tr>
+<td>bool</td>
+<td></td>
+<td>b = true;</td>
+</tr>
+
+<tr>
+<td>char</td>
+<td>2 bytes</td>
+<td>ch = ‘a’;</td>
+</tr>
+
+<tr>
+<td>byte</td>
+<td>1 byte</td>
+<td>b = 0x78;</td>
+</tr>
+
+<tr>
+<td>short</td>
+<td>2 bytes</td>
+<td>Ival = 54;</td>
+</tr>
+
+<tr>
+<td>int</td>
+<td>4 bytes</td>
+<td>Ival = 540;</td>
+</tr>
+
+<tr>
+<td>long</td>
+<td>8 bytes</td>
+<td>ival = 5400;</td>
+</tr>
+
+<tr>
+<td>float</td>
+<td>4 bytes</td>
+<td>val = 54.0F;</td>
+</tr>
+
+<tr>
+<td>double</td>
+<td>8 bytes</td>
+<td>val = 54.0D;</td>
+</tr>
+
+<tr>
+<td>decimal</td>
+<td>16 bytes</td>
+<td>val = 54.0M</td>
+</tr>
+</tbody>
+</table>
+
+    </article>
+    
+    <article>
+        <header><h3>Arrays</h3></header>
+        <p><strong>Declaration</strong></p>
+
+<pre><code class="language-csharp">int[] numArray = {1903, 1907, 1910};
+int[] numArray = new int[3];
+// 3 rows and 2 columns
+int[ , ] nums = {{1907, 1990}, {1904, 1986}, {1910, 1980}};
+</code></pre>
+
+<p><strong>Array Operations</strong></p>
+
+<pre><code class="language-csharp">Array.Sort(numArray); // sort ascending
+
+// Sort begins at element 4 and sorts 10 elements
+Array.Sort(numArray, 4,10);
+
+// Use one array as a key and sort two arrays
+string[] values = {&quot;Cary&quot;, &quot;Gary&quot;, &quot;Barbara&quot;};
+string[] keys = {&quot;Grant&quot;, &quot;Cooper&quot;, &quot;Stanwyck&quot;};
+Array.Sort(keys, values);
+
+// Clear elements in array (array, 1 st element, # elements)
+Array.Clear(numArray, 0, numArray.Length);
+
+// Copy elements from one array to another
+Array.Copy(src, target, numelements);
+</code></pre>
+
+    </article>
+    
+    <article>
+        <header><h3>String Operations</h3></header>
+        <p><strong>Compare</strong></p>
+
+<pre><code class="language-csharp">String.Compare(stra, strb, case, ci)
+</code></pre>
+
+<p>bool case – true for case insensitive<br/>ci – new CultureInfo(&ldquo;en-US&rdquo;)<br/>returns: &lt; 0 if <code>a &lt; b</code>, 0 if <code>a = b</code>, 1 if <code>a &gt; b</code></p>
+
+<p><strong>IndexOf</strong></p>
+
+<pre><code class="language-csharp">str.IndexOf(val, start, num)
+</code></pre>
+
+<p>val – string to search for<br/>start – where to begin in string<br>num – number of chars to search<br>returns (–1) if no match.</p>
+
+<p><strong>LastIndexOf</strong></p>
+
+<p>Search from end of string.</p>
+
+<p><strong>Replace</strong></p>
+
+<pre><code class="language-csharp">newstr = oldstr.Replace(&quot;old&quot;,&quot;new&quot;);
+</code></pre>
+
+<p><strong>Split</strong></p>
+
+<pre><code class="language-csharp">Char[] delim = {‘ ‘, ‘,’};
+string w = &quot;Kim, Joanna Leslie&quot;; 
+// create array with three names
+string[] names= w.Split(delim);
+</code></pre>
+
+    </article>
+    
+    <article>
+        <header><h3>System.Text.StringBuilder</h3></header>
+        <p><strong>Constructor</strong></p>
+
+<pre><code class="language-csharp">StringBuilder sb = new StringBuilder();
+StringBuilder sb = new StringBuilder(mystring);
+StringBuilder sb = new StringBuilder(mystring,capacity);
+</code></pre>
+
+<p><em>mystring</em> – Initial value of StringBuilder object<br/>
+<em>capacity</em> – Initial size (characters) of buffer.</p>
+
+<p><strong>Using StringBuilderMembers</strong></p>
+
+<pre><code class="language-csharp">decimal bmi = 22.2M;
+int wt = 168;
+StringBuilder sb = new StringBuilder(&quot;My weight is &quot;);
+sb = sb.Append(wt); // can append number
+sb = sb.Append(&quot; and my bmi is &quot;).Append(bmi);
+
+// my weight is 168 and my bmi is 22.2
+sb = sb.Replace(&quot;22.2&quot;,&quot;22.4&quot;);
+string s = sb.ToString();
+
+// Clear and set to new value
+sb.Length = 0;
+sb.Append(&quot;Xanadu&quot;);
+</code></pre>
+
+    </article>
+    
+    <article>
+        <header><h3>DateTime and TimeSpan</h3></header>
+        <p><strong>DateTime Constructor</strong></p>
+
+<pre><code class="language-csharp">DateTime(yr, mo, day);
+DateTime(yr, mo, day, hr, min, sec);
+
+DateTime bday = new DateTime(1964,12,20,11,2,0);
+DateTime newyr= DateTime.Parse(&quot;1/1/2005&quot;);
+DateTime currdt = DateTime.Now;
+
+// also AddHours, AddMonths, AddYears
+DateTime tomorrow = currdt.AddDays(1);
+TimeSpan diff = currdt.Subtract(bday);
+
+// 14795 days from 12/20/64 to 6/24/05
+Console.WriteLine(&quot;{0}&quot;, diff.Days);
+
+// TimeSpan(hrs, min, sec)
+TimeSpan ts = new TimeSpan(6, 30, 10);
+
+// also FromMinutes, FromHours, FromDays
+TimeSpan ts = TimeSpan.FromSeconds(120);
+TimeSpan ts = ts2 – ts1; // +,-,&gt;,&lt;,==, !=
+</code></pre>
+
+    </article>
+    
+    <article>
+        <header><h3>Formatting Numeric Values</h3></header>
+        <p><strong>Format Item Syntax:</strong> {index[,alignment] [:format string]}</p>
+
+<p><em>index</em> – Specifies element in list of values to which format is applied.<br>
+<em>alignment</em> – Indicates minimum width (in characters) to display value.<br>
+<em>format string</em> – Contains the code that specifies the format of the displayed value.</p>
+
+<pre><code class="language-csharp">// Example: 
+String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Format Specifier</th>
+<th>Pattern</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>C or c</td>
+<td>{0:C2}, 1388.55</td>
+<td>$ 1388.55</td>
+<td>Currency.</td>
+</tr>
+
+<tr>
+<td>D or d</td>
+<td>{0:D5}, 45</td>
+<td>00045</td>
+<td>Must be integer value.</td>
+</tr>
+
+<tr>
+<td>E or e</td>
+<td>{0,9:E2}, 1388.55</td>
+<td>1.39+E003</td>
+<td>Must be floating point.</td>
+</tr>
+
+<tr>
+<td>F or f</td>
+<td>{0,9:F2}, 1388.55</td>
+<td>1388.55</td>
+<td>Fixed Point representation.</td>
+</tr>
+
+<tr>
+<td>N or n</td>
+<td>{0,9:N1}, 1388.55</td>
+<td>1,388.6</td>
+<td>Insert commas</td>
+</tr>
+
+<tr>
+<td>P or p</td>
+<td>{0,9:P3}, .7865</td>
+<td>78.650%</td>
+<td>Converts to percent.</td>
+</tr>
+
+<tr>
+<td>R or r</td>
+<td>{0,9:R}, 3.14159</td>
+<td>3.14159</td>
+<td>Retains all decimal places.</td>
+</tr>
+
+<tr>
+<td>X or x</td>
+<td>{0,9:X4}, 31</td>
+<td>001f</td>
+<td>Converts to Hex</td>
+</tr>
+</tbody>
+</table>
+
+    </article>
+    
+    <article>
+        <header><h3>Formatting Date Values</h3></header>
+        <p>DateTime Formatting: (January 19, 2005 16:05:20) en-US</p>
+
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Value Displayed</th>
+<th>Format</th>
+<th>Value Displayed</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>d</td>
+<td>1/19/2005</td>
+<td>Y or y</td>
+<td>January, 2005</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td>Wednesday, January 19, 2005</td>
+<td>t</td>
+<td>4:05 PM</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td>Wednesday, January 19, 2005 4:05:20 PM</td>
+<td>T</td>
+<td>4:05:20 PM</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>Wednesday, January 19, 2005 4:05 PM</td>
+<td>s</td>
+<td>2005-01-19T16:05:20</td>
+</tr>
+
+<tr>
+<td>g</td>
+<td>1/19/2005 4:05 PM</td>
+<td>u</td>
+<td>2005-01-19 16:05:20Z</td>
+</tr>
+
+<tr>
+<td>G</td>
+<td>1/19/2005 4:05:20 PM</td>
+<td>U</td>
+<td>Wednesday, January 19, 2005 21:05:20PM</td>
+</tr>
+
+<tr>
+<td>M or m</td>
+<td>January 19</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+    </article>
+    
+    <article>
+        <header><h3>Using the System.Text.RegularExpressions.Regex class</h3></header>
+        <pre><code class="language-csharp">string zipexp = @&quot;\d{5}((-|\s)?\d{4})?$&quot;;
+string addr = &quot;W.44th St, New York, NY 10017-0233&quot;;
+Match m = Regex.Match(addr,zipexp); // Static method
+Regex zipRegex = new Regex(zipexp);
+m = zipRegex.Match(addr); // Use Regex Object
+Console.WriteLine(m.Value); // 10017-0233
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>+</td>
+<td>Match one or more occurrence</td>
+<td>ab+c matches abc, abbc</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>Match zero or more occurrences</td>
+<td>ab*c matches ac, abbc</td>
+</tr>
+
+<tr>
+<td>?</td>
+<td>Matches zero or one occurrence</td>
+<td>ab?c matches ac, abc</td>
+</tr>
+
+<tr>
+<td>\d \D</td>
+<td>Match decimal digit or non-digit (\D)</td>
+<td>\d\d matches 01, 55</td>
+</tr>
+
+<tr>
+<td>\w \W</td>
+<td>Match any word character or non-char</td>
+<td>\w equals [a-zA-Z0-9_]</td>
+</tr>
+
+<tr>
+<td>\s \S</td>
+<td>Match whitespace or non-whitespace</td>
+<td>\d*\s\d+ matches 246 98</td>
+</tr>
+
+<tr>
+<td>[ ]</td>
+<td>Match any character in set</td>
+<td>[aeiou]n matches in, on</td>
+</tr>
+
+<tr>
+<td>[^ ]</td>
+<td>Match any character not in set</td>
+<td>[^aeiou] matches r or 2</td>
+</tr>
+
+<tr>
+<td>a | b</td>
+<td>Either a or b</td>
+<td>jpg|jpeg|gif matches .jpg</td>
+</tr>
+
+<tr>
+<td>\n \r \t</td>
+<td>New line, carriage return, tab</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+    </article>
+    
+    <article>
+        <header><h3>Using the C# Compiler at the Command Line</h3></header>
+        <pre><code class="language-bash">C:\&gt;csc /t:library /out:reslib.dll mysource.cs
+    csc /t:winexe /r:ctls1.dll /r:ctls2.dll winapp.cs
+    csc /keyfile:strongkey.snk secure.cs
+</code></pre>
+
+    </article>
+    
+</div>
+<div class="container">
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+    var iso = new Isotope( '.grid', {
+        itemSelector: 'article',
+        layoutMode: 'fitRows',
+        gutter: 10
+    });
+});
+</script>
+
+      <footer class="site-footer">
+        <span itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="https://wews.co/">
+          <span itemprop="name"></span>
+
+          <br>
+
+          <a itemprop="sameAs" href="https://wews.co/page/resume" title="Resume">resume</a>
+
+          <a itemprop="sameAs" href="https://github.com/spaghettiwews" title="GitHub">github</a>
+
+          
+
+          
+        </span>
+
+        
+      </footer>
+    </div>
+
+  <script src="https://wews.co//js/prism.js"></script>
+  
+  
+
+  </body>
+</html>
+

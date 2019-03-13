@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>a blog of spaghettiwews</title>
-    <link>https://wews.co/</link>
-    <description>Recent content on a blog of spaghettiwews</description>
+    <title>C# on a blog of spaghettiwews</title>
+    <link>https://wews.co/cheatsheet/csharp/</link>
+    <description>Recent content in C# on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Mar 2019 19:05:54 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 19:37:37 +0200</lastBuildDate>
     
-	<atom:link href="https://wews.co/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wews.co/cheatsheet/csharp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -110,59 +110,6 @@ Array.Sort(numArray); // sort ascending // Sort begins at element 4 and sorts 10
       
       <guid>https://wews.co/cheatsheet/csharp/datatypes/</guid>
       <description>Primitive Size Example     string 2 bytes/char s = “reference”;   bool  b = true;   char 2 bytes ch = ‘a’;   byte 1 byte b = 0x78;   short 2 bytes Ival = 54;   int 4 bytes Ival = 540;   long 8 bytes ival = 5400;   float 4 bytes val = 54.</description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>https://wews.co/page/resume/</link>
-      <pubDate>Mon, 25 Feb 2019 21:29:15 +0200</pubDate>
-      
-      <guid>https://wews.co/page/resume/</guid>
-      <description>Welington Maposa Education Bachelor of Technology Honours Degree in Computer Science Harare Institute of Technology: December 2008 – June 2012
-
-Skills Business Analysis, Solution Design, Application Development, Project Management - SDLC, Kanban, Online Payments, Security, Accessibility and Usability, Performance, Research, Recruitment
-
-Tech  PHP, Javascript, Node.js, C#, RESTful APIs, MySql Content Management Systems, Woocommerce, Laravel, Shopify Git, CI/CD, SSH Agile, Waterfall, Object Oriented Design &amp;amp; Development, MVC Microsoft Visual Studio, VS Code, Postman, Docker, Virtualbox, Bash, DevTools</description>
-    </item>
-    
-    <item>
-      <title>On starting a new decade</title>
-      <link>https://wews.co/post/11110/</link>
-      <pubDate>Mon, 18 Feb 2019 01:15:45 +0200</pubDate>
-      
-      <guid>https://wews.co/post/11110/</guid>
-      <description>  bring it source: matrix revolutions | giphy
-  </description>
-    </item>
-    
-    <item>
-      <title>A list of open source projects</title>
-      <link>https://wews.co/post/open-source/</link>
-      <pubDate>Sun, 17 Feb 2019 15:32:47 +0200</pubDate>
-      
-      <guid>https://wews.co/post/open-source/</guid>
-      <description>I like well designed software. I also like free things, as I&amp;rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&amp;rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&amp;rsquo;s a 90% chance that I won&amp;rsquo;t ever use most of these, here&amp;rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.</description>
-    </item>
-    
-    <item>
-      <title>Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server</title>
-      <link>https://wews.co/post/sucuri-ssl/</link>
-      <pubDate>Fri, 22 Jun 2018 22:10:28 +0200</pubDate>
-      
-      <guid>https://wews.co/post/sucuri-ssl/</guid>
-      <description>what&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:  In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
-In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware.</description>
-    </item>
-    
-    <item>
-      <title>Hello Hugo</title>
-      <link>https://wews.co/post/hello-hugo/</link>
-      <pubDate>Sat, 12 May 2018 12:28:05 +0200</pubDate>
-      
-      <guid>https://wews.co/post/hello-hugo/</guid>
-      <description>Well hello there. This here is how this started:
-hugo -t black-and-light cd public git add . git commmit -m &amp;quot;initial commit&amp;quot; git push  </description>
     </item>
     
   </channel>

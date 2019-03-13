@@ -6,22 +6,9 @@
     <description>Recent content in Cheatsheets on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2019 12:03:26 +0200</lastBuildDate>
     
 	<atom:link href="https://wews.co/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>System.Text.StringBuilder</title>
-      <link>https://wews.co/cheatsheet/csharp/stringbuilder/</link>
-      <pubDate>Sun, 10 Mar 2019 12:03:26 +0200</pubDate>
-      
-      <guid>https://wews.co/cheatsheet/csharp/stringbuilder/</guid>
-      <description>Constructor
-StringBuilder sb = new StringBuilder(); StringBuilder sb = new StringBuilder(mystring); StringBuilder sb = new StringBuilder(mystring,capacity);  mystring – Initial value of StringBuilder object capacity – Initial size (characters) of buffer.
-Using StringBuilderMembers
-decimal bmi = 22.2M; int wt = 168; StringBuilder sb = new StringBuilder(&amp;quot;My weight is &amp;quot;); sb = sb.Append(wt); // can append number sb = sb.Append(&amp;quot; and my bmi is &amp;quot;).Append(bmi); // my weight is 168 and my bmi is 22.</description>
-    </item>
     
   </channel>
 </rss>
