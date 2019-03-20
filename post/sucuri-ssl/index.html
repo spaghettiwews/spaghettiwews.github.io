@@ -15,13 +15,42 @@
     <meta property="og:type" content="article">
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700">
     
+    <link rel="icon" type="image/png" href="https://wews.co/images/icon.png">
     <link rel="stylesheet" href="https://wews.co/css/journal.css">
-    <link rel="stylesheet" href="https://wews.co//css/prism-onedark.css">
-    <link rel="stylesheet" href="https://wews.co//css/custom.css">
+    <link rel="stylesheet" href="https://wews.co/css/prism-onedark.css">
+    <link rel="stylesheet" href="https://wews.co/css/custom.css">
     <link href="https://wews.co/index.xml" rel="alternate" type="application/rss+xml" title="a blog of spaghettiwews">
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+    
+        if (localStorage) {
+          setTheme = (localStorage.getItem("theme")) ? localStorage.getItem("theme") : "notheme";
+          switchToTheme(setTheme);
 
+          document.querySelector("#themeToggle").addEventListener("click", function(){
+            currentTheme = (localStorage.getItem("theme")) ? localStorage.getItem("theme") : "notheme";
+            if (currentTheme == "notheme" || currentTheme == "dark") {
+              switchToTheme("light");
+            }
+            else if (currentTheme == "light") {
+              switchToTheme("dark");
+            }
+          });
+        }
+    
+      });
+
+      
+      
+      
+    
+      function switchToTheme(theme) {
+        document.querySelector("body").setAttribute("class", theme);
+        localStorage.setItem("theme", theme);
+      }
+      </script>
   </head>
 
   <body>
@@ -29,9 +58,10 @@
       <header class="site-header">
         <h1><a href="https://wews.co/">a blog of spaghettiwews</a></h1>
         <p class="tagline">there is yet insufficient data for a meaningful answer</p>
+        <button id="themeToggle">toggle theme</button>
       </header>
       <nav class="site-nav">
-        <a href="https://wews.co/">Index</a>
+        <a href="https://wews.co/">back to /</a>
       </nav>
 
 
@@ -43,7 +73,7 @@
 
     
 
-<h3 id="what-s-a-reverse-proxy-well-in-this-context-wikipedia-has-this-to-say"><strong>what&rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:</strong></h3>
+<h3 id="what-s-a-reverse-proxy-well-in-this-context-wikipedia-has-this-to-say"><strong>What&rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:</strong></h3>
 
 <blockquote>
 <p>In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.</p>
@@ -52,14 +82,14 @@
 &mdash; <a href="https://en.wikipedia.org/wiki/Reverse_proxy">https://en.wikipedia.org/wiki/Reverse_proxy</a></p>
 </blockquote>
 
-<h3 id="what-s-sucuri"><strong>what&rsquo;s sucuri?</strong></h3>
+<h3 id="what-s-sucuri"><strong>What&rsquo;s sucuri?</strong></h3>
 
 <blockquote>
 <p>it&rsquo;s an example of the above. in oversimplified terms i guess. maybe.
 &mdash; me</p>
 </blockquote>
 
-<h3 id="a-guide-read-a-reminder-for-myself"><strong>a guide (read: a reminder for myself)</strong></h3>
+<h3 id="a-guide-read-a-reminder-for-myself"><strong>A guide (read: a reminder for myself)</strong></h3>
 
 <ol>
 <li>the A records for both domain names <strong>example.com</strong> and <strong>www.example.com</strong> need to point to the IP address provided by sucuri in order for them to be able to generate and install a valid LE cert for the domain</li>
@@ -68,9 +98,7 @@
 </ol>
 
 <pre><code class="language-php">/* Handle HTTPS Protocol */
-
 if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
-
 	$_SERVER['HTTPS']='on';
 </code></pre>
 
@@ -89,11 +117,11 @@ if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;upgrade-insecure-requests&quot;&gt;
 </code></pre>
 
-<h3 id="did-you-win"><strong>did you win?</strong></h3>
+<h3 id="did-you-win"><strong>Did you win?</strong></h3>
 
 <p>yes? good! now it&rsquo;s time feel good about yourself for completing this simple task by watching this <a href="https://www.youtube.com/watch?v=JrO46CJd9ns">video</a>  ✌️</p>
 
-<h3 id="more-reading"><strong>more reading</strong></h3>
+<h3 id="more-reading"><strong>More reading</strong></h3>
 
 <ol>
 <li><a href="https://blog.sucuri.net/2016/04/troubleshooting-mixed-content-warnings-https.html">Troubleshooting Mixed Content Warnings with HTTPS - https://blog.sucuri.net/2016/04/troubleshooting-mixed-content-warnings-https.html</a></li>
@@ -119,16 +147,17 @@ if ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')
           
 
           
+
+          
         </span>
 
         
       </footer>
     </div>
 
-  <script src="https://wews.co//js/prism.js"></script>
+  <script async src="https://wews.co//js/prism.js"></script>
   
   
-
   </body>
 </html>
 

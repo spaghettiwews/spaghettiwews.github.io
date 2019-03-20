@@ -151,7 +151,7 @@ Tech  PHP, Javascript, Node.js, C#, RESTful APIs, MySql Content Management Syste
       <pubDate>Fri, 22 Jun 2018 22:10:28 +0200</pubDate>
       
       <guid>https://wews.co/post/sucuri-ssl/</guid>
-      <description>what&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:  In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
+      <description>What&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:  In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
 In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware.</description>
     </item>
     

@@ -15,13 +15,42 @@
     <meta property="og:type" content="article">
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700">
     
+    <link rel="icon" type="image/png" href="https://wews.co/images/icon.png">
     <link rel="stylesheet" href="https://wews.co/css/journal.css">
-    <link rel="stylesheet" href="https://wews.co//css/prism-onedark.css">
-    <link rel="stylesheet" href="https://wews.co//css/custom.css">
+    <link rel="stylesheet" href="https://wews.co/css/prism-onedark.css">
+    <link rel="stylesheet" href="https://wews.co/css/custom.css">
     <link href="https://wews.co/index.xml" rel="alternate" type="application/rss+xml" title="a blog of spaghettiwews">
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+    
+        if (localStorage) {
+          setTheme = (localStorage.getItem("theme")) ? localStorage.getItem("theme") : "notheme";
+          switchToTheme(setTheme);
 
+          document.querySelector("#themeToggle").addEventListener("click", function(){
+            currentTheme = (localStorage.getItem("theme")) ? localStorage.getItem("theme") : "notheme";
+            if (currentTheme == "notheme" || currentTheme == "dark") {
+              switchToTheme("light");
+            }
+            else if (currentTheme == "light") {
+              switchToTheme("dark");
+            }
+          });
+        }
+    
+      });
+
+      
+      
+      
+    
+      function switchToTheme(theme) {
+        document.querySelector("body").setAttribute("class", theme);
+        localStorage.setItem("theme", theme);
+      }
+      </script>
   </head>
 
   <body>
@@ -29,9 +58,10 @@
       <header class="site-header">
         <h1><a href="https://wews.co/">a blog of spaghettiwews</a></h1>
         <p class="tagline">there is yet insufficient data for a meaningful answer</p>
+        <button id="themeToggle">toggle theme</button>
       </header>
       <nav class="site-nav">
-        <a href="https://wews.co/">Index</a>
+        <a href="https://wews.co/">back to /</a>
       </nav>
 
 
@@ -68,16 +98,17 @@
           
 
           
+
+          
         </span>
 
         
       </footer>
     </div>
 
-  <script src="https://wews.co//js/prism.js"></script>
+  <script async src="https://wews.co//js/prism.js"></script>
   
   
-
   </body>
 </html>
 
