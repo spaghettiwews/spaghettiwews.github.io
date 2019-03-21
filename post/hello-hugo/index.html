@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <meta property="og:url" content="https://wews.co/post/hello-hugo/">
+    <meta name="theme-color" content="">
 
     <title>Hello Hugo - a blog of spaghettiwews</title>
     <meta property="og:title" content="Hello Hugo - a blog of spaghettiwews">
@@ -24,6 +25,8 @@
     <link href="https://wews.co/index.xml" rel="alternate" type="application/rss+xml" title="a blog of spaghettiwews">
     <script>
       document.addEventListener("DOMContentLoaded", function(){
+
+        themes = {"dark": "#001d26","light": "#fffbcc"};
     
         if (localStorage) {
           setTheme = (localStorage.getItem("theme")) ? localStorage.getItem("theme") : "notheme";
@@ -41,13 +44,10 @@
         }
     
       });
-
-      
-      
-      
     
       function switchToTheme(theme) {
         document.querySelector("body").setAttribute("class", theme);
+        document.querySelector("meta[name='theme-color']").setAttribute("content", themes[theme]);
         localStorage.setItem("theme", theme);
       }
       </script>
