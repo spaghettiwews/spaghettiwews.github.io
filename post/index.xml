@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on a blog of spaghettiwews</title>
@@ -48,7 +48,7 @@ In the case of secure websites, a web server may not perform SSL encryption itse
       
       <guid>https://wews.co/post/hello-hugo/</guid>
       <description>Well hello there. This here is how this started:
-hugo -t black-and-light cd public git add . git commmit -m &amp;quot;initial commit&amp;quot; git push  </description>
+hugo -t black-and-light cd public git add . git commmit -m &amp;#34;initial commit&amp;#34; git push </description>
     </item>
     
   </channel>

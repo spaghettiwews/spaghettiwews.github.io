@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.64.1" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -79,62 +79,52 @@
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>string</td>
 <td>2 bytes/char</td>
 <td>s = “reference”;</td>
 </tr>
-
 <tr>
 <td>bool</td>
 <td></td>
 <td>b = true;</td>
 </tr>
-
 <tr>
 <td>char</td>
 <td>2 bytes</td>
 <td>ch = ‘a’;</td>
 </tr>
-
 <tr>
 <td>byte</td>
 <td>1 byte</td>
 <td>b = 0x78;</td>
 </tr>
-
 <tr>
 <td>short</td>
 <td>2 bytes</td>
 <td>Ival = 54;</td>
 </tr>
-
 <tr>
 <td>int</td>
 <td>4 bytes</td>
 <td>Ival = 540;</td>
 </tr>
-
 <tr>
 <td>long</td>
 <td>8 bytes</td>
 <td>ival = 5400;</td>
 </tr>
-
 <tr>
 <td>float</td>
 <td>4 bytes</td>
 <td>val = 54.0F;</td>
 </tr>
-
 <tr>
 <td>double</td>
 <td>8 bytes</td>
 <td>val = 54.0D;</td>
 </tr>
-
 <tr>
 <td>decimal</td>
 <td>16 bytes</td>
@@ -148,141 +138,109 @@
     <article>
         <header><h3>Arrays</h3></header>
         <p><strong>Declaration</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">int</span>[] numArray = {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">0</span><span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">0</span><span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">1</span><span style="color:#ae81ff">0</span>};
+<span style="color:#66d9ef">int</span>[] numArray = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span>[<span style="color:#ae81ff">3</span>];
+<span style="color:#75715e">// 3 rows and 2 columns
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span>[ , ] nums = {{<span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">0</span><span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">0</span>}, {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">0</span><span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">8</span><span style="color:#ae81ff">6</span>}, {<span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">1</span><span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">8</span><span style="color:#ae81ff">0</span>}};
+</code></pre></div><p><strong>Array Operations</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Array.Sort(numArray); <span style="color:#75715e">// sort ascending
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// Sort begins at element 4 and sorts 10 elements
+</span><span style="color:#75715e"></span>Array.Sort(numArray, <span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span><span style="color:#ae81ff">0</span>);
 
-<pre><code class="language-csharp">int[] numArray = {1903, 1907, 1910};
-int[] numArray = new int[3];
-// 3 rows and 2 columns
-int[ , ] nums = {{1907, 1990}, {1904, 1986}, {1910, 1980}};
-</code></pre>
-
-<p><strong>Array Operations</strong></p>
-
-<pre><code class="language-csharp">Array.Sort(numArray); // sort ascending
-
-// Sort begins at element 4 and sorts 10 elements
-Array.Sort(numArray, 4,10);
-
-// Use one array as a key and sort two arrays
-string[] values = {&quot;Cary&quot;, &quot;Gary&quot;, &quot;Barbara&quot;};
-string[] keys = {&quot;Grant&quot;, &quot;Cooper&quot;, &quot;Stanwyck&quot;};
+<span style="color:#75715e">// Use one array as a key and sort two arrays
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">string</span>[] values = {<span style="color:#e6db74">&#34;Cary&#34;</span>, <span style="color:#e6db74">&#34;Gary&#34;</span>, <span style="color:#e6db74">&#34;Barbara&#34;</span>};
+<span style="color:#66d9ef">string</span>[] keys = {<span style="color:#e6db74">&#34;Grant&#34;</span>, <span style="color:#e6db74">&#34;Cooper&#34;</span>, <span style="color:#e6db74">&#34;Stanwyck&#34;</span>};
 Array.Sort(keys, values);
 
-// Clear elements in array (array, 1 st element, # elements)
-Array.Clear(numArray, 0, numArray.Length);
+<span style="color:#75715e">// Clear elements in array (array, 1 st element, # elements)
+</span><span style="color:#75715e"></span>Array.Clear(numArray, <span style="color:#ae81ff">0</span>, numArray.Length);
 
-// Copy elements from one array to another
-Array.Copy(src, target, numelements);
-</code></pre>
-
+<span style="color:#75715e">// Copy elements from one array to another
+</span><span style="color:#75715e"></span>Array.Copy(src, target, numelements);
+</code></pre></div>
     </article>
     
     <article>
         <header><h3>String Operations</h3></header>
         <p><strong>Compare</strong></p>
-
-<pre><code class="language-csharp">String.Compare(stra, strb, case, ci)
-</code></pre>
-
-<p>bool case – true for case insensitive<br/>ci – new CultureInfo(&ldquo;en-US&rdquo;)<br/>returns: &lt; 0 if <code>a &lt; b</code>, 0 if <code>a = b</code>, 1 if <code>a &gt; b</code></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">String.Compare(stra, strb, <span style="color:#66d9ef">case</span>, ci)
+</code></pre></div><p>bool case – true for case insensitive<!-- raw HTML omitted -->ci – new CultureInfo(&ldquo;en-US&rdquo;)<!-- raw HTML omitted -->returns: &lt; 0 if <code>a &lt; b</code>, 0 if <code>a = b</code>, 1 if <code>a &gt; b</code></p>
 <p><strong>IndexOf</strong></p>
-
-<pre><code class="language-csharp">str.IndexOf(val, start, num)
-</code></pre>
-
-<p>val – string to search for<br/>start – where to begin in string<br>num – number of chars to search<br>returns (–1) if no match.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">str.IndexOf(val, start, num)
+</code></pre></div><p>val – string to search for<!-- raw HTML omitted -->start – where to begin in string<!-- raw HTML omitted -->num – number of chars to search<!-- raw HTML omitted -->returns (–1) if no match.</p>
 <p><strong>LastIndexOf</strong></p>
-
 <p>Search from end of string.</p>
-
 <p><strong>Replace</strong></p>
-
-<pre><code class="language-csharp">newstr = oldstr.Replace(&quot;old&quot;,&quot;new&quot;);
-</code></pre>
-
-<p><strong>Split</strong></p>
-
-<pre><code class="language-csharp">Char[] delim = {‘ ‘, ‘,’};
-string w = &quot;Kim, Joanna Leslie&quot;; 
-// create array with three names
-string[] names= w.Split(delim);
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">newstr = oldstr.Replace(<span style="color:#e6db74">&#34;old&#34;</span>,<span style="color:#e6db74">&#34;new&#34;</span>);
+</code></pre></div><p><strong>Split</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Char[] delim = {<span style="color:#960050;background-color:#1e0010">‘</span> <span style="color:#960050;background-color:#1e0010">‘</span>, <span style="color:#960050;background-color:#1e0010">‘</span>,<span style="color:#960050;background-color:#1e0010">’</span>};
+<span style="color:#66d9ef">string</span> w = <span style="color:#e6db74">&#34;Kim, Joanna Leslie&#34;</span>; 
+<span style="color:#75715e">// create array with three names
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">string</span>[] names= w.Split(delim);
+</code></pre></div>
     </article>
     
     <article>
         <header><h3>System.Text.StringBuilder</h3></header>
         <p><strong>Constructor</strong></p>
-
-<pre><code class="language-csharp">StringBuilder sb = new StringBuilder();
-StringBuilder sb = new StringBuilder(mystring);
-StringBuilder sb = new StringBuilder(mystring,capacity);
-</code></pre>
-
-<p><em>mystring</em> – Initial value of StringBuilder object<br/>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">StringBuilder sb = <span style="color:#66d9ef">new</span> StringBuilder();
+StringBuilder sb = <span style="color:#66d9ef">new</span> StringBuilder(mystring);
+StringBuilder sb = <span style="color:#66d9ef">new</span> StringBuilder(mystring,capacity);
+</code></pre></div><p><em>mystring</em> – Initial value of StringBuilder object<!-- raw HTML omitted -->
 <em>capacity</em> – Initial size (characters) of buffer.</p>
-
 <p><strong>Using StringBuilderMembers</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">decimal</span> bmi = <span style="color:#ae81ff">2</span><span style="color:#ae81ff">2.2</span>M;
+<span style="color:#66d9ef">int</span> wt = <span style="color:#ae81ff">1</span><span style="color:#ae81ff">6</span><span style="color:#ae81ff">8</span>;
+StringBuilder sb = <span style="color:#66d9ef">new</span> StringBuilder(<span style="color:#e6db74">&#34;My weight is &#34;</span>);
+sb = sb.Append(wt); <span style="color:#75715e">// can append number
+</span><span style="color:#75715e"></span>sb = sb.Append(<span style="color:#e6db74">&#34; and my bmi is &#34;</span>).Append(bmi);
 
-<pre><code class="language-csharp">decimal bmi = 22.2M;
-int wt = 168;
-StringBuilder sb = new StringBuilder(&quot;My weight is &quot;);
-sb = sb.Append(wt); // can append number
-sb = sb.Append(&quot; and my bmi is &quot;).Append(bmi);
+<span style="color:#75715e">// my weight is 168 and my bmi is 22.2
+</span><span style="color:#75715e"></span>sb = sb.Replace(<span style="color:#e6db74">&#34;22.2&#34;</span>,<span style="color:#e6db74">&#34;22.4&#34;</span>);
+<span style="color:#66d9ef">string</span> s = sb.ToString();
 
-// my weight is 168 and my bmi is 22.2
-sb = sb.Replace(&quot;22.2&quot;,&quot;22.4&quot;);
-string s = sb.ToString();
-
-// Clear and set to new value
-sb.Length = 0;
-sb.Append(&quot;Xanadu&quot;);
-</code></pre>
-
+<span style="color:#75715e">// Clear and set to new value
+</span><span style="color:#75715e"></span>sb.Length = <span style="color:#ae81ff">0</span>;
+sb.Append(<span style="color:#e6db74">&#34;Xanadu&#34;</span>);
+</code></pre></div>
     </article>
     
     <article>
         <header><h3>DateTime and TimeSpan</h3></header>
         <p><strong>DateTime Constructor</strong></p>
-
-<pre><code class="language-csharp">DateTime(yr, mo, day);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">DateTime(yr, mo, day);
 DateTime(yr, mo, day, hr, min, sec);
 
-DateTime bday = new DateTime(1964,12,20,11,2,0);
-DateTime newyr= DateTime.Parse(&quot;1/1/2005&quot;);
+DateTime bday = <span style="color:#66d9ef">new</span> DateTime(<span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">6</span><span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span><span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>);
+DateTime newyr= DateTime.Parse(<span style="color:#e6db74">&#34;1/1/2005&#34;</span>);
 DateTime currdt = DateTime.Now;
 
-// also AddHours, AddMonths, AddYears
-DateTime tomorrow = currdt.AddDays(1);
+<span style="color:#75715e">// also AddHours, AddMonths, AddYears
+</span><span style="color:#75715e"></span>DateTime tomorrow = currdt.AddDays(<span style="color:#ae81ff">1</span>);
 TimeSpan diff = currdt.Subtract(bday);
 
-// 14795 days from 12/20/64 to 6/24/05
-Console.WriteLine(&quot;{0}&quot;, diff.Days);
+<span style="color:#75715e">// 14795 days from 12/20/64 to 6/24/05
+</span><span style="color:#75715e"></span>Console.WriteLine(<span style="color:#e6db74">&#34;{0}&#34;</span>, diff.Days);
 
-// TimeSpan(hrs, min, sec)
-TimeSpan ts = new TimeSpan(6, 30, 10);
+<span style="color:#75715e">// TimeSpan(hrs, min, sec)
+</span><span style="color:#75715e"></span>TimeSpan ts = <span style="color:#66d9ef">new</span> TimeSpan(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span><span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">0</span>);
 
-// also FromMinutes, FromHours, FromDays
-TimeSpan ts = TimeSpan.FromSeconds(120);
-TimeSpan ts = ts2 – ts1; // +,-,&gt;,&lt;,==, !=
-</code></pre>
-
+<span style="color:#75715e">// also FromMinutes, FromHours, FromDays
+</span><span style="color:#75715e"></span>TimeSpan ts = TimeSpan.FromSeconds(<span style="color:#ae81ff">1</span><span style="color:#ae81ff">2</span><span style="color:#ae81ff">0</span>);
+TimeSpan ts = ts2 <span style="color:#960050;background-color:#1e0010">–</span> ts1; <span style="color:#75715e">// +,-,&gt;,&lt;,==, !=
+</span></code></pre></div>
     </article>
     
     <article>
         <header><h3>Formatting Numeric Values</h3></header>
         <p><strong>Format Item Syntax:</strong> {index[,alignment] [:format string]}</p>
-
-<p><em>index</em> – Specifies element in list of values to which format is applied.<br>
-<em>alignment</em> – Indicates minimum width (in characters) to display value.<br>
+<p><em>index</em> – Specifies element in list of values to which format is applied.<!-- raw HTML omitted -->
+<em>alignment</em> – Indicates minimum width (in characters) to display value.<!-- raw HTML omitted -->
 <em>format string</em> – Contains the code that specifies the format of the displayed value.</p>
-
-<pre><code class="language-csharp">// Example: 
-String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
-</code></pre>
-
-<table>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">// Example: 
+</span><span style="color:#75715e"></span>String.Format(<span style="color:#e6db74">&#34;Price is: {0:C2}&#34;</span>, <span style="color:#ae81ff">4</span><span style="color:#ae81ff">9.95</span>); <span style="color:#75715e">// output: Price is: $ 49.95
+</span></code></pre></div><table>
 <thead>
 <tr>
 <th>Format Specifier</th>
@@ -291,7 +249,6 @@ String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>C or c</td>
@@ -299,49 +256,42 @@ String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
 <td>$ 1388.55</td>
 <td>Currency.</td>
 </tr>
-
 <tr>
 <td>D or d</td>
 <td>{0:D5}, 45</td>
 <td>00045</td>
 <td>Must be integer value.</td>
 </tr>
-
 <tr>
 <td>E or e</td>
 <td>{0,9:E2}, 1388.55</td>
 <td>1.39+E003</td>
 <td>Must be floating point.</td>
 </tr>
-
 <tr>
 <td>F or f</td>
 <td>{0,9:F2}, 1388.55</td>
 <td>1388.55</td>
 <td>Fixed Point representation.</td>
 </tr>
-
 <tr>
 <td>N or n</td>
 <td>{0,9:N1}, 1388.55</td>
 <td>1,388.6</td>
 <td>Insert commas</td>
 </tr>
-
 <tr>
 <td>P or p</td>
 <td>{0,9:P3}, .7865</td>
 <td>78.650%</td>
 <td>Converts to percent.</td>
 </tr>
-
 <tr>
 <td>R or r</td>
 <td>{0,9:R}, 3.14159</td>
 <td>3.14159</td>
 <td>Retains all decimal places.</td>
 </tr>
-
 <tr>
 <td>X or x</td>
 <td>{0,9:X4}, 31</td>
@@ -356,7 +306,6 @@ String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
     <article>
         <header><h3>Formatting Date Values</h3></header>
         <p>DateTime Formatting: (January 19, 2005 16:05:20) en-US</p>
-
 <table>
 <thead>
 <tr>
@@ -366,7 +315,6 @@ String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
 <th>Value Displayed</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>d</td>
@@ -374,42 +322,36 @@ String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
 <td>Y or y</td>
 <td>January, 2005</td>
 </tr>
-
 <tr>
 <td>D</td>
 <td>Wednesday, January 19, 2005</td>
 <td>t</td>
 <td>4:05 PM</td>
 </tr>
-
 <tr>
 <td>f</td>
 <td>Wednesday, January 19, 2005 4:05:20 PM</td>
 <td>T</td>
 <td>4:05:20 PM</td>
 </tr>
-
 <tr>
 <td>F</td>
 <td>Wednesday, January 19, 2005 4:05 PM</td>
 <td>s</td>
 <td>2005-01-19T16:05:20</td>
 </tr>
-
 <tr>
 <td>g</td>
 <td>1/19/2005 4:05 PM</td>
 <td>u</td>
 <td>2005-01-19 16:05:20Z</td>
 </tr>
-
 <tr>
 <td>G</td>
 <td>1/19/2005 4:05:20 PM</td>
 <td>U</td>
 <td>Wednesday, January 19, 2005 21:05:20PM</td>
 </tr>
-
 <tr>
 <td>M or m</td>
 <td>January 19</td>
@@ -423,15 +365,13 @@ String.Format(&quot;Price is: {0:C2}&quot;, 49.95); // output: Price is: $ 49.95
     
     <article>
         <header><h3>Using the System.Text.RegularExpressions.Regex class</h3></header>
-        <pre><code class="language-csharp">string zipexp = @&quot;\d{5}((-|\s)?\d{4})?$&quot;;
-string addr = &quot;W.44th St, New York, NY 10017-0233&quot;;
-Match m = Regex.Match(addr,zipexp); // Static method
-Regex zipRegex = new Regex(zipexp);
-m = zipRegex.Match(addr); // Use Regex Object
-Console.WriteLine(m.Value); // 10017-0233
-</code></pre>
-
-<table>
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">string</span> zipexp = <span style="color:#e6db74">@&#34;\d{5}((-|\s)?\d{4})?$&#34;</span>;
+<span style="color:#66d9ef">string</span> addr = <span style="color:#e6db74">&#34;W.44th St, New York, NY 10017-0233&#34;</span>;
+Match m = Regex.Match(addr,zipexp); <span style="color:#75715e">// Static method
+</span><span style="color:#75715e"></span>Regex zipRegex = <span style="color:#66d9ef">new</span> Regex(zipexp);
+m = zipRegex.Match(addr); <span style="color:#75715e">// Use Regex Object
+</span><span style="color:#75715e"></span>Console.WriteLine(m.Value); <span style="color:#75715e">// 10017-0233
+</span></code></pre></div><table>
 <thead>
 <tr>
 <th>Pattern</th>
@@ -439,79 +379,30 @@ Console.WriteLine(m.Value); // 10017-0233
 <th>Example</th>
 </tr>
 </thead>
-
-<tbody>
-<tr>
-<td>+</td>
-<td>Match one or more occurrence</td>
-<td>ab+c matches abc, abbc</td>
-</tr>
-
-<tr>
-<td>*</td>
-<td>Match zero or more occurrences</td>
-<td>ab*c matches ac, abbc</td>
-</tr>
-
-<tr>
-<td>?</td>
-<td>Matches zero or one occurrence</td>
-<td>ab?c matches ac, abc</td>
-</tr>
-
-<tr>
-<td>\d \D</td>
-<td>Match decimal digit or non-digit (\D)</td>
-<td>\d\d matches 01, 55</td>
-</tr>
-
-<tr>
-<td>\w \W</td>
-<td>Match any word character or non-char</td>
-<td>\w equals [a-zA-Z0-9_]</td>
-</tr>
-
-<tr>
-<td>\s \S</td>
-<td>Match whitespace or non-whitespace</td>
-<td>\d*\s\d+ matches 246 98</td>
-</tr>
-
-<tr>
-<td>[ ]</td>
-<td>Match any character in set</td>
-<td>[aeiou]n matches in, on</td>
-</tr>
-
-<tr>
-<td>[^ ]</td>
-<td>Match any character not in set</td>
-<td>[^aeiou] matches r or 2</td>
-</tr>
-
-<tr>
-<td>a | b</td>
-<td>Either a or b</td>
-<td>jpg|jpeg|gif matches .jpg</td>
-</tr>
-
-<tr>
-<td>\n \r \t</td>
-<td>New line, carriage return, tab</td>
-<td></td>
-</tr>
-</tbody>
 </table>
+<ul>
+<li>|Match one or more occurrence |ab+c matches abc, abbc</li>
+</ul>
+<ul>
+<li>|Match zero or more occurrences |ab*c matches ac, abbc
+? |Matches zero or one occurrence |ab?c matches ac, abc
+\d \D |Match decimal digit or non-digit (\D) |\d\d matches 01, 55
+\w \W |Match any word character or non-char |\w equals [a-zA-Z0-9_]
+\s \S |Match whitespace or non-whitespace |\d*\s\d+ matches 246 98
+<input disabled="" type="checkbox">|Match any character in set |[aeiou]n matches in, on
+[^ ] |Match any character not in set |[^aeiou] matches r or 2
+a | b |Either a or b |jpg|jpeg|gif matches .jpg
+\n \r \t |New line, carriage return, tab</li>
+</ul>
 
     </article>
     
     <article>
         <header><h3>Using the C# Compiler at the Command Line</h3></header>
-        <pre><code class="language-bash">C:\&gt;csc /t:library /out:reslib.dll mysource.cs
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">C:<span style="color:#ae81ff">\&gt;</span>csc /t:library /out:reslib.dll mysource.cs
     csc /t:winexe /r:ctls1.dll /r:ctls2.dll winapp.cs
     csc /keyfile:strongkey.snk secure.cs
-</code></pre>
-
+</code></pre></div>
     </article>
     
 </div>

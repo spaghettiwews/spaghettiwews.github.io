@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on a blog of spaghettiwews</title>
@@ -17,11 +17,9 @@
       <pubDate>Mon, 25 Feb 2019 21:29:15 +0200</pubDate>
       
       <guid>https://wews.co/page/resume/</guid>
-      <description>Welington Maposa Education Bachelor of Technology Honours Degree in Computer Science Harare Institute of Technology: December 2008 – June 2012
-
-Skills Business Analysis, Solution Design, Application Development, Project Management - SDLC, Kanban, Online Payments, Security, Accessibility and Usability, Performance, Research, Recruitment
-
-Tech  PHP, Javascript, Node.js, C#, RESTful APIs, MySql Content Management Systems, Woocommerce, Laravel, Shopify Git, CI/CD, SSH Agile, Waterfall, Object Oriented Design &amp;amp; Development, MVC Microsoft Visual Studio, VS Code, Postman, Docker, Virtualbox, Bash, DevTools</description>
+      <description>Welington Maposa Education  Bachelor of Technology Honours Degree in Computer Science Harare Institute of Technology: December 2008 – June 2012
+Skills  Business Analysis, Solution Design, Application Development, Project Management - SDLC, Kanban, Online Payments, Security, Accessibility and Usability, Performance, Research, Recruitment
+Tech   PHP, Javascript, Node.js, C#, RESTful APIs, MySql Content Management Systems, Woocommerce, Laravel, Shopify Git, CI/CD, SSH Agile, Waterfall, Object Oriented Design &amp;amp; Development, MVC Microsoft Visual Studio, VS Code, Postman, Docker, Virtualbox, Bash, DevTools  Experience  Senior Developer Webdev Group, Harare: February 2015 - Current</description>
     </item>
     
   </channel>
