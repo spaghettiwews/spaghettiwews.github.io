@@ -25,27 +25,27 @@
 
 
 
-<title>A list of open source projects | a blog of spaghettiwews</title>
-<meta name="description" content="I like well designed software. I also like free things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.">
-<meta property="og:title" content="A list of open source projects | a blog of spaghettiwews">
+<title>How to install/use Hugo in WSL (Ubuntu 18.04) | a blog of spaghettiwews</title>
+<meta name="description" content="It&rsquo;s been a while since I wrote on this blog and today when I git cloned the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.
+So, for my future self and posterity&rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:">
+<meta property="og:title" content="How to install/use Hugo in WSL (Ubuntu 18.04) | a blog of spaghettiwews">
 <meta property="og:site_name" content="a blog of spaghettiwews">
-<meta property="og:description" content="I like well designed software. I also like free things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.">
-<meta property="og:url" content="https://wews.co/post/open-source/">
+<meta property="og:description" content="It&rsquo;s been a while since I wrote on this blog and today when I git cloned the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.
+So, for my future self and posterity&rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:">
+<meta property="og:url" content="https://wews.co/post/installing-using-hugo-wsl-ubuntu-18-04/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='https://wews.co/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A list of open source projects | a blog of spaghettiwews">
+<meta property="og:image" content='https://wews.co/images/joshua-hoehne-zs5ybmIY0fA-unsplash.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to install/use Hugo in WSL (Ubuntu 18.04) | a blog of spaghettiwews">
 
-	<link rel="canonical" href="https://wews.co/post/open-source/">
+	<link rel="canonical" href="https://wews.co/post/installing-using-hugo-wsl-ubuntu-18-04/">
 
 
-	<meta name="twitter:description" content="I like well designed software. I also like free things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.">
-<meta name="twitter:image" content="https://wews.co/uploads/default.jpg">
-<meta property="article:published_time" content="2019-02-17T15:32:47&#43;02:00">
-	<meta property="article:updated_time" content="2019-02-17T15:32:47&#43;02:00">
+	<meta name="twitter:description" content="It&rsquo;s been a while since I wrote on this blog and today when I git cloned the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.
+So, for my future self and posterity&rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:">
+<meta name="twitter:image" content="https://wews.co/images/joshua-hoehne-zs5ybmIY0fA-unsplash.jpg">
+<meta property="article:published_time" content="2020-02-10T14:20:47&#43;02:00">
+	<meta property="article:updated_time" content="2020-02-10T14:20:47&#43;02:00">
 
 
 
@@ -115,7 +115,7 @@
     <section id="articleHero" class="section narrow">
     <div class="article-hero">
         <header class="article-header">
-            <h1 class="article-hero-heading">A list of open source projects</h1>
+            <h1 class="article-hero-heading">How to install/use Hugo in WSL (Ubuntu 18.04)</h1>
             <div class="article-hero-subtitle">
                 <div class="article-meta">
                     
@@ -172,11 +172,15 @@ xmlns="http://www.w3.org/2000/svg"
 
 
 <script src="https://wews.co/js/collapseAuthors.js"></script>
-                    February 17, 2019
+                    February 10, 2020
                     • 2 min read
                 </div>
             </div>
         </header>
+        
+        <div class="article-hero-image" id="ArticleImage__Hero">
+            <img src="https://wews.co/images/joshua-hoehne-zs5ybmIY0fA-unsplash.jpg">
+        </div>
         
     </div>
 </section>
@@ -199,74 +203,23 @@ xmlns="http://www.w3.org/2000/svg"
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        <p>I like <strong>well designed</strong> software. I also like <strong>free</strong> things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:</p>
-<ol>
-<li><strong>Grafana</strong> - <em>The open platform for analytics and monitoring</em>
-<ul>
-<li><a href="https://grafana.com/">https://grafana.com/</a></li>
-</ul>
-</li>
-<li><strong>Wekan</strong> - <em>open-source kanban</em>
-<ul>
-<li><a href="https://wekan.github.io/">https://wekan.github.io/</a></li>
-</ul>
-</li>
-<li><strong>decidim</strong> - <em>Free Open-Source participatory democracy for cities and organizations</em>
-<ul>
-<li><a href="https://decidim.org/">https://decidim.org/</a></li>
-</ul>
-</li>
-<li><strong>Discourse</strong> - <em>modern forum software for your community</em>
-<ul>
-<li><a href="https://discourse.org/">https://discourse.org/</a></li>
-</ul>
-</li>
-<li><strong>Binder</strong> - <em>Turn a Git repo into a collection of interactive notebooks</em>
-<ul>
-<li><a href="https://mybinder.org/">https://mybinder.org/</a></li>
-</ul>
-</li>
-<li><strong>Mailtrain</strong> - <em>Self Hosted Newsletter App</em>
-<ul>
-<li><a href="https://mailtrain.org/">https://mailtrain.org/</a></li>
-</ul>
-</li>
-<li><strong>Zulip</strong> - <em>powerful open source team chat</em>
-<ul>
-<li><a href="https://zulipchat.com/">https://zulipchat.com/</a></li>
-</ul>
-</li>
-<li><strong>Open edX</strong> - <em>Open edX is the massively scalable learning software platform behind edX</em>
-<ul>
-<li><a href="https://open.edx.org/">https://open.edx.org/</a></li>
-</ul>
-</li>
-<li><strong>Solr</strong> - <em>Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene™.</em>
-<ul>
-<li><a href="http://lucene.apache.org/solr/">http://lucene.apache.org/solr/</a></li>
-</ul>
-</li>
-<li><strong>Rasa</strong> - <em>Open source tools to build contextual AI assistants</em>
-<ul>
-<li><a href="https://rasa.com/">https://rasa.com/</a></li>
-</ul>
-</li>
-<li><strong>Standard Notes</strong> - <em>Standard Notes is a safe place for your notes, thoughts, and life&rsquo;s work.</em>
-<ul>
-<li><a href="https://standardnotes.org/">https://standardnotes.org/</a></li>
-</ul>
-</li>
-<li><strong>SecureDrop</strong> - <em>SecureDrop is an open source whistleblower submission system that media organizations and NGOs can install to securely accept documents from anonymous sources.</em>
-<ul>
-<li><a href="https://securedrop.org/">https://securedrop.org/</a></li>
-</ul>
-</li>
-<li><strong>Syncthing</strong> - <em>Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&rsquo;s transmitted over the Internet.</em>
-<ul>
-<li><a href="https://syncthing.net/">https://syncthing.net/</a></li>
-</ul>
-</li>
-</ol>
+        <p>It&rsquo;s been a while since I wrote on this blog and today when I <code>git clone</code>d the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.</p>
+<p>So, for my future self and posterity&rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:</p>
+<h2 id="installing-hugo">Installing Hugo</h2>
+<p>I like installing Hugo using the tarball/binary method as it does not require me to install any arcane package managers beforehand.</p>
+<p>The following commands run in succession will download the latest tarball version <em>(at the time of writing)</em> of Hugo to my <code>$HOME</code> directory, and extract the binary therein into my <code>/usr/local/bin/</code> directory. The last command deletes the tarball from your <code>$HOME</code> directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~
+wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.tar.gz
+sudo tar -C /usr/local/bin -xzf hugo_$VERSION_$OS-$ARCH.tar.gz
+cd ~ <span style="color:#f92672">&amp;&amp;</span> rm hugo_0.64.1_Linux-64bit.tar.gz
+</code></pre></div><h2 id="downloading-the-site-and-its-theme">Downloading the site and its theme</h2>
+<p>I setup my site&rsquo;s theme as a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodule</a> because it&rsquo;s easier to manage that way I think. Once I&rsquo;ve cloned my site&rsquo;s git repo I need to run <code>git submodule update</code> in order to download the theme from its repository into my <code>/themes</code> folder. The <code>--recursive</code> flag finds any other submodules within my repo and downloads them as well&hellip; recursively.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule update --init --recursive
+</code></pre></div><h2 id="usage">Usage</h2>
+<p>Once all of the above is done, I can then run <code>hugo server --ignoreCache --disableFastRender</code> from the site root to serve the site on the default URL: http://localhost:1313.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server --ignoreCache --disableFastRender
+</code></pre></div><p>To create a new blog post I run <code>hugo new post/title-of-post.md</code>, edit the newly created .md file in <code>/content/post/</code>, commit and push the changes. That&rsquo;s it.</p>
+<p>The build and deployment step is currently handled by a CircleCI workflow that compiles the source to HTML/CSS/JS and deploys <strong>that</strong> to another Github Pages repo. I will document that part in another post. Maybe.</p>
 
     </article>
 
@@ -292,7 +245,7 @@ xmlns="http://www.w3.org/2000/svg"
     <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
         <div class="post-row">
             
-                <a href="https://wews.co/post/sucuri-ssl/" class="article-link"
+                <a href="https://wews.co/post/11110/" class="article-link"
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
@@ -302,19 +255,19 @@ xmlns="http://www.w3.org/2000/svg"
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server
+                                On starting a new decade
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                June 6, 2018 · 2 min read
+                                February 2, 2019 · 1 min read
                             </div>
                         </div>
                     </div>
                 </a>
             
-                <a href="https://wews.co/post/hello-hugo/" class="article-link"
+                <a href="https://wews.co/post/open-source/" class="article-link"
                 >
                     <div>
                         <div class="image-container">
@@ -324,13 +277,13 @@ xmlns="http://www.w3.org/2000/svg"
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Hello Hugo
+                                A list of open source projects
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                May 5, 2018 · 1 min read
+                                February 2, 2019 · 2 min read
                             </div>
                         </div>
                     </div>
