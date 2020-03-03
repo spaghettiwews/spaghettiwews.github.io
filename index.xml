@@ -6,10 +6,32 @@
     <description>Recent content on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Feb 2020 14:20:47 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 18:21:14 +0200</lastBuildDate>
     
 	<atom:link href="https://wews.co/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://wews.co/post/troubleshooting/</link>
+      <pubDate>Fri, 28 Feb 2020 18:21:14 +0200</pubDate>
+      
+      <guid>https://wews.co/post/troubleshooting/</guid>
+      <description>This past week I had to troubleshoot a problem with a 4 year old WordPress/CiviCRM application that had largely gone untouched since its development. Recently, it had stopped rendering the frontend and was throwing an unhelpful error message that contained what would turn out to be misleading information later, &amp;ldquo;Sorry but we are not able to provide this at the moment. Please make sure the folder is writable&amp;rdquo;.
+Ummm ohkay?? Which folder?</description>
+    </item>
+    
+    <item>
+      <title>Fixing the WP All Import caching issue with a quick hack</title>
+      <link>https://wews.co/post/fix-wpallimport-caching-issue/</link>
+      <pubDate>Fri, 14 Feb 2020 16:06:03 +0200</pubDate>
+      
+      <guid>https://wews.co/post/fix-wpallimport-caching-issue/</guid>
+      <description>There&amp;rsquo;s an annoying caching issue I&amp;rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.
+The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.
+  WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog
+  The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?</description>
+    </item>
     
     <item>
       <title>How to install/use Hugo in WSL (Ubuntu 18.04)</title>
@@ -151,11 +173,11 @@ Tech   PHP, Javascript, Node.js, C#, RESTful APIs, MySql Content Management Syst
     </item>
     
     <item>
-      <title>Using a reverse proxy to provide ssl to a wordpress site hosted on a non-https server</title>
-      <link>https://wews.co/post/sucuri-ssl/</link>
+      <title>Using a reverse proxy to provide a secure connection to a WordPress site</title>
+      <link>https://wews.co/post/sucuri-wordpress-ssl/</link>
       <pubDate>Fri, 22 Jun 2018 22:10:28 +0200</pubDate>
       
-      <guid>https://wews.co/post/sucuri-ssl/</guid>
+      <guid>https://wews.co/post/sucuri-wordpress-ssl/</guid>
       <description>What&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:  In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
 In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware.</description>
     </item>

@@ -25,27 +25,33 @@
 
 
 
-<title>A list of open source projects | a blog of spaghettiwews</title>
-<meta name="description" content="I like well designed software. I also like free things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.">
-<meta property="og:title" content="A list of open source projects | a blog of spaghettiwews">
+<title>Fixing the WP All Import caching issue with a quick hack | a blog of spaghettiwews</title>
+<meta name="description" content="There&rsquo;s an annoying caching issue I&rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.
+The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.
+  WP All Import &lsquo;import file location&rsquo; setup dialog
+  The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?">
+<meta property="og:title" content="Fixing the WP All Import caching issue with a quick hack | a blog of spaghettiwews">
 <meta property="og:site_name" content="a blog of spaghettiwews">
-<meta property="og:description" content="I like well designed software. I also like free things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.">
-<meta property="og:url" content="https://wews.co/post/open-source/">
+<meta property="og:description" content="There&rsquo;s an annoying caching issue I&rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.
+The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.
+  WP All Import &lsquo;import file location&rsquo; setup dialog
+  The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?">
+<meta property="og:url" content="https://wews.co/post/fix-wpallimport-caching-issue/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content='https://wews.co/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="A list of open source projects | a blog of spaghettiwews">
+<meta name="twitter:title" content="Fixing the WP All Import caching issue with a quick hack | a blog of spaghettiwews">
 
-	<link rel="canonical" href="https://wews.co/post/open-source/">
+	<link rel="canonical" href="https://wews.co/post/fix-wpallimport-caching-issue/">
 
 
-	<meta name="twitter:description" content="I like well designed software. I also like free things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.">
+	<meta name="twitter:description" content="There&rsquo;s an annoying caching issue I&rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.
+The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.
+  WP All Import &lsquo;import file location&rsquo; setup dialog
+  The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?">
 <meta name="twitter:image" content="https://wews.co/uploads/default.jpg">
-<meta property="article:published_time" content="2019-02-17T15:32:47&#43;02:00">
-	<meta property="article:updated_time" content="2019-02-17T15:32:47&#43;02:00">
+<meta property="article:published_time" content="2020-02-14T16:06:03&#43;02:00">
+	<meta property="article:updated_time" content="2020-02-14T16:06:03&#43;02:00">
 
 
 
@@ -115,7 +121,7 @@
     <section id="articleHero" class="section narrow">
     <div class="article-hero">
         <header class="article-header">
-            <h1 class="article-hero-heading">A list of open source projects</h1>
+            <h1 class="article-hero-heading">Fixing the WP All Import caching issue with a quick hack</h1>
             <div class="article-hero-subtitle">
                 <div class="article-meta">
                     
@@ -172,8 +178,8 @@ xmlns="http://www.w3.org/2000/svg"
 
 
 <script src="https://wews.co/js/collapseAuthors.js"></script>
-                    February 17, 2019
-                    • 2 min read
+                    February 14, 2020
+                    • 3 min read
                 </div>
             </div>
         </header>
@@ -199,74 +205,28 @@ xmlns="http://www.w3.org/2000/svg"
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        <p>I like <strong>well designed</strong> software. I also like <strong>free</strong> things, as I&rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&rsquo;s a 90% chance that I won&rsquo;t ever use most of these, here&rsquo;s a running list of said applications/systems/software nonetheless:</p>
-<ol>
-<li><strong>Grafana</strong> - <em>The open platform for analytics and monitoring</em>
-<ul>
-<li><a href="https://grafana.com/">https://grafana.com/</a></li>
-</ul>
-</li>
-<li><strong>Wekan</strong> - <em>open-source kanban</em>
-<ul>
-<li><a href="https://wekan.github.io/">https://wekan.github.io/</a></li>
-</ul>
-</li>
-<li><strong>decidim</strong> - <em>Free Open-Source participatory democracy for cities and organizations</em>
-<ul>
-<li><a href="https://decidim.org/">https://decidim.org/</a></li>
-</ul>
-</li>
-<li><strong>Discourse</strong> - <em>modern forum software for your community</em>
-<ul>
-<li><a href="https://discourse.org/">https://discourse.org/</a></li>
-</ul>
-</li>
-<li><strong>Binder</strong> - <em>Turn a Git repo into a collection of interactive notebooks</em>
-<ul>
-<li><a href="https://mybinder.org/">https://mybinder.org/</a></li>
-</ul>
-</li>
-<li><strong>Mailtrain</strong> - <em>Self Hosted Newsletter App</em>
-<ul>
-<li><a href="https://mailtrain.org/">https://mailtrain.org/</a></li>
-</ul>
-</li>
-<li><strong>Zulip</strong> - <em>powerful open source team chat</em>
-<ul>
-<li><a href="https://zulipchat.com/">https://zulipchat.com/</a></li>
-</ul>
-</li>
-<li><strong>Open edX</strong> - <em>Open edX is the massively scalable learning software platform behind edX</em>
-<ul>
-<li><a href="https://open.edx.org/">https://open.edx.org/</a></li>
-</ul>
-</li>
-<li><strong>Solr</strong> - <em>Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene™.</em>
-<ul>
-<li><a href="http://lucene.apache.org/solr/">http://lucene.apache.org/solr/</a></li>
-</ul>
-</li>
-<li><strong>Rasa</strong> - <em>Open source tools to build contextual AI assistants</em>
-<ul>
-<li><a href="https://rasa.com/">https://rasa.com/</a></li>
-</ul>
-</li>
-<li><strong>Standard Notes</strong> - <em>Standard Notes is a safe place for your notes, thoughts, and life&rsquo;s work.</em>
-<ul>
-<li><a href="https://standardnotes.org/">https://standardnotes.org/</a></li>
-</ul>
-</li>
-<li><strong>SecureDrop</strong> - <em>SecureDrop is an open source whistleblower submission system that media organizations and NGOs can install to securely accept documents from anonymous sources.</em>
-<ul>
-<li><a href="https://securedrop.org/">https://securedrop.org/</a></li>
-</ul>
-</li>
-<li><strong>Syncthing</strong> - <em>Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it&rsquo;s transmitted over the Internet.</em>
-<ul>
-<li><a href="https://syncthing.net/">https://syncthing.net/</a></li>
-</ul>
-</li>
-</ol>
+        <p>There&rsquo;s an annoying caching issue I&rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.</p>
+<p>The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.</p>
+<figure>
+    <img src="https://wews.co/images/Annotation%202020-02-14%20161802.png"
+         alt="WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog" width="100%"/> <figcaption>
+            <p>WP All Import &lsquo;import file location&rsquo; setup dialog</p>
+        </figcaption>
+</figure>
+
+<p>The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?) and uses the cached version for all subsequent imports. Obviously this presents a problem because whatever updates are made to the product data in the file are never actually imported. The developers of the plugin are aware of this issue and have even suggested a solution on their <a href="http://www.wpallimport.com/documentation/troubleshooting/common-issues/">Troubleshooting Guide</a>:</p>
+<blockquote>
+<p>Issues with caching can be hard to diagnose. Often they will show themselves if you upload a new import file but WP All Import shows you an older, unrelated import file. There are other symptoms as well, but this is the most common one.<!-- raw HTML omitted --><!-- raw HTML omitted -->If you’re having a problem with WP All Import and use some form of server side caching, try your import on one of our testing servers. If you aren’t able to reproduce the problem on a testing server, the issue might be related to your caching configuration. We especially see these types of issues with users hosted by WP Engine and Pantheon, or when Varnish tries to cache admin pages.</p>
+</blockquote>
+<p>I&rsquo;m not hosting on with any of those companies nor do I have time to troubleshoot with the hosting team to fix this &ldquo;the right way&rdquo;. It&rsquo;s 16:30, on a Friday.</p>
+<p>After incessantly googling for an easy solution without success, the easiest one I could think of was to use a cache-busting technique that I&rsquo;ve seen used to solve browser caching issues with assets like CSS and JS. i.e. <em>adding a querystring parameter with a random value to the URL of the asset.</em></p>
+<p>First we need to find the function that gets called to download the file at the URL we provide. A quick vscode search finds us the function: <code>get_file_curl</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">if ( ! function_exists(&#39;get_file_curl&#39;) ):
+	function get_file_curl($url, $fullpath, $to_variable = false, $iteration = false) {
+		if ( ! preg_match(&#39;%^(http|ftp)s?://%i&#39;, $url) ) return false;
+		$uid = uniqid();
+        $response = wp_remote_get($url.&#34;?v=&#34;.$uid);
+</code></pre></div><p>&hellip;adding the parameter <code>?v</code> to the URL, with a random value <code>$uid</code> every time <code>get_file_curl</code> gets called means that the server thinks it&rsquo;s downloading a new file each time. Therefore, instead of reaching for the cached copy it will always download the actual updated file guaranteeing that the our products are updated with the latest data.</p>
 
     </article>
 
@@ -292,29 +252,29 @@ xmlns="http://www.w3.org/2000/svg"
     <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
         <div class="post-row">
             
-                <a href="https://wews.co/post/sucuri-wordpress-ssl/" class="article-link"
+                <a href="https://wews.co/post/installing-using-hugo-wsl-ubuntu-18-04/" class="article-link"
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
                             
-                            <img src="https://wews.co/images/sans-image.png" class="article-image" />
+                            <img src="https://wews.co/images/joshua-hoehne-zs5ybmIY0fA-unsplash.jpg" class="article-image" />
                             
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Using a reverse proxy to provide a secure connection to a WordPress site
+                                How to install/use Hugo in WSL (Ubuntu 18.04)
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                June 6, 2018 · 2 min read
+                                February 2, 2020 · 2 min read
                             </div>
                         </div>
                     </div>
                 </a>
             
-                <a href="https://wews.co/post/hello-hugo/" class="article-link"
+                <a href="https://wews.co/post/11110/" class="article-link"
                 >
                     <div>
                         <div class="image-container">
@@ -324,13 +284,13 @@ xmlns="http://www.w3.org/2000/svg"
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Hello Hugo
+                                On starting a new decade
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                May 5, 2018 · 1 min read
+                                February 2, 2019 · 1 min read
                             </div>
                         </div>
                     </div>

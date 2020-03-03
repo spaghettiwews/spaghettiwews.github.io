@@ -4,16 +4,26 @@
   
   <url>
     <loc>https://wews.co/</loc>
-    <lastmod>2020-02-10T14:20:47+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co/post/installing-using-hugo-wsl-ubuntu-18-04/</loc>
-    <lastmod>2020-02-10T14:20:47+02:00</lastmod>
+    <lastmod>2020-02-28T18:21:14+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://wews.co/post/</loc>
+    <lastmod>2020-02-28T18:21:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wews.co/post/troubleshooting/</loc>
+    <lastmod>2020-02-28T18:21:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wews.co/post/fix-wpallimport-caching-issue/</loc>
+    <lastmod>2020-02-14T16:06:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wews.co/post/installing-using-hugo-wsl-ubuntu-18-04/</loc>
     <lastmod>2020-02-10T14:20:47+02:00</lastmod>
   </url>
   
@@ -88,7 +98,7 @@
   </url>
   
   <url>
-    <loc>https://wews.co/post/sucuri-ssl/</loc>
+    <loc>https://wews.co/post/sucuri-wordpress-ssl/</loc>
     <lastmod>2018-06-22T22:10:28+02:00</lastmod>
   </url>
   
