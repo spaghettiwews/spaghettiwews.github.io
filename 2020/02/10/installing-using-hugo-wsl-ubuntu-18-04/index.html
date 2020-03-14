@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>a blog of spaghettiwews | Formatting Numeric Values</title>
+<html><title>a blog of spaghettiwews | How to install/use Hugo in WSL (Ubuntu 18.04)</title>
 <link rel="icon" href="https://wews.co//images/favicon.svg" />
 <link rel="stylesheet" href=https://wews.co/css/main.css />
 <body><header>
@@ -21,75 +21,26 @@
 </header>
 <main id="content"> 
     <main id="content">
-        <h1>Formatting Numeric Values</h1>
-        <time>Sunday, March 10, 2019</time>
+        <h1>How to install/use Hugo in WSL (Ubuntu 18.04)</h1>
+        <time>Monday, February 10, 2020</time>
 
-        <p><strong>Format Item Syntax:</strong> {index[,alignment] [:format string]}</p>
-<p><em>index</em> – Specifies element in list of values to which format is applied.<!-- raw HTML omitted -->
-<em>alignment</em> – Indicates minimum width (in characters) to display value.<!-- raw HTML omitted -->
-<em>format string</em> – Contains the code that specifies the format of the displayed value.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#75715e">// Example: 
-</span><span style="color:#75715e"></span>String.Format(<span style="color:#e6db74">&#34;Price is: {0:C2}&#34;</span>, <span style="color:#ae81ff">4</span><span style="color:#ae81ff">9.95</span>); <span style="color:#75715e">// output: Price is: $ 49.95
-</span></code></pre></div><table>
-<thead>
-<tr>
-<th>Format Specifier</th>
-<th>Pattern</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>C or c</td>
-<td>{0:C2}, 1388.55</td>
-<td>$ 1388.55</td>
-<td>Currency.</td>
-</tr>
-<tr>
-<td>D or d</td>
-<td>{0:D5}, 45</td>
-<td>00045</td>
-<td>Must be integer value.</td>
-</tr>
-<tr>
-<td>E or e</td>
-<td>{0,9:E2}, 1388.55</td>
-<td>1.39+E003</td>
-<td>Must be floating point.</td>
-</tr>
-<tr>
-<td>F or f</td>
-<td>{0,9:F2}, 1388.55</td>
-<td>1388.55</td>
-<td>Fixed Point representation.</td>
-</tr>
-<tr>
-<td>N or n</td>
-<td>{0,9:N1}, 1388.55</td>
-<td>1,388.6</td>
-<td>Insert commas</td>
-</tr>
-<tr>
-<td>P or p</td>
-<td>{0,9:P3}, .7865</td>
-<td>78.650%</td>
-<td>Converts to percent.</td>
-</tr>
-<tr>
-<td>R or r</td>
-<td>{0,9:R}, 3.14159</td>
-<td>3.14159</td>
-<td>Retains all decimal places.</td>
-</tr>
-<tr>
-<td>X or x</td>
-<td>{0,9:X4}, 31</td>
-<td>001f</td>
-<td>Converts to Hex</td>
-</tr>
-</tbody>
-</table>
+        <p>It&rsquo;s been a while since I wrote on this blog and today when I <code>git clone</code>d the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.</p>
+<p>So, for my future self and posterity&rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:</p>
+<h2 id="installing-hugo">Installing Hugo</h2>
+<p>I like installing Hugo using the tarball/binary method as it does not require me to install any arcane package managers beforehand.</p>
+<p>The following commands run in succession will download the latest tarball version <em>(at the time of writing)</em> of Hugo to my <code>$HOME</code> directory, and extract the binary therein into my <code>/usr/local/bin/</code> directory. The last command deletes the tarball from your <code>$HOME</code> directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~
+wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.tar.gz
+sudo tar -C /usr/local/bin -xzf hugo_$VERSION_$OS-$ARCH.tar.gz
+cd ~ <span style="color:#f92672">&amp;&amp;</span> rm hugo_0.64.1_Linux-64bit.tar.gz
+</code></pre></div><h2 id="downloading-the-site-and-its-theme">Downloading the site and its theme</h2>
+<p>I setup my site&rsquo;s theme as a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodule</a> because it&rsquo;s easier to manage that way I think. Once I&rsquo;ve cloned my site&rsquo;s git repo I need to run <code>git submodule update</code> in order to download the theme from its repository into my <code>/themes</code> folder. The <code>--recursive</code> flag finds any other submodules within my repo and downloads them as well&hellip; recursively.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule update --init --recursive
+</code></pre></div><h2 id="usage">Usage</h2>
+<p>Once all of the above is done, I can then run <code>hugo server --ignoreCache --disableFastRender</code> from the site root to serve the site on the default URL: http://localhost:1313.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server --ignoreCache --disableFastRender
+</code></pre></div><p>To create a new blog post I run <code>hugo new post/title-of-post.md</code>, edit the newly created .md file in <code>/content/post/</code>, commit and push the changes. That&rsquo;s it.</p>
+<p>The build and deployment step is currently handled by a CircleCI workflow that compiles the source to HTML/CSS/JS and deploys <strong>that</strong> to another Github Pages repo. I will document that part in another post. Maybe.</p>
 
     </main>
 

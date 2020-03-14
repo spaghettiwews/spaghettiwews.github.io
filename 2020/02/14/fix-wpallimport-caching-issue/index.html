@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><title>a blog of spaghettiwews | Fixing the WP All Import caching issue with a quick hack</title>
+<link rel="icon" href="https://wews.co//images/favicon.svg" />
+<link rel="stylesheet" href=https://wews.co/css/main.css />
+<body><header>
+  <a href="https://wews.co/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+  <nav>
+    <ul class="main-nav">
+        
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co/resume/" title="Resume">Resume</a></li>
+         
+    </ul>
+    <ul class="social-nav">
+        
+            <li><a class="social-nav__menuItem social-nav__menuItem--github" href="https://www.github.com/spaghettiwews" title="Github"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="20" height="20"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>Github</a></li>
+        
+            <li><a class="social-nav__menuItem social-nav__menuItem--rss" href="https://wews.co/index.xml" title="RSS"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" class="svg-inline--fa fa-rss fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path></svg>RSS</a></li>
+         
+    </ul>
+  </nav>
+</header>
+<main id="content"> 
+    <main id="content">
+        <h1>Fixing the WP All Import caching issue with a quick hack</h1>
+        <time>Friday, February 14, 2020</time>
+
+        <p>There&rsquo;s an annoying caching issue I&rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.</p>
+<p>The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.</p>
+<figure>
+    <img src="https://wews.co/images/Annotation%202020-02-14%20161802.png"
+         alt="WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog" width="100%"/> <figcaption>
+            <p>WP All Import &lsquo;import file location&rsquo; setup dialog</p>
+        </figcaption>
+</figure>
+
+<p>The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?) and uses the cached version for all subsequent imports. Obviously this presents a problem because whatever updates are made to the product data in the file are never actually imported. The developers of the plugin are aware of this issue and have even suggested a solution on their <a href="http://www.wpallimport.com/documentation/troubleshooting/common-issues/">Troubleshooting Guide</a>:</p>
+<blockquote>
+<p>Issues with caching can be hard to diagnose. Often they will show themselves if you upload a new import file but WP All Import shows you an older, unrelated import file. There are other symptoms as well, but this is the most common one.<!-- raw HTML omitted --><!-- raw HTML omitted -->If you’re having a problem with WP All Import and use some form of server side caching, try your import on one of our testing servers. If you aren’t able to reproduce the problem on a testing server, the issue might be related to your caching configuration. We especially see these types of issues with users hosted by WP Engine and Pantheon, or when Varnish tries to cache admin pages.</p>
+</blockquote>
+<p>I&rsquo;m not hosting on with any of those companies nor do I have time to troubleshoot with the hosting team to fix this &ldquo;the right way&rdquo;. It&rsquo;s 16:30, on a Friday.</p>
+<p>After incessantly googling for an easy solution without success, the easiest one I could think of was to use a cache-busting technique that I&rsquo;ve seen used to solve browser caching issues with assets like CSS and JS. i.e. <em>adding a querystring parameter with a random value to the URL of the asset.</em></p>
+<p>First we need to find the function that gets called to download the file at the URL we provide. A quick vscode search finds us the function: <code>get_file_curl</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">if ( ! function_exists(&#39;get_file_curl&#39;) ):
+	function get_file_curl($url, $fullpath, $to_variable = false, $iteration = false) {
+		if ( ! preg_match(&#39;%^(http|ftp)s?://%i&#39;, $url) ) return false;
+		$uid = uniqid();
+        $response = wp_remote_get($url.&#34;?v=&#34;.$uid);
+</code></pre></div><p>&hellip;adding the parameter <code>?v</code> to the URL, with a random value <code>$uid</code> every time <code>get_file_curl</code> gets called means that the server thinks it&rsquo;s downloading a new file each time. Therefore, instead of reaching for the cached copy it will always download the actual updated file guaranteeing that the our products are updated with the latest data.</p>
+
+    </main>
+
+        </main><footer>
+  &copy; Welington Maposa
+</footer>
+</body>
+</html>
