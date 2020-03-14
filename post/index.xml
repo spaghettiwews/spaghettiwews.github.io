@@ -54,13 +54,12 @@ So, for my future self and posterity&amp;rsquo;s sake in this post I will be doc
     </item>
     
     <item>
-      <title>A list of open source projects</title>
+      <title>Open source software and tools I like</title>
       <link>https://wews.co/2019/02/17/open-source/</link>
       <pubDate>Sun, 17 Feb 2019 15:32:47 +0200</pubDate>
       
       <guid>https://wews.co/2019/02/17/open-source/</guid>
-      <description>I like well designed software. I also like free things, as I&amp;rsquo;m sure do you. Every now and again these two qualities/properties/attributes intersect and I&amp;rsquo;ll stumble upon a free, cool piece of software that I reckon may be useful to me (or you) in the future. While there&amp;rsquo;s a 90% chance that I won&amp;rsquo;t ever use most of these, here&amp;rsquo;s a running list of said applications/systems/software nonetheless:
- Grafana - The open platform for analytics and monitoring  https://grafana.</description>
+      <description>Grafana - The open platform for analytics and monitoring  https://grafana.com/   Wekan - open-source kanban  https://wekan.github.io/   decidim - Free Open-Source participatory democracy for cities and organizations  https://decidim.org/   Discourse - modern forum software for your community  https://discourse.org/   Binder - Turn a Git repo into a collection of interactive notebooks  https://mybinder.org/   Mailtrain - Self Hosted Newsletter App  https://mailtrain.</description>
     </item>
     
     <item>
@@ -79,7 +78,7 @@ In the case of secure websites, a web server may not perform SSL encryption itse
       <pubDate>Sat, 12 May 2018 12:28:05 +0200</pubDate>
       
       <guid>https://wews.co/2018/05/12/hello-hugo/</guid>
-      <description>Well hello there. This here is how this started:
+      <description>Well hello there. This here, is how this started:
 hugo -t black-and-light cd public git add . git commmit -m &amp;#34;initial commit&amp;#34; git push </description>
     </item>
     
