@@ -3,23 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://wews.co/attribution/</loc>
-    <lastmod>2020-03-14T16:40:17+02:00</lastmod>
+    <loc>https://wews.co/</loc>
+    <lastmod>2020-03-24T15:37:51+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wews.co/</loc>
+    <loc>https://wews.co/2020/03/24/ramblings-on-everything-age-of-coronavirus/</loc>
+    <lastmod>2020-03-24T15:37:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wews.co/post/</loc>
+    <lastmod>2020-03-24T15:37:51+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wews.co/attribution/</loc>
     <lastmod>2020-03-14T16:40:17+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://wews.co/page/</loc>
     <lastmod>2020-03-14T16:40:17+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co/post/</loc>
-    <lastmod>2020-02-28T18:21:14+02:00</lastmod>
   </url>
   
   <url>
@@ -35,6 +40,11 @@
   <url>
     <loc>https://wews.co/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</loc>
     <lastmod>2020-02-10T14:20:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wews.co/2019/03/13/creating-personal-knowledgebase/</loc>
+    <lastmod>2019-03-13T20:42:05+02:00</lastmod>
   </url>
   
   <url>
