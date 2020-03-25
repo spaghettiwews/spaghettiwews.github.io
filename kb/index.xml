@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal knowledgebase on a blog of spaghettiwews</title>
+    <link>https://wews.co/kb/</link>
+    <description>Recent content in Personal knowledgebase on a blog of spaghettiwews</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://wews.co/kb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>React</title>
+      <link>https://wews.co/kb/react/</link>
+      <pubDate>Tue, 24 Mar 2020 00:15:36 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/react/</guid>
+      <description>props are immutable: they are passed from the parent and are “owned” by the parent. To implement interactions, we introduce mutable state to the component. this.state is private to the component and can be changed by calling this.setState(). When the state updates, the component re-renders itself. https://linkedlist.org/react</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://wews.co/kb/git/</link>
+      <pubDate>Mon, 23 Mar 2020 23:17:49 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/git/</guid>
+      <description>Download submodules for the first time git submodule update --init --recursive This pulls all submodules using the latest revision that the parent repo is tracking, and not the latest revision from the submodule itself.
+ Update submodule to its latest revision/commit on origin git submodule update --remote --merge This will update the submodule to the latest version on origin and update the commit SHA hash that the parent is tracking. You will need to commit this change to persist it.</description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://wews.co/kb/bash/</link>
+      <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/bash/</guid>
+      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files </description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://wews.co/kb/ssh/</link>
+      <pubDate>Wed, 13 Mar 2019 23:24:21 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/ssh/</guid>
+      <description>Log into remote server ssh -l username example.com </description>
+    </item>
+    
+  </channel>
+</rss>

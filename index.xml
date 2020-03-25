@@ -6,7 +6,6 @@
     <description>Recent content in Home on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 24 Mar 2020 15:37:51 +0200</lastBuildDate>
     
 	<atom:link href="https://wews.co/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +18,25 @@
       <guid>https://wews.co/2020/03/24/ramblings-on-everything/</guid>
       <description>25 March 2020 Cycling at lunchtime and after work today was good refreshing fun! It&amp;rsquo;d been a while since I last cycled I&amp;rsquo;d almost forgotten how much I enjoyed it. I should really get back into it again, and hopefully spend a little less time in front of rectangular screens, as a former colleague used to refer to all these attention-sucking devices of ours.
  Judging by the past few weeks&amp;rsquo; headlines it appears that everything we are doing collectively right now, is the biggest, largest, hugest experiment of that thing ever done.</description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://wews.co/kb/react/</link>
+      <pubDate>Tue, 24 Mar 2020 00:15:36 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/react/</guid>
+      <description>props are immutable: they are passed from the parent and are “owned” by the parent. To implement interactions, we introduce mutable state to the component. this.state is private to the component and can be changed by calling this.setState(). When the state updates, the component re-renders itself. https://linkedlist.org/react</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://wews.co/kb/git/</link>
+      <pubDate>Mon, 23 Mar 2020 23:17:49 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/git/</guid>
+      <description>Download submodules for the first time git submodule update --init --recursive This pulls all submodules using the latest revision that the parent repo is tracking, and not the latest revision from the submodule itself.
+ Update submodule to its latest revision/commit on origin git submodule update --remote --merge This will update the submodule to the latest version on origin and update the commit SHA hash that the parent is tracking. You will need to commit this change to persist it.</description>
     </item>
     
     <item>
@@ -62,6 +80,24 @@ The way the plugin works is that you give it a URL to a CSV/XML file that it nee
       <guid>https://wews.co/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</guid>
       <description>It&amp;rsquo;s been a while since I wrote on this blog and today when I git cloned the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.
 So, for my future self and posterity&amp;rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:</description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://wews.co/kb/bash/</link>
+      <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/bash/</guid>
+      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files </description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://wews.co/kb/ssh/</link>
+      <pubDate>Wed, 13 Mar 2019 23:24:21 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/ssh/</guid>
+      <description>Log into remote server ssh -l username example.com </description>
     </item>
     
     <item>

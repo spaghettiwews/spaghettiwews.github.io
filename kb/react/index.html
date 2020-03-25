@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><title>a blog of spaghettiwews | DateTime and TimeSpan</title>
+<html><title>a blog of spaghettiwews | React</title>
 <link rel="icon" href="https://wews.co//images/favicon.svg" />
 <link rel="stylesheet" href=https://wews.co/css/main.css />
 <script  src=https://wews.co/js/main.js></script><body><header>
@@ -37,31 +37,11 @@
 </header>
  <main id="content"> 
     <main id="content">
-        <h1>DateTime and TimeSpan</h1>
-        <time>Sunday, March 10, 2019</time>
+        <h1>React</h1>
+        <time>Tuesday, March 24, 2020</time>
 
-        <p><strong>DateTime Constructor</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">DateTime(yr, mo, day);
-DateTime(yr, mo, day, hr, min, sec);
+        <p>props are immutable: they are passed from the parent and are “owned” by the parent. To implement interactions, we introduce mutable state to the component. this.state is private to the component and can be changed by calling this.setState(). When the state updates, the component re-renders itself. <a href="https://linkedlist.org/react">https://linkedlist.org/react</a></p>
 
-DateTime bday = <span style="color:#66d9ef">new</span> DateTime(<span style="color:#ae81ff">1</span><span style="color:#ae81ff">9</span><span style="color:#ae81ff">6</span><span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span><span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span><span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">0</span>);
-DateTime newyr= DateTime.Parse(<span style="color:#e6db74">&#34;1/1/2005&#34;</span>);
-DateTime currdt = DateTime.Now;
-
-<span style="color:#75715e">// also AddHours, AddMonths, AddYears
-</span><span style="color:#75715e"></span>DateTime tomorrow = currdt.AddDays(<span style="color:#ae81ff">1</span>);
-TimeSpan diff = currdt.Subtract(bday);
-
-<span style="color:#75715e">// 14795 days from 12/20/64 to 6/24/05
-</span><span style="color:#75715e"></span>Console.WriteLine(<span style="color:#e6db74">&#34;{0}&#34;</span>, diff.Days);
-
-<span style="color:#75715e">// TimeSpan(hrs, min, sec)
-</span><span style="color:#75715e"></span>TimeSpan ts = <span style="color:#66d9ef">new</span> TimeSpan(<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span><span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span><span style="color:#ae81ff">0</span>);
-
-<span style="color:#75715e">// also FromMinutes, FromHours, FromDays
-</span><span style="color:#75715e"></span>TimeSpan ts = TimeSpan.FromSeconds(<span style="color:#ae81ff">1</span><span style="color:#ae81ff">2</span><span style="color:#ae81ff">0</span>);
-TimeSpan ts = ts2 <span style="color:#960050;background-color:#1e0010">–</span> ts1; <span style="color:#75715e">// +,-,&gt;,&lt;,==, !=
-</span></code></pre></div>
     </main>
 
         </main><footer>
