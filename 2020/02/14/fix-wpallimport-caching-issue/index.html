@@ -63,6 +63,9 @@
         $response = wp_remote_get($url.&#34;?v=&#34;.$uid);
 </code></pre></div><p>&hellip;adding the parameter <code>?v</code> to the URL, with a random value <code>$uid</code> every time <code>get_file_curl</code> gets called means that the server thinks it&rsquo;s downloading a new file each time. Therefore, instead of reaching for the cached copy it will always download the actual updated file guaranteeing that the our products are updated with the latest data.</p>
 
+        <hr />
+<time><em>Last updated: Saturday, March 14, 2020</em></time>
+
     </main>
 
         </main><footer>
