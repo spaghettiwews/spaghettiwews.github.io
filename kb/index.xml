@@ -36,7 +36,7 @@ Hooks useState() returns/uses an array to destructure its return values. The rea
       <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
       
       <guid>https://wews.co/kb/bash/</guid>
-      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and writes it to the file recovered.txt</description>
+      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and write it to the file recovered.txt. Option -C 200 will include 200 lines before and after each match, while option -B 200 will only include the 200 before it.</description>
     </item>
     
     <item>

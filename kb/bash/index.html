@@ -48,10 +48,14 @@
 </code></pre></div><hr>
 <h3 id="recover-deleted-text-datafiles">Recover deleted text data/files</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep -a -C <span style="color:#ae81ff">200</span> <span style="color:#e6db74">&#39;Unique string in text file&#39;</span> /dev/sdX &gt; /mnt/c/Users/Welington/Downloads/recovered.txt
-</code></pre></div><p>This will search partition <code>sdX</code> for data containing the unique string specified and writes it to the file <code>recovered.txt</code></p>
+</code></pre></div><p>This will search partition <code>sdX</code> for data containing the unique string specified and write it to the file <code>recovered.txt</code>. Option <code>-C 200</code> will include 200 lines before and after each match, while option <code>-B 200</code> will only include the 200 before it.</p>
+<hr>
+<h3 id="delete-all-files-and-directories-except-some">Delete all files and directories except some</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -rf !<span style="color:#f92672">(</span>*.png|.git|.gitignore|CNAME|.|..<span style="color:#f92672">)</span>
+</code></pre></div><p>This deletes all files and directories in the path where it is executed save for the ones that match the identifiers enclosed in the parentheses. For this command to work though, you must enable <strong>Extended Pattern Matching</strong> first running <code>shopt -s extglob</code></p>
 
         <hr />
-<time><em>Last updated: Friday, March 27, 2020</em></time>
+<time><em>Last updated: Saturday, March 28, 2020</em></time>
 
     </main>
 

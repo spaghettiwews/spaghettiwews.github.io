@@ -16,8 +16,8 @@
       <pubDate>Tue, 24 Mar 2020 15:37:51 +0200</pubDate>
       
       <guid>https://wews.co/2020/03/24/random-ramblings/</guid>
-      <description>25 March 2020 Today, during my lunch break and after work, I went cycling again. Hadn&amp;rsquo;t realised how long it had been since I last did. I should try and make more time for it.
- Judging by the past few weeks&amp;rsquo; headlines it appears that everything we are doing collectively right now, is the biggest, largest, hugest experiment of that thing ever done. Remote working? Check. Online learning? Check. And to top it all off, I have newsletter spam about WFH from every other company/website out there: Trello, Heroku, Dev.</description>
+      <description>27 March 2020 Looks like we are finally going into lockdown for 21 days starting on Monday. Hoping it&amp;rsquo;s not a case of too little, too late. We thank the president Cyril Ramaphosa for the leadership. Cde. Xerox had to wait a couple of days before announcing so that it wouldn&amp;rsquo;t seem too obvious. I personally think he nailed it. Good job, sir. Good job.
+ 25 March 2020 Today, during my lunch break and after work, I went cycling again.</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ So, for my future self and posterity&amp;rsquo;s sake in this post I will be doc
       <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
       
       <guid>https://wews.co/kb/bash/</guid>
-      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and writes it to the file recovered.txt</description>
+      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and write it to the file recovered.txt. Option -C 200 will include 200 lines before and after each match, while option -B 200 will only include the 200 before it.</description>
     </item>
     
     <item>
