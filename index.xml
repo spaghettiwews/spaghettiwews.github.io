@@ -89,7 +89,7 @@ So, for my future self and posterity&amp;rsquo;s sake in this post I will be doc
       <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
       
       <guid>https://wews.co/kb/bash/</guid>
-      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files </description>
+      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and writes it to the file recovered.txt</description>
     </item>
     
     <item>

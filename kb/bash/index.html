@@ -40,16 +40,18 @@
         <h1>bash</h1>
         <time>Monday, March 25, 2019</time>
 
-        <h2 id="move-files-and-subdirectories-using-mv">Move files and subdirectories using mv</h2>
+        <h3 id="move-files-and-subdirectories-using-mv">Move files and subdirectories using mv</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv /path/source_directory/* /path/target_directory/
 </code></pre></div><hr>
-<h2 id="unzip-zip-file-into-another-directory">Unzip ZIP file into another directory</h2>
+<h3 id="unzip-zip-file-into-another-directory">Unzip ZIP file into another directory</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">unzip -o filename.zip -d /path/target_directory/
 </code></pre></div><hr>
-<h2 id="recover-deleted-text-datafiles">Recover deleted text data/files</h2>
+<h3 id="recover-deleted-text-datafiles">Recover deleted text data/files</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep -a -C <span style="color:#ae81ff">200</span> <span style="color:#e6db74">&#39;Unique string in text file&#39;</span> /dev/sdX &gt; /mnt/c/Users/Welington/Downloads/recovered.txt
+</code></pre></div><p>This will search partition <code>sdX</code> for data containing the unique string specified and writes it to the file <code>recovered.txt</code></p>
 
         <hr />
-<time><em>Last updated: Wednesday, March 25, 2020</em></time>
+<time><em>Last updated: Friday, March 27, 2020</em></time>
 
     </main>
 
