@@ -17,8 +17,8 @@
       <pubDate>Fri, 03 Apr 2020 09:22:11 +0200</pubDate>
       
       <guid>https://wews.co/2020/04/03/how-not-write-infinite-build-loop/</guid>
-      <description>If your build workflow/pipeline triggers on a push or merge to master and it needs push some changes back upstream, say for Github Pages or something, make sure it does so to a seperate branch or a submodule. That&amp;rsquo;s it.
-Now, it seems obvious in hindsight but imagine my surprise when I tried to push a change and kept getting the error that there were changes on remote that I needed to pull - even after I&amp;rsquo;d pulled said changes (the build was completing its run before I could push thus introducing new changes).</description>
+      <description>If your build workflow/pipeline triggers on a push or merge to master and it needs push some changes back upstream, say for Github Pages or something, make sure it does so to a seperate branch or a submodule.
+It seems obvious but I just wrote a workflow that did the complete opposite of that and got this Git error whenever I tried to push a change to the repo. The build was obviously completing its run, committing new changes to master before I could do a git pull, and push my local modifications.</description>
     </item>
     
     <item>
