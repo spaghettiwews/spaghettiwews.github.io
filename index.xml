@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Ubuntu</title>
+      <link>https://wews.co/kb/ubuntu/</link>
+      <pubDate>Wed, 29 Apr 2020 22:16:36 +0200</pubDate>
+      
+      <guid>https://wews.co/kb/ubuntu/</guid>
+      <description>What is /etc/apt/sources.list.d/ used for? The directory is used for adding new repositories without editing the central /etc/apt/sources.list file. Add a file with a unique name and the same format as /etc/apt/sources.list into this folder and it will be used by apt.</description>
+    </item>
+    
+    <item>
       <title>Infinite scroll is bad</title>
       <link>https://wews.co/2020/04/15/infinite-scroll-is-bad/</link>
       <pubDate>Wed, 15 Apr 2020 22:46:48 +0200</pubDate>
@@ -235,9 +244,8 @@ Array.Sort(numArray); // sort ascending  // Sort begins at element 4 and sorts 1
       
       <guid>https://wews.co/resume/</guid>
       <description>Welington Maposa  Experience Lead Developer / Webdev Pvt. Ltd, Harare / February 2015 - Present
-In this role I lead a team of full-stack and frontend developers with my main duties spanning the entire software development life cycle of our web projects.
-Web Developer / Webdev Pvt. Ltd, Harare / May 2013 - February 2015
-Built websites for various types of clients ranging from corporate websites, online stores, to large content management systems for government institutions and news publishers.</description>
+In this role I lead a team of fullstack and frontend developers. My duties span all aspects of the solution development process, from early planning and design, to testing, deployment and support.
+  Led and project managed the development of various business solutions ranging from self-service portals, ecommerce stores, billing systems, and mobile applications for insurance firms, government institutions, banks, and large retailers.</description>
     </item>
     
     <item>
