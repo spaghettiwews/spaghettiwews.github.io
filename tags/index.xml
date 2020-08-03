@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on a blog of spaghettiwews</title>
-    <link>https://wews.co/tags/</link>
+    <link>https://wews.co.zw/tags/</link>
     <description>Recent content in Tags on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://wews.co/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wews.co.zw/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

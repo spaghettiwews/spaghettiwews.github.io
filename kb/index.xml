@@ -2,68 +2,68 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal knowledgebase on a blog of spaghettiwews</title>
-    <link>https://wews.co/kb/</link>
+    <link>https://wews.co.zw/kb/</link>
     <description>Recent content in Personal knowledgebase on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://wews.co/kb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wews.co.zw/kb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node.js</title>
-      <link>https://wews.co/kb/node.js/</link>
+      <link>https://wews.co.zw/kb/node.js/</link>
       <pubDate>Sat, 23 May 2020 01:08:02 +0200</pubDate>
       
-      <guid>https://wews.co/kb/node.js/</guid>
+      <guid>https://wews.co.zw/kb/node.js/</guid>
       <description>Diffence between tilde(~) and caret(^) in package.json? A tilde in front of the version number means that npm or yarn will update to, or use future patch versions of that library. Both the major and minor versions will not be changed. e.g. ~1.2.4 means use versions 1.2.4 &amp;lt; 1.3.0
 A caret in front of the version number means that npm or yarn will update to, or use future minor/patch versions of that library.</description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>https://wews.co/kb/ubuntu/</link>
+      <link>https://wews.co.zw/kb/ubuntu/</link>
       <pubDate>Wed, 29 Apr 2020 22:16:36 +0200</pubDate>
       
-      <guid>https://wews.co/kb/ubuntu/</guid>
+      <guid>https://wews.co.zw/kb/ubuntu/</guid>
       <description>What is /etc/apt/sources.list.d/ used for? The directory is used for adding new repositories without editing the central /etc/apt/sources.list file. Add a file with a unique name and the same format as /etc/apt/sources.list into this folder and it will be used by apt.</description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://wews.co/kb/react/</link>
+      <link>https://wews.co.zw/kb/react/</link>
       <pubDate>Tue, 24 Mar 2020 00:15:36 +0200</pubDate>
       
-      <guid>https://wews.co/kb/react/</guid>
+      <guid>https://wews.co.zw/kb/react/</guid>
       <description>props props are immutable: they are passed from the parent and are “owned” by the parent. To implement interactions, we introduce mutable state to the component. this.state is private to the component and can be changed by calling this.setState(). When the state updates, the component re-renders itself. https://linkedlist.org/react
 Hooks useState() returns/uses an array to destructure its return values. The reason it uses an array is that an object would require the destructuring to be done based on its property names - an array allows us to name the values whatever we want.</description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://wews.co/kb/git/</link>
+      <link>https://wews.co.zw/kb/git/</link>
       <pubDate>Mon, 23 Mar 2020 23:17:49 +0200</pubDate>
       
-      <guid>https://wews.co/kb/git/</guid>
+      <guid>https://wews.co.zw/kb/git/</guid>
       <description>Download submodules for the first time git submodule update --init --recursive This pulls all submodules using the latest revision that the parent repo is tracking, and not the latest revision from the submodule itself.
  Update submodule to its latest revision/commit on origin git submodule update --remote --merge This will update the submodule to the latest version on origin and update the commit SHA hash that the parent is tracking. You will need to commit this change to persist it.</description>
     </item>
     
     <item>
       <title>bash</title>
-      <link>https://wews.co/kb/bash/</link>
+      <link>https://wews.co.zw/kb/bash/</link>
       <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
       
-      <guid>https://wews.co/kb/bash/</guid>
+      <guid>https://wews.co.zw/kb/bash/</guid>
       <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and write it to the file recovered.txt. Option -C 200 will include 200 lines before and after each match, while option -B 200 will only include the 200 before it.</description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://wews.co/kb/ssh/</link>
+      <link>https://wews.co.zw/kb/ssh/</link>
       <pubDate>Wed, 13 Mar 2019 23:24:21 +0200</pubDate>
       
-      <guid>https://wews.co/kb/ssh/</guid>
+      <guid>https://wews.co.zw/kb/ssh/</guid>
       <description>Log into remote server ssh -l username example.com </description>
     </item>
     

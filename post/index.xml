@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on a blog of spaghettiwews</title>
-    <link>https://wews.co/post/</link>
+    <link>https://wews.co.zw/post/</link>
     <description>Recent content in Posts on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 15 Apr 2020 22:46:48 +0200</lastBuildDate>
     
-	<atom:link href="https://wews.co/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wews.co.zw/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Infinite scroll is bad</title>
-      <link>https://wews.co/2020/04/15/infinite-scroll-is-bad/</link>
+      <link>https://wews.co.zw/2020/04/15/infinite-scroll-is-bad/</link>
       <pubDate>Wed, 15 Apr 2020 22:46:48 +0200</pubDate>
       
-      <guid>https://wews.co/2020/04/15/infinite-scroll-is-bad/</guid>
+      <guid>https://wews.co.zw/2020/04/15/infinite-scroll-is-bad/</guid>
       <description>A few weeks ago, I exhausted my free Google Drive storage quota, mostly with my phone&amp;rsquo;s photos backup. So, this week I decided I&amp;rsquo;d move the photos from Google Photos to OneDrive where I have more storage capacity, allowing me to continue backing up to Google.
 Naturally, I thought this was going to be a fairly easy exercise. I mean, it should be as simple as selecting all the photos, clicking download, and uploading the package to Onedrive, right?</description>
     </item>
     
     <item>
       <title>How not to write an CI/CD build pipeline</title>
-      <link>https://wews.co/2020/04/03/how-not-write-infinite-build-loop/</link>
+      <link>https://wews.co.zw/2020/04/03/how-not-write-infinite-build-loop/</link>
       <pubDate>Fri, 03 Apr 2020 09:22:11 +0200</pubDate>
       
-      <guid>https://wews.co/2020/04/03/how-not-write-infinite-build-loop/</guid>
+      <guid>https://wews.co.zw/2020/04/03/how-not-write-infinite-build-loop/</guid>
       <description>If your build workflow/pipeline triggers on a push or merge to master and it needs push some changes back upstream, say for Github Pages or something, make sure it does so to a seperate branch or a submodule.
 It seems obvious but I just wrote a workflow that did the complete opposite of that and got this Git error whenever I tried to push a change to the repo. The build was obviously completing its run, committing new changes to master before I could do a git pull, and push my local modifications.</description>
     </item>
     
     <item>
       <title>Random ramblings: 2020</title>
-      <link>https://wews.co/2020/03/24/random-ramblings/</link>
+      <link>https://wews.co.zw/2020/03/24/random-ramblings/</link>
       <pubDate>Tue, 24 Mar 2020 15:37:51 +0200</pubDate>
       
-      <guid>https://wews.co/2020/03/24/random-ramblings/</guid>
+      <guid>https://wews.co.zw/2020/03/24/random-ramblings/</guid>
       <description>3 July 2020 Just finished watching Hamilton and maaaaan was that 5 year wait worth it!!! Absolute Perfection. Crazy impeccable perfomances, choreography, production, everything was just 🔥🔥🔥🔥🔥.
  23 May 2020 It&amp;rsquo;s exactly 4 weeks today since I installed Ubuntu as my main OS and I think, finally, after years of toying back and forth with a move, I&amp;rsquo;m here to stay. Ubuntu 20.04 feels so polished and easy to use, it&amp;rsquo;s just a great experience.</description>
     </item>
     
     <item>
       <title>Troubleshooting</title>
-      <link>https://wews.co/2020/02/28/troubleshooting/</link>
+      <link>https://wews.co.zw/2020/02/28/troubleshooting/</link>
       <pubDate>Fri, 28 Feb 2020 18:21:14 +0200</pubDate>
       
-      <guid>https://wews.co/2020/02/28/troubleshooting/</guid>
+      <guid>https://wews.co.zw/2020/02/28/troubleshooting/</guid>
       <description>This past week I had to troubleshoot a problem with a 4 year old WordPress/CiviCRM application that had largely gone untouched since its development. Recently, it had stopped rendering the frontend and was throwing an unhelpful error message that contained what would turn out to be misleading information later, &amp;ldquo;Sorry but we are not able to provide this at the moment. Please make sure the folder is writable&amp;rdquo;.
 Ummm ohkay?? Which folder?</description>
     </item>
     
     <item>
       <title>Fixing the WP All Import caching issue with a quick hack</title>
-      <link>https://wews.co/2020/02/14/fix-wpallimport-caching-issue/</link>
+      <link>https://wews.co.zw/2020/02/14/fix-wpallimport-caching-issue/</link>
       <pubDate>Fri, 14 Feb 2020 16:06:03 +0200</pubDate>
       
-      <guid>https://wews.co/2020/02/14/fix-wpallimport-caching-issue/</guid>
+      <guid>https://wews.co.zw/2020/02/14/fix-wpallimport-caching-issue/</guid>
       <description>There&amp;rsquo;s an annoying caching issue I&amp;rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.
 The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.
   WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog
@@ -65,58 +65,58 @@ The way the plugin works is that you give it a URL to a CSV/XML file that it nee
     
     <item>
       <title>How to install/use Hugo in WSL (Ubuntu 18.04)</title>
-      <link>https://wews.co/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</link>
+      <link>https://wews.co.zw/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</link>
       <pubDate>Mon, 10 Feb 2020 14:20:47 +0200</pubDate>
       
-      <guid>https://wews.co/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</guid>
+      <guid>https://wews.co.zw/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</guid>
       <description>It&amp;rsquo;s been a while since I wrote on this blog and today when I git cloned the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.
 So, for my future self and posterity&amp;rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:</description>
     </item>
     
     <item>
       <title>Creating a personal knowledgebase</title>
-      <link>https://wews.co/2019/03/13/creating-personal-knowledgebase/</link>
+      <link>https://wews.co.zw/2019/03/13/creating-personal-knowledgebase/</link>
       <pubDate>Wed, 13 Mar 2019 20:42:05 +0200</pubDate>
       
-      <guid>https://wews.co/2019/03/13/creating-personal-knowledgebase/</guid>
+      <guid>https://wews.co.zw/2019/03/13/creating-personal-knowledgebase/</guid>
       <description>I recently got this fleeting idea that I should probably start keeping a repository of all the little random tidbits of technical knowledge that I learn on a daily - mostly through reading blogs and doing stuff at work - as a way of remembering these things for future use/reference. The contents would range from code snippets, bash commands that I always seem to forget, definitions (glossary of terms), ideas, concepts, really just anything I thought useful at the time.</description>
     </item>
     
     <item>
       <title>On starting a new decade</title>
-      <link>https://wews.co/2019/02/18/11110/</link>
+      <link>https://wews.co.zw/2019/02/18/11110/</link>
       <pubDate>Mon, 18 Feb 2019 01:15:45 +0200</pubDate>
       
-      <guid>https://wews.co/2019/02/18/11110/</guid>
+      <guid>https://wews.co.zw/2019/02/18/11110/</guid>
       <description>  bring it source: matrix revolutions | giphy
   </description>
     </item>
     
     <item>
       <title>Open source software and tools I like</title>
-      <link>https://wews.co/2019/02/17/open-source/</link>
+      <link>https://wews.co.zw/2019/02/17/open-source/</link>
       <pubDate>Sun, 17 Feb 2019 15:32:47 +0200</pubDate>
       
-      <guid>https://wews.co/2019/02/17/open-source/</guid>
+      <guid>https://wews.co.zw/2019/02/17/open-source/</guid>
       <description>Grafana - The open platform for analytics and monitoring  https://grafana.com/   Wekan - open-source kanban  https://wekan.github.io/   decidim - Free Open-Source participatory democracy for cities and organizations  https://decidim.org/   Discourse - modern forum software for your community  https://discourse.org/   Binder - Turn a Git repo into a collection of interactive notebooks  https://mybinder.org/   Mailtrain - Self Hosted Newsletter App  https://mailtrain.</description>
     </item>
     
     <item>
       <title>Using a reverse proxy to provide a secure connection to a WordPress site</title>
-      <link>https://wews.co/2018/06/22/sucuri-wordpress-ssl/</link>
+      <link>https://wews.co.zw/2018/06/22/sucuri-wordpress-ssl/</link>
       <pubDate>Fri, 22 Jun 2018 22:10:28 +0200</pubDate>
       
-      <guid>https://wews.co/2018/06/22/sucuri-wordpress-ssl/</guid>
+      <guid>https://wews.co.zw/2018/06/22/sucuri-wordpress-ssl/</guid>
       <description>What&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:  In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
 In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware.</description>
     </item>
     
     <item>
       <title>Hello Hugo</title>
-      <link>https://wews.co/2018/05/12/hello-hugo/</link>
+      <link>https://wews.co.zw/2018/05/12/hello-hugo/</link>
       <pubDate>Sat, 12 May 2018 12:28:05 +0200</pubDate>
       
-      <guid>https://wews.co/2018/05/12/hello-hugo/</guid>
+      <guid>https://wews.co.zw/2018/05/12/hello-hugo/</guid>
       <description>Well hello there. This here, is how this started:
 hugo -t black-and-light cd public git add . git commmit -m &amp;#34;initial commit&amp;#34; git push </description>
     </item>
