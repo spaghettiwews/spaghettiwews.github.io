@@ -6,10 +6,20 @@
     <description>Recent content in Posts on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Aug 2021 18:15:18 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 16 Dec 2021 23:14:59 +0200</lastBuildDate>
     
 	<atom:link href="https://wews.co.zw/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fixing Doom Eternal&#39;s &#34;No Physical Devices Found&#34; Error. Well, not really.</title>
+      <link>https://wews.co.zw/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</link>
+      <pubDate>Thu, 16 Dec 2021 23:14:59 +0200</pubDate>
+      
+      <guid>https://wews.co.zw/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</guid>
+      <description>I&amp;rsquo;m keep running into this issue where my PC throws this error at me whenever I try and play Doom Eternal. It&amp;rsquo;s annoying and the only solution I have found on the innernet that works is to disable the iGPU, start the game, and then re-enable it afterwards. This is obviously not ideal but whatever&amp;hellip;
+Because I&amp;rsquo;m lazy and hate clicking around the start menu to navigate to the device manager I googled to see if there&amp;rsquo;s a way to to restart the iGPU from the terminal.</description>
+    </item>
     
     <item>
       <title>DDG being too clever for its own good</title>
