@@ -1,192 +1,117 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://wews.co.zw/feeling-nostalgic/</loc>
+    <loc>https://spaghettiwews.github.io/feeling-nostalgic/</loc>
     <lastmod>2022-01-07T23:26:11+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</loc>
     <lastmod>2022-01-07T23:26:11+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/post/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/post/</loc>
     <lastmod>2022-01-07T23:26:11+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2021/08/07/ddg-being-too-clever-for-its-own-good/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2021/08/07/ddg-being-too-clever-for-its-own-good/</loc>
     <lastmod>2022-01-07T23:26:11+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/node.js/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/node.js/</loc>
     <lastmod>2020-05-23T01:55:21+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/ubuntu/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/ubuntu/</loc>
     <lastmod>2020-05-01T00:07:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2020/04/15/infinite-scroll-is-bad/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2020/04/15/infinite-scroll-is-bad/</loc>
     <lastmod>2022-01-07T22:48:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2020/04/03/how-not-write-infinite-build-loop/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2020/04/03/how-not-write-infinite-build-loop/</loc>
     <lastmod>2020-04-05T06:55:31+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/react/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/react/</loc>
     <lastmod>2020-03-27T11:19:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/git/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/git/</loc>
     <lastmod>2020-03-27T11:19:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/attribution/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/attribution/</loc>
     <lastmod>2020-03-14T22:06:05+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/page/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/page/</loc>
     <lastmod>2020-05-01T00:07:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2020/02/28/troubleshooting/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2020/02/28/troubleshooting/</loc>
     <lastmod>2020-03-14T14:41:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2020/02/14/fix-wpallimport-caching-issue/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2020/02/14/fix-wpallimport-caching-issue/</loc>
     <lastmod>2020-03-14T14:41:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</loc>
     <lastmod>2020-03-14T14:41:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/bash/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/bash/</loc>
     <lastmod>2020-03-28T00:23:23+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/ssh/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/ssh/</loc>
     <lastmod>2020-03-25T23:11:26+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2019/03/13/creating-personal-knowledgebase/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2019/03/13/creating-personal-knowledgebase/</loc>
     <lastmod>2022-01-07T23:26:11+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/compiler/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/regex/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/compiler/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/formattingdatevalues/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/regex/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/formattingnumericvalues/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/formattingdatevalues/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/datetime/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/formattingnumericvalues/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/stringbuilder/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/datetime/</loc>
+    <lastmod>2019-03-13T09:42:37+02:00</lastmod>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/stringbuilder/</loc>
     <lastmod>2019-03-12T22:42:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/stringops/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/stringops/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/arrays/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/arrays/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/csharp/datatypes/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/cheatsheet/csharp/datatypes/</loc>
     <lastmod>2019-03-13T09:42:37+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/resume/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/resume/</loc>
     <lastmod>2020-05-01T00:07:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2019/02/18/11110/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2019/02/18/11110/</loc>
     <lastmod>2020-03-14T14:41:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2019/02/17/open-source/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2019/02/17/open-source/</loc>
     <lastmod>2022-01-07T22:48:32+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2018/06/22/sucuri-wordpress-ssl/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2018/06/22/sucuri-wordpress-ssl/</loc>
     <lastmod>2020-03-14T14:41:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/2018/05/12/hello-hugo/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/2018/05/12/hello-hugo/</loc>
     <lastmod>2020-03-14T14:41:28+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/cheatsheet/</loc>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/categories/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/</loc>
     <lastmod>2020-03-14T14:08:44+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wews.co.zw/kb/</loc>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/kb/</loc>
     <lastmod>2020-03-25T23:11:26+02:00</lastmod>
+  </url><url>
+    <loc>https://spaghettiwews.github.io/tags/</loc>
   </url>
-  
-  <url>
-    <loc>https://wews.co.zw/tags/</loc>
-  </url>
-  
 </urlset>

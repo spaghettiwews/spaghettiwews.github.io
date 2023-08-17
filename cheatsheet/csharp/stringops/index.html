@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | String Operations</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -41,21 +41,21 @@
         <time>Saturday, March 9, 2019</time>
 
         <p><strong>Compare</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">String.Compare(stra, strb, <span style="color:#66d9ef">case</span>, ci)
-</code></pre></div><p>bool case – true for case insensitive<!-- raw HTML omitted -->ci – new CultureInfo(&ldquo;en-US&rdquo;)<!-- raw HTML omitted -->returns: &lt; 0 if <code>a &lt; b</code>, 0 if <code>a = b</code>, 1 if <code>a &gt; b</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>String.Compare(stra, strb, <span style="color:#66d9ef">case</span>, ci)
+</span></span></code></pre></div><p>bool case – true for case insensitive<!-- raw HTML omitted -->ci – new CultureInfo(&ldquo;en-US&rdquo;)<!-- raw HTML omitted -->returns: &lt; 0 if <code>a &lt; b</code>, 0 if <code>a = b</code>, 1 if <code>a &gt; b</code></p>
 <p><strong>IndexOf</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">str.IndexOf(val, start, num)
-</code></pre></div><p>val – string to search for<!-- raw HTML omitted -->start – where to begin in string<!-- raw HTML omitted -->num – number of chars to search<!-- raw HTML omitted -->returns (–1) if no match.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>str.IndexOf(val, start, num)
+</span></span></code></pre></div><p>val – string to search for<!-- raw HTML omitted -->start – where to begin in string<!-- raw HTML omitted -->num – number of chars to search<!-- raw HTML omitted -->returns (–1) if no match.</p>
 <p><strong>LastIndexOf</strong></p>
 <p>Search from end of string.</p>
 <p><strong>Replace</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">newstr = oldstr.Replace(<span style="color:#e6db74">&#34;old&#34;</span>,<span style="color:#e6db74">&#34;new&#34;</span>);
-</code></pre></div><p><strong>Split</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">Char[] delim = {<span style="color:#960050;background-color:#1e0010">‘</span> <span style="color:#960050;background-color:#1e0010">‘</span>, <span style="color:#960050;background-color:#1e0010">‘</span>,<span style="color:#960050;background-color:#1e0010">’</span>};
-<span style="color:#66d9ef">string</span> w = <span style="color:#e6db74">&#34;Kim, Joanna Leslie&#34;</span>; 
-<span style="color:#75715e">// create array with three names
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">string</span>[] names= w.Split(delim);
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>newstr = oldstr.Replace(<span style="color:#e6db74">&#34;old&#34;</span>,<span style="color:#e6db74">&#34;new&#34;</span>);
+</span></span></code></pre></div><p><strong>Split</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Char[] delim = {<span style="color:#960050;background-color:#1e0010">‘</span> <span style="color:#960050;background-color:#1e0010">‘</span>, <span style="color:#960050;background-color:#1e0010">‘</span>,<span style="color:#960050;background-color:#1e0010">’</span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">string</span> w = <span style="color:#e6db74">&#34;Kim, Joanna Leslie&#34;</span>; 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// create array with three names</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">string</span>[] names= w.Split(delim);
+</span></span></code></pre></div>
         <hr />
 <time><em>Last updated: Wednesday, March 13, 2019</em></time>
 
@@ -66,7 +66,7 @@
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

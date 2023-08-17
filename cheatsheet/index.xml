@@ -2,13 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheatsheets on a blog of spaghettiwews</title>
-    <link>https://wews.co.zw/cheatsheet/</link>
+    <link>https://spaghettiwews.github.io/cheatsheet/</link>
     <description>Recent content in Cheatsheets on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    
-	<atom:link href="https://wews.co.zw/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 12 Mar 2019 19:05:54 +0200</lastBuildDate><atom:link href="https://spaghettiwews.github.io/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | Fixing the WP All Import caching issue with a quick hack</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -42,9 +42,8 @@
 
         <p>There&rsquo;s an annoying caching issue I&rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.</p>
 <p>The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.</p>
-<figure>
-    <img src="https://wews.co.zw/images/Annotation%202020-02-14%20161802.png"
-         alt="WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog" width="100%"/> <figcaption>
+<figure><img src="https://spaghettiwews.github.io/images/Annotation%202020-02-14%20161802.png"
+         alt="WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog" width="100%"/><figcaption>
             <p>WP All Import &lsquo;import file location&rsquo; setup dialog</p>
         </figcaption>
 </figure>
@@ -56,12 +55,12 @@
 <p>I&rsquo;m not hosting on with any of those companies nor do I have time to troubleshoot with the hosting team to fix this &ldquo;the right way&rdquo;. It&rsquo;s 16:30, on a Friday.</p>
 <p>After incessantly googling for an easy solution without success, the easiest one I could think of was to use a cache-busting technique that I&rsquo;ve seen used to solve browser caching issues with assets like CSS and JS. i.e. <em>adding a querystring parameter with a random value to the URL of the asset.</em></p>
 <p>First we need to find the function that gets called to download the file at the URL we provide. A quick vscode search finds us the function: <code>get_file_curl</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">if ( ! function_exists(&#39;get_file_curl&#39;) ):
-	function get_file_curl($url, $fullpath, $to_variable = false, $iteration = false) {
-		if ( ! preg_match(&#39;%^(http|ftp)s?://%i&#39;, $url) ) return false;
-		$uid = uniqid();
-        $response = wp_remote_get($url.&#34;?v=&#34;.$uid);
-</code></pre></div><p>&hellip;adding the parameter <code>?v</code> to the URL, with a random value <code>$uid</code> every time <code>get_file_curl</code> gets called means that the server thinks it&rsquo;s downloading a new file each time. Therefore, instead of reaching for the cached copy it will always download the actual updated file guaranteeing that the our products are updated with the latest data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ( <span style="color:#f92672">!</span> <span style="color:#a6e22e">function_exists</span>(<span style="color:#e6db74">&#39;get_file_curl&#39;</span>) )<span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">get_file_curl</span>($url, $fullpath, $to_variable <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>, $iteration <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> ( <span style="color:#f92672">!</span> <span style="color:#a6e22e">preg_match</span>(<span style="color:#e6db74">&#39;%^(http|ftp)s?://%i&#39;</span>, $url) ) <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>		$uid <span style="color:#f92672">=</span> <span style="color:#a6e22e">uniqid</span>();
+</span></span><span style="display:flex;"><span>        $response <span style="color:#f92672">=</span> <span style="color:#a6e22e">wp_remote_get</span>($url<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;?v=&#34;</span><span style="color:#f92672">.</span>$uid);
+</span></span></code></pre></div><p>&hellip;adding the parameter <code>?v</code> to the URL, with a random value <code>$uid</code> every time <code>get_file_curl</code> gets called means that the server thinks it&rsquo;s downloading a new file each time. Therefore, instead of reaching for the cached copy it will always download the actual updated file guaranteeing that the our products are updated with the latest data.</p>
 
         <hr />
 <time><em>Last updated: Saturday, March 14, 2020</em></time>
@@ -73,7 +72,7 @@
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

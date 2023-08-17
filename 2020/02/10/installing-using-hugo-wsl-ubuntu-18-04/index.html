@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | How to install/use Hugo in WSL (Ubuntu 18.04)</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -45,17 +45,17 @@
 <h2 id="installing-hugo">Installing Hugo</h2>
 <p>I like installing Hugo using the tarball/binary method as it does not require me to install any arcane package managers beforehand.</p>
 <p>The following commands run in succession will download the latest tarball version <em>(at the time of writing)</em> of Hugo to my <code>$HOME</code> directory, and extract the binary therein into my <code>/usr/local/bin/</code> directory. The last command deletes the tarball from your <code>$HOME</code> directory.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~
-wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.tar.gz
-sudo tar -C /usr/local/bin -xzf hugo_$VERSION_$OS-$ARCH.tar.gz
-cd ~ <span style="color:#f92672">&amp;&amp;</span> rm hugo_0.64.1_Linux-64bit.tar.gz
-</code></pre></div><h2 id="downloading-the-site-and-its-theme">Downloading the site and its theme</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~
+</span></span><span style="display:flex;"><span>wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.tar.gz
+</span></span><span style="display:flex;"><span>sudo tar -C /usr/local/bin -xzf hugo_$VERSION_$OS-$ARCH.tar.gz
+</span></span><span style="display:flex;"><span>cd ~ <span style="color:#f92672">&amp;&amp;</span> rm hugo_0.64.1_Linux-64bit.tar.gz
+</span></span></code></pre></div><h2 id="downloading-the-site-and-its-theme">Downloading the site and its theme</h2>
 <p>I setup my site&rsquo;s theme as a <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">git submodule</a> because it&rsquo;s easier to manage that way I think. Once I&rsquo;ve cloned my site&rsquo;s git repo I need to run <code>git submodule update</code> in order to download the theme from its repository into my <code>/themes</code> folder. The <code>--recursive</code> flag finds any other submodules within my repo and downloads them as well&hellip; recursively.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git submodule update --init --recursive
-</code></pre></div><h2 id="usage">Usage</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule update --init --recursive
+</span></span></code></pre></div><h2 id="usage">Usage</h2>
 <p>Once all of the above is done, I can then run <code>hugo server --ignoreCache --disableFastRender</code> from the site root to serve the site on the default URL: http://localhost:1313.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server --ignoreCache --disableFastRender
-</code></pre></div><p>To create a new blog post I run <code>hugo new post/title-of-post.md</code>, edit the newly created .md file in <code>/content/post/</code>, commit and push the changes. That&rsquo;s it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server --ignoreCache --disableFastRender
+</span></span></code></pre></div><p>To create a new blog post I run <code>hugo new post/title-of-post.md</code>, edit the newly created .md file in <code>/content/post/</code>, commit and push the changes. That&rsquo;s it.</p>
 <p>The build and deployment step is currently handled by a CircleCI workflow that compiles the source to HTML/CSS/JS and deploys <strong>that</strong> to another Github Pages repo. I will document that part in another post. Maybe.</p>
 
         <hr />
@@ -68,7 +68,7 @@ cd ~ <span style="color:#f92672">&amp;&amp;</span> rm hugo_0.64.1_Linux-64bit.ta
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

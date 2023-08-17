@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | How not to write an CI/CD build pipeline</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -42,17 +42,17 @@
 
         <p>If your build workflow/pipeline triggers on a <code>push</code> or <code>merge</code> to <code>master</code> and it needs push some changes back upstream, say for Github Pages or something, make sure it does so to a seperate branch or a submodule.</p>
 <p>It seems obvious but I just wrote a workflow that did the complete opposite of that and got this Git error whenever I tried to push a change to the repo. <em>The build was obviously completing its run, committing new changes to <code>master</code> before I could do a git pull, and push my local modifications</em>. I must admit, I was rather confused for a moment before realising my mistake.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> ! <span style="color:#f92672">[</span>rejected<span style="color:#f92672">]</span>        master -&gt; master <span style="color:#f92672">(</span>fetch first<span style="color:#f92672">)</span>
-error: failed to push some refs to <span style="color:#e6db74">&#39;git@github.com:spaghettiwews/trailers.git&#39;</span>
-hint: Updates were rejected because the remote contains work that you <span style="color:#66d9ef">do</span>
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: <span style="color:#f92672">(</span>e.g., <span style="color:#e6db74">&#39;git pull ...&#39;</span><span style="color:#f92672">)</span> before pushing again.
-hint: See the <span style="color:#e6db74">&#39;Note about fast-forwards&#39;</span> in <span style="color:#e6db74">&#39;git push --help&#39;</span> <span style="color:#66d9ef">for</span> details.
-</code></pre></div><p>I ended up with 200+ commits in the space of 45 minutes (<em>after unknowingly kicking off my infinite loop, I had gone off to do other things, chuffed that the workflow was now working as expected</em>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> ! <span style="color:#f92672">[</span>rejected<span style="color:#f92672">]</span>        master -&gt; master <span style="color:#f92672">(</span>fetch first<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>error: failed to push some refs to <span style="color:#e6db74">&#39;git@github.com:spaghettiwews/trailers.git&#39;</span>
+</span></span><span style="display:flex;"><span>hint: Updates were rejected because the remote contains work that you <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>hint: not have locally. This is usually caused by another repository pushing
+</span></span><span style="display:flex;"><span>hint: to the same ref. You may want to first integrate the remote changes
+</span></span><span style="display:flex;"><span>hint: <span style="color:#f92672">(</span>e.g., <span style="color:#e6db74">&#39;git pull ...&#39;</span><span style="color:#f92672">)</span> before pushing again.
+</span></span><span style="display:flex;"><span>hint: See the <span style="color:#e6db74">&#39;Note about fast-forwards&#39;</span> in <span style="color:#e6db74">&#39;git push --help&#39;</span> <span style="color:#66d9ef">for</span> details.
+</span></span></code></pre></div><p>I ended up with 200+ commits in the space of 45 minutes (<em>after unknowingly kicking off my infinite loop, I had gone off to do other things, chuffed that the workflow was now working as expected</em>).</p>
 <p>Luckily, this was on the free Github Actions plan. Can you imagine doing something like this on a paid plan, on a Friday, not realising it and knocking off for the weekend. 😂</p>
 <p><strong>NB:</strong> To end the loop I had to edit the workflow file directly on Github, temporarily commenting out the part that pushing changes to the repo.</p>
-<p><img src="https://wews.co.zw/images/Screenshot_2020-04-03-spaghettiwews-trailers.png" alt="so much for a clean commit history"></p>
+<p><img src="https://spaghettiwews.github.io/images/Screenshot_2020-04-03-spaghettiwews-trailers.png" alt="so much for a clean commit history"></p>
 
         <hr />
 <time><em>Last updated: Sunday, April 5, 2020</em></time>
@@ -64,7 +64,7 @@ hint: See the <span style="color:#e6db74">&#39;Note about fast-forwards&#39;</sp
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

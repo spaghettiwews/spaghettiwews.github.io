@@ -2,82 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C# on a blog of spaghettiwews</title>
-    <link>https://wews.co.zw/cheatsheet/csharp/</link>
+    <link>https://spaghettiwews.github.io/cheatsheet/csharp/</link>
     <description>Recent content in C# on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Mar 2019 19:37:37 +0200</lastBuildDate>
-    
-	<atom:link href="https://wews.co.zw/cheatsheet/csharp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 07 Mar 2019 19:37:37 +0200</lastBuildDate><atom:link href="https://spaghettiwews.github.io/cheatsheet/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using the C# Compiler at the Command Line</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/compiler/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/compiler/</link>
       <pubDate>Tue, 12 Mar 2019 19:05:54 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/compiler/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/compiler/</guid>
       <description>C:\&amp;gt;csc /t:library /out:reslib.dll mysource.cs csc /t:winexe /r:ctls1.dll /r:ctls2.dll winapp.cs csc /keyfile:strongkey.snk secure.cs </description>
     </item>
     
     <item>
       <title>Using the System.Text.RegularExpressions.Regex class</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/regex/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/regex/</link>
       <pubDate>Tue, 12 Mar 2019 18:52:23 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/regex/</guid>
-      <description>string zipexp = @&amp;#34;\d{5}((-|\s)?\d{4})?$&amp;#34;; string addr = &amp;#34;W.44th St, New York, NY 10017-0233&amp;#34;; Match m = Regex.Match(addr,zipexp); // Static method Regex zipRegex = new Regex(zipexp); m = zipRegex.Match(addr); // Use Regex Object Console.WriteLine(m.Value); // 10017-0233    Pattern Description Example     |Match one or more occurrence |ab+c matches abc, abbc   |Match zero or more occurrences |ab*c matches ac, abbc ? |Matches zero or one occurrence |ab?</description>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/regex/</guid>
+      <description>string zipexp = @&amp;#34;\d{5}((-|\s)?\d{4})?$&amp;#34;; string addr = &amp;#34;W.44th St, New York, NY 10017-0233&amp;#34;; Match m = Regex.Match(addr,zipexp); // Static method Regex zipRegex = new Regex(zipexp); m = zipRegex.Match(addr); // Use Regex Object Console.WriteLine(m.Value); // 10017-0233 Pattern Description Example |Match one or more occurrence |ab+c matches abc, abbc |Match zero or more occurrences |abc matches ac, abbc ? |Matches zero or one occurrence |ab?c matches ac, abc \d \D |Match decimal digit or non-digit (\D) |\d\d matches 01, 55 \w \W |Match any word character or non-char |\w equals [a-zA-Z0-9_] \s \S |Match whitespace or non-whitespace |\d\s\d+ matches 246 98 |Match any character in set |[aeiou]n matches in, on [^ ] |Match any character not in set |[^aeiou] matches r or 2 a | b |Either a or b |jpg|jpeg|gif matches .</description>
     </item>
     
     <item>
       <title>Formatting Date Values</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/formattingdatevalues/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/formattingdatevalues/</link>
       <pubDate>Tue, 12 Mar 2019 14:27:08 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/formattingdatevalues/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/formattingdatevalues/</guid>
       <description>DateTime Formatting: (January 19, 2005 16:05:20) en-US
-   Format Value Displayed Format Value Displayed     d 1/19/2005 Y or y January, 2005   D Wednesday, January 19, 2005 t 4:05 PM   f Wednesday, January 19, 2005 4:05:20 PM T 4:05:20 PM   F Wednesday, January 19, 2005 4:05 PM s 2005-01-19T16:05:20   g 1/19/2005 4:05 PM u 2005-01-19 16:05:20Z   G 1/19/2005 4:05:20 PM U Wednesday, January 19, 2005 21:05:20PM   M or m January 19      </description>
+Format Value Displayed Format Value Displayed d 1/19/2005 Y or y January, 2005 D Wednesday, January 19, 2005 t 4:05 PM f Wednesday, January 19, 2005 4:05:20 PM T 4:05:20 PM F Wednesday, January 19, 2005 4:05 PM s 2005-01-19T16:05:20 g 1/19/2005 4:05 PM u 2005-01-19 16:05:20Z G 1/19/2005 4:05:20 PM U Wednesday, January 19, 2005 21:05:20PM M or m January 19 </description>
     </item>
     
     <item>
       <title>Formatting Numeric Values</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/formattingnumericvalues/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/formattingnumericvalues/</link>
       <pubDate>Sun, 10 Mar 2019 18:04:04 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/formattingnumericvalues/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/formattingnumericvalues/</guid>
       <description>Format Item Syntax: {index[,alignment] [:format string]}
-index – Specifies element in list of values to which format is applied.alignment – Indicates minimum width (in characters) to display value.format string – Contains the code that specifies the format of the displayed value.
-// Example: String.Format(&amp;#34;Price is: {0:C2}&amp;#34;, 49.95); // output: Price is: $ 49.95    Format Specifier Pattern Value Description     C or c {0:C2}, 1388.55 $ 1388.</description>
+index – Specifies element in list of values to which format is applied. alignment – Indicates minimum width (in characters) to display value. format string – Contains the code that specifies the format of the displayed value.
+// Example: String.Format(&amp;#34;Price is: {0:C2}&amp;#34;, 49.95); // output: Price is: $ 49.95 Format Specifier Pattern Value Description C or c {0:C2}, 1388.55 $ 1388.55 Currency. D or d {0:D5}, 45 00045 Must be integer value.</description>
     </item>
     
     <item>
       <title>DateTime and TimeSpan</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/datetime/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/datetime/</link>
       <pubDate>Sun, 10 Mar 2019 12:32:31 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/datetime/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/datetime/</guid>
       <description>DateTime Constructor
 DateTime(yr, mo, day); DateTime(yr, mo, day, hr, min, sec); DateTime bday = new DateTime(1964,12,20,11,2,0); DateTime newyr= DateTime.Parse(&amp;#34;1/1/2005&amp;#34;); DateTime currdt = DateTime.Now; // also AddHours, AddMonths, AddYears DateTime tomorrow = currdt.AddDays(1); TimeSpan diff = currdt.Subtract(bday); // 14795 days from 12/20/64 to 6/24/05 Console.WriteLine(&amp;#34;{0}&amp;#34;, diff.Days); // TimeSpan(hrs, min, sec) TimeSpan ts = new TimeSpan(6, 30, 10); // also FromMinutes, FromHours, FromDays TimeSpan ts = TimeSpan.FromSeconds(120); TimeSpan ts = ts2 – ts1; // +,-,&amp;gt;,&amp;lt;,==, !</description>
     </item>
     
     <item>
       <title>System.Text.StringBuilder</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/stringbuilder/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/stringbuilder/</link>
       <pubDate>Sun, 10 Mar 2019 12:03:26 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/stringbuilder/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/stringbuilder/</guid>
       <description>Constructor
-StringBuilder sb = new StringBuilder(); StringBuilder sb = new StringBuilder(mystring); StringBuilder sb = new StringBuilder(mystring,capacity); mystring – Initial value of StringBuilder objectcapacity – Initial size (characters) of buffer.
+StringBuilder sb = new StringBuilder(); StringBuilder sb = new StringBuilder(mystring); StringBuilder sb = new StringBuilder(mystring,capacity); mystring – Initial value of StringBuilder object capacity – Initial size (characters) of buffer.
 Using StringBuilderMembers
 decimal bmi = 22.2M; int wt = 168; StringBuilder sb = new StringBuilder(&amp;#34;My weight is &amp;#34;); sb = sb.Append(wt); // can append number sb = sb.Append(&amp;#34; and my bmi is &amp;#34;).Append(bmi); // my weight is 168 and my bmi is 22.</description>
     </item>
     
     <item>
       <title>String Operations</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/stringops/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/stringops/</link>
       <pubDate>Sat, 09 Mar 2019 07:44:37 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/stringops/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/stringops/</guid>
       <description>Compare
 String.Compare(stra, strb, case, ci) bool case – true for case insensitiveci – new CultureInfo(&amp;ldquo;en-US&amp;rdquo;)returns: &amp;lt; 0 if a &amp;lt; b, 0 if a = b, 1 if a &amp;gt; b
 IndexOf
@@ -91,22 +87,22 @@ Char[] delim = {‘ ‘, ‘,’}; string w = &amp;#34;Kim, Joanna Leslie&amp;#3
     
     <item>
       <title>Arrays</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/arrays/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/arrays/</link>
       <pubDate>Sat, 09 Mar 2019 07:32:21 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/arrays/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/arrays/</guid>
       <description>Declaration
 int[] numArray = {1903, 1907, 1910}; int[] numArray = new int[3]; // 3 rows and 2 columns int[ , ] nums = {{1907, 1990}, {1904, 1986}, {1910, 1980}}; Array Operations
-Array.Sort(numArray); // sort ascending  // Sort begins at element 4 and sorts 10 elements Array.Sort(numArray, 4,10); // Use one array as a key and sort two arrays string[] values = {&amp;#34;Cary&amp;#34;, &amp;#34;Gary&amp;#34;, &amp;#34;Barbara&amp;#34;}; string[] keys = {&amp;#34;Grant&amp;#34;, &amp;#34;Cooper&amp;#34;, &amp;#34;Stanwyck&amp;#34;}; Array.</description>
+Array.Sort(numArray); // sort ascending // Sort begins at element 4 and sorts 10 elements Array.Sort(numArray, 4,10); // Use one array as a key and sort two arrays string[] values = {&amp;#34;Cary&amp;#34;, &amp;#34;Gary&amp;#34;, &amp;#34;Barbara&amp;#34;}; string[] keys = {&amp;#34;Grant&amp;#34;, &amp;#34;Cooper&amp;#34;, &amp;#34;Stanwyck&amp;#34;}; Array.</description>
     </item>
     
     <item>
       <title>Data Types</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/datatypes/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/datatypes/</link>
       <pubDate>Thu, 07 Mar 2019 19:30:34 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/datatypes/</guid>
-      <description>Primitive Size Example     string 2 bytes/char s = “reference”;   bool  b = true;   char 2 bytes ch = ‘a’;   byte 1 byte b = 0x78;   short 2 bytes Ival = 54;   int 4 bytes Ival = 540;   long 8 bytes ival = 5400;   float 4 bytes val = 54.</description>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/datatypes/</guid>
+      <description> Primitive Size Example string 2 bytes/char s = “reference”; bool b = true; char 2 bytes ch = ‘a’; byte 1 byte b = 0x78; short 2 bytes Ival = 54; int 4 bytes Ival = 540; long 8 bytes ival = 5400; float 4 bytes val = 54.0F; double 8 bytes val = 54.0D; decimal 16 bytes val = 54.0M </description>
     </item>
     
   </channel>

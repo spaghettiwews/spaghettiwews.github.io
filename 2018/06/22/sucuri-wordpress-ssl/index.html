@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | Using a reverse proxy to provide a secure connection to a WordPress site</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -53,26 +53,26 @@
 </blockquote>
 <h2 id="a-guide-read-a-reminder-for-myself">A guide (read: a reminder for myself)</h2>
 <ol>
-<li>the A records for both domain names <strong>example.com</strong> and <strong><a href="http://www.example.com">www.example.com</a></strong> need to point to the IP address provided by sucuri in order for them to be able to generate and install a valid LE cert for the domain</li>
+<li>the A records for both domain names <strong>example.com</strong> and <strong><a href="https://www.example.com">www.example.com</a></strong> need to point to the IP address provided by sucuri in order for them to be able to generate and install a valid LE cert for the domain</li>
 <li>once that is done, select Partial HTTPS under the HTTPS/SSL tab. Partial SSL because sucuri is reverse proxying to a non-https server. Full HTTPS is for when the hosting server already has an SSL cert installed - then it&rsquo;s an https-to-https connection all the way.</li>
 <li>Next up include the code below in your <strong>wp-config.php</strong> file to prevent the site from going into an infinite redirect loop. Read up more on this here: <a href="https://codex.wordpress.org/Administration_Over_SSL">https://codex.wordpress.org/Administration_Over_SSL</a></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/* Handle HTTPS Protocol */
-if ($_SERVER[&#39;HTTP_X_FORWARDED_PROTO&#39;] == &#39;https&#39;)
-	$_SERVER[&#39;HTTPS&#39;]=&#39;on&#39;;
-</code></pre></div><ol start="4">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#75715e">/* Handle HTTPS Protocol */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($_SERVER[<span style="color:#e6db74">&#39;HTTP_X_FORWARDED_PROTO&#39;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;https&#39;</span>)
+</span></span><span style="display:flex;"><span>	$_SERVER[<span style="color:#e6db74">&#39;HTTPS&#39;</span>]<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;on&#39;</span>;
+</span></span></code></pre></div><ol start="4">
 <li>change site and home url protocols to https</li>
 <li>lastly, your site will most likely still have some resources being loaded over insecure http. hunt these down and deeeestroy them. just kidding, just search &amp; replace absolute urls with relatives ones where you can. if some http resources still remain after that, figure it out son.</li>
 </ol>
 <h2 id="update-29082018">Update (29/08/2018)</h2>
 <p>While playing around with Content Security Policy I stumbled upon the <strong>directive</strong> <code>upgrade-insecure-requests</code> which tells a browser or user agent to load any resources with HTTP URLS over HTTPS instead. This directive is intended for sites that have a large number of HTTP URLs that would otherwise need to be re-written by hand.</p>
 <p>So instead of re-writing all those pesky insecure URLs by hand as suggested by an older version of myself, if possible, just use the CSP directive by adding it to your site&rsquo;s headers or by adding the below meta tag to your <code>head</code> section.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> meta tag in the head </span><span style="color:#75715e">--&gt;</span>
-&lt;<span style="color:#f92672">meta</span>
-  <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Content-Security-Policy&#34;</span>
-  <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;upgrade-insecure-requests&#34;</span>
-/&gt;
-</code></pre></div><h2 id="did-you-win">Did you win?</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- meta tag in the head --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Content-Security-Policy&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;upgrade-insecure-requests&#34;</span>
+</span></span><span style="display:flex;"><span>/&gt;
+</span></span></code></pre></div><h2 id="did-you-win">Did you win?</h2>
 <p>yes? good! now it&rsquo;s time feel good about yourself for completing this simple task by watching this <a href="https://www.youtube.com/watch?v=JrO46CJd9ns">video</a> ✌️</p>
 <h3 id="more-reading">More reading</h3>
 <ol>
@@ -91,7 +91,7 @@ if ($_SERVER[&#39;HTTP_X_FORWARDED_PROTO&#39;] == &#39;https&#39;)
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

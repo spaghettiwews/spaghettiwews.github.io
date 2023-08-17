@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | Fixing Doom Eternal&#39;s &#34;No Physical Devices Found&#34; Error. Well, not really.</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -40,7 +40,7 @@
         <h1>Fixing Doom Eternal&#39;s &#34;No Physical Devices Found&#34; Error. Well, not really.</h1>
         <time>Thursday, December 16, 2021</time>
 
-        <p><img src="https://wews.co.zw/images/dude-wheres-my-gpu-what-does-mine-say-dude-wheres-my-gpu.png" alt="&ldquo;doom, where&rsquo;s my gpu&rdquo;"></p>
+        <p><img src="https://spaghettiwews.github.io/images/dude-wheres-my-gpu-what-does-mine-say-dude-wheres-my-gpu.png" alt="&ldquo;doom, where&rsquo;s my gpu&rdquo;"></p>
 <p>I&rsquo;m keep running into this issue where my PC throws this error at me whenever I try and play Doom Eternal. It&rsquo;s annoying and the only solution I have found on the innernet that works is to disable the iGPU, start the game, and then re-enable it afterwards. This is obviously not ideal but whatever&hellip;</p>
 <p>Because I&rsquo;m lazy and hate clicking around the start menu to navigate to the device manager I googled to see if there&rsquo;s a way to to restart the iGPU from the terminal. As it turns out, there is.</p>
 <p>Enter <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil">PnPUtil</a>.</p>
@@ -54,28 +54,28 @@
 </ul>
 </blockquote>
 <p>Here&rsquo;s the command you run to enumerate devices of class: Display (i.e. the graphics devices) as well as its output. What we need here is the <code>Instance ID</code> of the iGPU, the AMD Radeon one.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">PS C:\WINDOWS\system32<span style="color:#ae81ff"></span>&gt; pnputil /enum-devices /class Display
-Microsoft PnP Utility
-
-Instance ID:                PCI\VEN_10DE&amp;DEV_1F12&amp;SUBSYS_1F111043&amp;REV_A1\4&amp;1293019d&amp;0&amp;0009
-Device Description:         NVIDIA GeForce RTX 2060 with Max-Q Design
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          NVIDIA
-Status:                     Started
-Driver Name:                oem89.inf
-
-Instance ID:                PCI\VEN_1002&amp;DEV_1636&amp;SUBSYS_1F111043&amp;REV_C5\4&amp;38c8dac&amp;0&amp;0041
-Device Description:         AMD Radeon(TM) Graphics
-Class Name:                 Display
-Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
-Manufacturer Name:          Advanced Micro Devices, Inc.
-Status:                     Started
-Driver Name:                oem2.inf
-Extension Driver Names:     oem12.inf
-</code></pre></div><p>With the <code>Instance ID</code> we can write a simple one-line Windows batch file that we&rsquo;ll run whenever we get this stupid error. This is obviously not a permanent fix but it at least allows us to start the game.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">pnputil /restart-device <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PCI\VEN_1002&amp;DEV_1636&amp;SUBSYS_1F111043&amp;REV_C5\4&amp;38c8dac&amp;0&amp;0041</span><span style="color:#e6db74">&#34;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>PS C:\WINDOWS\system32&gt; pnputil /enum-devices /class Display
+</span></span><span style="display:flex;"><span>Microsoft PnP Utility
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Instance ID:                PCI\VEN_10DE&amp;DEV_1F12&amp;SUBSYS_1F111043&amp;REV_A1\4&amp;1293019d&amp;0&amp;0009
+</span></span><span style="display:flex;"><span>Device Description:         NVIDIA GeForce RTX 2060 with Max-Q Design
+</span></span><span style="display:flex;"><span>Class Name:                 Display
+</span></span><span style="display:flex;"><span>Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+</span></span><span style="display:flex;"><span>Manufacturer Name:          NVIDIA
+</span></span><span style="display:flex;"><span>Status:                     Started
+</span></span><span style="display:flex;"><span>Driver Name:                oem89.inf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Instance ID:                PCI\VEN_1002&amp;DEV_1636&amp;SUBSYS_1F111043&amp;REV_C5\4&amp;38c8dac&amp;0&amp;0041
+</span></span><span style="display:flex;"><span>Device Description:         AMD Radeon(TM) Graphics
+</span></span><span style="display:flex;"><span>Class Name:                 Display
+</span></span><span style="display:flex;"><span>Class GUID:                 {4d36e968-e325-11ce-bfc1-08002be10318}
+</span></span><span style="display:flex;"><span>Manufacturer Name:          Advanced Micro Devices, Inc.
+</span></span><span style="display:flex;"><span>Status:                     Started
+</span></span><span style="display:flex;"><span>Driver Name:                oem2.inf
+</span></span><span style="display:flex;"><span>Extension Driver Names:     oem12.inf
+</span></span></code></pre></div><p>With the <code>Instance ID</code> we can write a simple one-line Windows batch file that we&rsquo;ll run whenever we get this stupid error. This is obviously not a permanent fix but it at least allows us to start the game.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>pnputil /restart-device <span style="color:#e6db74">&#34;PCI\VEN_1002&amp;DEV_1636&amp;SUBSYS_1F111043&amp;REV_C5\4&amp;38c8dac&amp;0&amp;0041&#34;</span>
+</span></span></code></pre></div>
         <hr />
 <time><em>Last updated: Friday, January 7, 2022</em></time>
 
@@ -86,7 +86,7 @@ Extension Driver Names:     oem12.inf
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | Using the System.Text.RegularExpressions.Regex class</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -40,13 +40,13 @@
         <h1>Using the System.Text.RegularExpressions.Regex class</h1>
         <time>Tuesday, March 12, 2019</time>
 
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">string</span> zipexp = <span style="color:#e6db74">@&#34;\d{5}((-|\s)?\d{4})?$&#34;</span>;
-<span style="color:#66d9ef">string</span> addr = <span style="color:#e6db74">&#34;W.44th St, New York, NY 10017-0233&#34;</span>;
-Match m = Regex.Match(addr,zipexp); <span style="color:#75715e">// Static method
-</span><span style="color:#75715e"></span>Regex zipRegex = <span style="color:#66d9ef">new</span> Regex(zipexp);
-m = zipRegex.Match(addr); <span style="color:#75715e">// Use Regex Object
-</span><span style="color:#75715e"></span>Console.WriteLine(m.Value); <span style="color:#75715e">// 10017-0233
-</span></code></pre></div><table>
+        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">string</span> zipexp = <span style="color:#e6db74">@&#34;\d{5}((-|\s)?\d{4})?$&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">string</span> addr = <span style="color:#e6db74">&#34;W.44th St, New York, NY 10017-0233&#34;</span>;
+</span></span><span style="display:flex;"><span>Match m = Regex.Match(addr,zipexp); <span style="color:#75715e">// Static method</span>
+</span></span><span style="display:flex;"><span>Regex zipRegex = <span style="color:#66d9ef">new</span> Regex(zipexp);
+</span></span><span style="display:flex;"><span>m = zipRegex.Match(addr); <span style="color:#75715e">// Use Regex Object</span>
+</span></span><span style="display:flex;"><span>Console.WriteLine(m.Value); <span style="color:#75715e">// 10017-0233</span>
+</span></span></code></pre></div><table>
 <thead>
 <tr>
 <th>Pattern</th>
@@ -59,12 +59,12 @@ m = zipRegex.Match(addr); <span style="color:#75715e">// Use Regex Object
 <li>|Match one or more occurrence |ab+c matches abc, abbc</li>
 </ul>
 <ul>
-<li>|Match zero or more occurrences |ab*c matches ac, abbc
+<li>|Match zero or more occurrences |ab<em>c matches ac, abbc
 ? |Matches zero or one occurrence |ab?c matches ac, abc
 \d \D |Match decimal digit or non-digit (\D) |\d\d matches 01, 55
 \w \W |Match any word character or non-char |\w equals [a-zA-Z0-9_]
-\s \S |Match whitespace or non-whitespace |\d*\s\d+ matches 246 98
-<input disabled="" type="checkbox">|Match any character in set |[aeiou]n matches in, on
+\s \S |Match whitespace or non-whitespace |\d</em>\s\d+ matches 246 98
+<input disabled="" type="checkbox"> |Match any character in set |[aeiou]n matches in, on
 [^ ] |Match any character not in set |[^aeiou] matches r or 2
 a | b |Either a or b |jpg|jpeg|gif matches .jpg
 \n \r \t |New line, carriage return, tab</li>
@@ -80,7 +80,7 @@ a | b |Either a or b |jpg|jpeg|gif matches .jpg
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

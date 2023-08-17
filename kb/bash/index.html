@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html><title>a blog of spaghettiwews | bash</title>
-<link rel="icon" href="https://wews.co.zw//images/favicon.svg" />
-<link rel="stylesheet" href=https://wews.co.zw/css/main.css />
-<script  src=https://wews.co.zw/js/main.js></script><body><header>
-  <a href="https://wews.co.zw/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
+<link rel="icon" href="https://spaghettiwews.github.io//images/favicon.svg" />
+<link rel="stylesheet" href=https://spaghettiwews.github.io/css/main.css />
+<script  src=https://spaghettiwews.github.io/js/main.js></script><body><header>
+  <a href="https://spaghettiwews.github.io/" id="logo" aria-label=a&#32;blog&#32;of&#32;spaghettiwews>a blog of spaghettiwews</a>
   <nav>
     <ul class="main-nav">
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://wews.co.zw/resume/" title="Resume">Resume</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--resume" href="https://spaghettiwews.github.io/resume/" title="Resume">Resume</a></li>
         
-            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://wews.co.zw/kb/" title="Knowledgebase">Knowledgebase</a></li>
+            <li><a class="main-nav__menuItem main-nav__menuItem--knowledgebase" href="https://spaghettiwews.github.io/kb/" title="Knowledgebase">Knowledgebase</a></li>
          
     </ul>
     <ul class="social-nav">
@@ -41,18 +41,18 @@
         <time>Monday, March 25, 2019</time>
 
         <h3 id="move-files-and-subdirectories-using-mv">Move files and subdirectories using mv</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv /path/source_directory/* /path/target_directory/
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv /path/source_directory/* /path/target_directory/
+</span></span></code></pre></div><hr>
 <h3 id="unzip-zip-file-into-another-directory">Unzip ZIP file into another directory</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">unzip -o filename.zip -d /path/target_directory/
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>unzip -o filename.zip -d /path/target_directory/
+</span></span></code></pre></div><hr>
 <h3 id="recover-deleted-text-datafiles">Recover deleted text data/files</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">grep -a -C <span style="color:#ae81ff">200</span> <span style="color:#e6db74">&#39;Unique string in text file&#39;</span> /dev/sdX &gt; /mnt/c/Users/Welington/Downloads/recovered.txt
-</code></pre></div><p>This will search partition <code>sdX</code> for data containing the unique string specified and write it to the file <code>recovered.txt</code>. Option <code>-C 200</code> will include 200 lines before and after each match, while option <code>-B 200</code> will only include the 200 before it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -a -C <span style="color:#ae81ff">200</span> <span style="color:#e6db74">&#39;Unique string in text file&#39;</span> /dev/sdX &gt; /mnt/c/Users/Welington/Downloads/recovered.txt
+</span></span></code></pre></div><p>This will search partition <code>sdX</code> for data containing the unique string specified and write it to the file <code>recovered.txt</code>. Option <code>-C 200</code> will include 200 lines before and after each match, while option <code>-B 200</code> will only include the 200 before it.</p>
 <hr>
 <h3 id="delete-all-files-and-directories-except-some">Delete all files and directories except some</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rm -rf !<span style="color:#f92672">(</span>*.png|.git|.gitignore|CNAME|.|..<span style="color:#f92672">)</span>
-</code></pre></div><p>This deletes all files and directories in the path where it is executed save for the ones that match the identifiers enclosed in the parentheses. For this command to work though, you must enable <strong>Extended Pattern Matching</strong> first running <code>shopt -s extglob</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf !<span style="color:#f92672">(</span>*.png|.git|.gitignore|CNAME|.|..<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>This deletes all files and directories in the path where it is executed save for the ones that match the identifiers enclosed in the parentheses. For this command to work though, you must enable <strong>Extended Pattern Matching</strong> first running <code>shopt -s extglob</code></p>
 
         <hr />
 <time><em>Last updated: Saturday, March 28, 2020</em></time>
@@ -64,7 +64,7 @@
   <nav class="footer-nav">
     <ul>
       
-        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://wews.co.zw/attribution/" title="Attribution">Attribution</a></li>
+        <li><a class="footer-nav__menuItem footer-nav__menuItem--attribution" href="https://spaghettiwews.github.io/attribution/" title="Attribution">Attribution</a></li>
       
     </ul>
   </nav>

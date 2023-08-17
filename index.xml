@@ -2,107 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on a blog of spaghettiwews</title>
-    <link>https://wews.co.zw/</link>
+    <link>https://spaghettiwews.github.io/</link>
     <description>Recent content in Home on a blog of spaghettiwews</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://wews.co.zw/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://spaghettiwews.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feeling nostalgia for my old game library and a 486SX PC</title>
-      <link>https://wews.co.zw/feeling-nostalgic/</link>
+      <link>https://spaghettiwews.github.io/feeling-nostalgic/</link>
       <pubDate>Fri, 07 Jan 2022 10:27:54 +0200</pubDate>
       
-      <guid>https://wews.co.zw/feeling-nostalgic/</guid>
+      <guid>https://spaghettiwews.github.io/feeling-nostalgic/</guid>
       <description>Last night I was installing some games for my almost 10yo nephew and thought I&amp;rsquo;d show him gameplay videos of some of the ones I grew up playing with my brothers on our Intel 486SX PC with all its 8Mb of RAM! Naturally, I ended up trawling the internet for all the games I could remember and found this archive of MS-DOS games on archive.org. Most of the games included therein are playable within the browser so I embedded them in the accordion below.</description>
     </item>
     
     <item>
       <title>Fixing Doom Eternal&#39;s &#34;No Physical Devices Found&#34; Error. Well, not really.</title>
-      <link>https://wews.co.zw/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</link>
+      <link>https://spaghettiwews.github.io/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</link>
       <pubDate>Thu, 16 Dec 2021 23:14:59 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</guid>
+      <guid>https://spaghettiwews.github.io/2021/12/16/fixing-doom-eternal-no-physical-devices-found-error/</guid>
       <description>I&amp;rsquo;m keep running into this issue where my PC throws this error at me whenever I try and play Doom Eternal. It&amp;rsquo;s annoying and the only solution I have found on the innernet that works is to disable the iGPU, start the game, and then re-enable it afterwards. This is obviously not ideal but whatever&amp;hellip;
 Because I&amp;rsquo;m lazy and hate clicking around the start menu to navigate to the device manager I googled to see if there&amp;rsquo;s a way to to restart the iGPU from the terminal.</description>
     </item>
     
     <item>
       <title>DDG being too clever for its own good</title>
-      <link>https://wews.co.zw/2021/08/07/ddg-being-too-clever-for-its-own-good/</link>
+      <link>https://spaghettiwews.github.io/2021/08/07/ddg-being-too-clever-for-its-own-good/</link>
       <pubDate>Sat, 07 Aug 2021 18:15:18 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2021/08/07/ddg-being-too-clever-for-its-own-good/</guid>
+      <guid>https://spaghettiwews.github.io/2021/08/07/ddg-being-too-clever-for-its-own-good/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Node.js</title>
-      <link>https://wews.co.zw/kb/node.js/</link>
+      <link>https://spaghettiwews.github.io/kb/node.js/</link>
       <pubDate>Sat, 23 May 2020 01:08:02 +0200</pubDate>
       
-      <guid>https://wews.co.zw/kb/node.js/</guid>
+      <guid>https://spaghettiwews.github.io/kb/node.js/</guid>
       <description>Diffence between tilde(~) and caret(^) in package.json? A tilde in front of the version number means that npm or yarn will update to, or use future patch versions of that library. Both the major and minor versions will not be changed. e.g. ~1.2.4 means use versions 1.2.4 &amp;lt; 1.3.0
 A caret in front of the version number means that npm or yarn will update to, or use future minor/patch versions of that library.</description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>https://wews.co.zw/kb/ubuntu/</link>
+      <link>https://spaghettiwews.github.io/kb/ubuntu/</link>
       <pubDate>Wed, 29 Apr 2020 22:16:36 +0200</pubDate>
       
-      <guid>https://wews.co.zw/kb/ubuntu/</guid>
+      <guid>https://spaghettiwews.github.io/kb/ubuntu/</guid>
       <description>What is /etc/apt/sources.list.d/ used for? The directory is used for adding new repositories without editing the central /etc/apt/sources.list file. Add a file with a unique name and the same format as /etc/apt/sources.list into this folder and it will be used by apt.</description>
     </item>
     
     <item>
       <title>Infinite scroll is bad</title>
-      <link>https://wews.co.zw/2020/04/15/infinite-scroll-is-bad/</link>
+      <link>https://spaghettiwews.github.io/2020/04/15/infinite-scroll-is-bad/</link>
       <pubDate>Wed, 15 Apr 2020 22:46:48 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2020/04/15/infinite-scroll-is-bad/</guid>
+      <guid>https://spaghettiwews.github.io/2020/04/15/infinite-scroll-is-bad/</guid>
       <description>A few weeks ago, I exhausted my free Google Drive storage quota, mostly with my phone&amp;rsquo;s photos backup. So, this week I decided I&amp;rsquo;d move the photos from Google Photos to OneDrive where I have more storage capacity, allowing me to continue backing up to Google.
 Naturally, I thought this was going to be a fairly easy exercise. I mean, it should be as simple as selecting all the photos, clicking download, and uploading the package to Onedrive, right?</description>
     </item>
     
     <item>
       <title>How not to write an CI/CD build pipeline</title>
-      <link>https://wews.co.zw/2020/04/03/how-not-write-infinite-build-loop/</link>
+      <link>https://spaghettiwews.github.io/2020/04/03/how-not-write-infinite-build-loop/</link>
       <pubDate>Fri, 03 Apr 2020 09:22:11 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2020/04/03/how-not-write-infinite-build-loop/</guid>
+      <guid>https://spaghettiwews.github.io/2020/04/03/how-not-write-infinite-build-loop/</guid>
       <description>If your build workflow/pipeline triggers on a push or merge to master and it needs push some changes back upstream, say for Github Pages or something, make sure it does so to a seperate branch or a submodule.
 It seems obvious but I just wrote a workflow that did the complete opposite of that and got this Git error whenever I tried to push a change to the repo. The build was obviously completing its run, committing new changes to master before I could do a git pull, and push my local modifications.</description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://wews.co.zw/kb/react/</link>
+      <link>https://spaghettiwews.github.io/kb/react/</link>
       <pubDate>Tue, 24 Mar 2020 00:15:36 +0200</pubDate>
       
-      <guid>https://wews.co.zw/kb/react/</guid>
+      <guid>https://spaghettiwews.github.io/kb/react/</guid>
       <description>props props are immutable: they are passed from the parent and are “owned” by the parent. To implement interactions, we introduce mutable state to the component. this.state is private to the component and can be changed by calling this.setState(). When the state updates, the component re-renders itself. https://linkedlist.org/react
 Hooks useState() returns/uses an array to destructure its return values. The reason it uses an array is that an object would require the destructuring to be done based on its property names - an array allows us to name the values whatever we want.</description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://wews.co.zw/kb/git/</link>
+      <link>https://spaghettiwews.github.io/kb/git/</link>
       <pubDate>Mon, 23 Mar 2020 23:17:49 +0200</pubDate>
       
-      <guid>https://wews.co.zw/kb/git/</guid>
+      <guid>https://spaghettiwews.github.io/kb/git/</guid>
       <description>Download submodules for the first time git submodule update --init --recursive This pulls all submodules using the latest revision that the parent repo is tracking, and not the latest revision from the submodule itself.
- Update submodule to its latest revision/commit on origin git submodule update --remote --merge This will update the submodule to the latest version on origin and update the commit SHA hash that the parent is tracking. You will need to commit this change to persist it.</description>
+Update submodule to its latest revision/commit on origin git submodule update --remote --merge This will update the submodule to the latest version on origin and update the commit SHA hash that the parent is tracking. You will need to commit this change to persist it.</description>
     </item>
     
     <item>
       <title>Attribution</title>
-      <link>https://wews.co.zw/attribution/</link>
+      <link>https://spaghettiwews.github.io/attribution/</link>
       <pubDate>Sat, 14 Mar 2020 16:40:17 +0200</pubDate>
       
-      <guid>https://wews.co.zw/attribution/</guid>
+      <guid>https://spaghettiwews.github.io/attribution/</guid>
       <description>Design This site&amp;rsquo;s design is based on that of Jessie Frazelle&amp;rsquo;s personal blog https://blog.jessfraz.com/. I made it into a theme called hugo-jessie that you can find here: https://github.com/spaghettiwews/hugo-jessie
 Icons The Github, LinkedIn, and RSS SVG icons used herein belong to Font Awesome and are made available for use under the Creative Commons Attribution 4.0 International license. You can read their license here: https://fontawesome.com/license
 Fonts The theme uses the IBM Plex font https://www.</description>
@@ -110,130 +106,130 @@ Fonts The theme uses the IBM Plex font https://www.</description>
     
     <item>
       <title>Troubleshooting</title>
-      <link>https://wews.co.zw/2020/02/28/troubleshooting/</link>
+      <link>https://spaghettiwews.github.io/2020/02/28/troubleshooting/</link>
       <pubDate>Fri, 28 Feb 2020 18:21:14 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2020/02/28/troubleshooting/</guid>
+      <guid>https://spaghettiwews.github.io/2020/02/28/troubleshooting/</guid>
       <description>This past week I had to troubleshoot a problem with a 4 year old WordPress/CiviCRM application that had largely gone untouched since its development. Recently, it had stopped rendering the frontend and was throwing an unhelpful error message that contained what would turn out to be misleading information later, &amp;ldquo;Sorry but we are not able to provide this at the moment. Please make sure the folder is writable&amp;rdquo;.
 Ummm ohkay?? Which folder?</description>
     </item>
     
     <item>
       <title>Fixing the WP All Import caching issue with a quick hack</title>
-      <link>https://wews.co.zw/2020/02/14/fix-wpallimport-caching-issue/</link>
+      <link>https://spaghettiwews.github.io/2020/02/14/fix-wpallimport-caching-issue/</link>
       <pubDate>Fri, 14 Feb 2020 16:06:03 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2020/02/14/fix-wpallimport-caching-issue/</guid>
+      <guid>https://spaghettiwews.github.io/2020/02/14/fix-wpallimport-caching-issue/</guid>
       <description>There&amp;rsquo;s an annoying caching issue I&amp;rsquo;ve been experiencing with WP All import, the WordPress CSV/XML plugin we use for importing products into WooCommerce from CSV/XML files.
 The way the plugin works is that you give it a URL to a CSV/XML file that it needs to download on a regular basis in order to update product data etc.
-  WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog
-  The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?</description>
+WP All Import &amp;lsquo;import file location&amp;rsquo; setup dialog
+The issue is that once the plugin downloads the file the first time an import runs, it caches it somewhere (or the server does?</description>
     </item>
     
     <item>
       <title>How to install/use Hugo in WSL (Ubuntu 18.04)</title>
-      <link>https://wews.co.zw/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</link>
+      <link>https://spaghettiwews.github.io/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</link>
       <pubDate>Mon, 10 Feb 2020 14:20:47 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</guid>
+      <guid>https://spaghettiwews.github.io/2020/02/10/installing-using-hugo-wsl-ubuntu-18-04/</guid>
       <description>It&amp;rsquo;s been a while since I wrote on this blog and today when I git cloned the blog repo and attempted to update it, I quickly realised that I could not for the life of me remember all of the commands I needed to run in order to download the theme submodule and deploy the site after writing a new post.
 So, for my future self and posterity&amp;rsquo;s sake in this post I will be documenting the commands I need for installing Hugo, downloading the site and its theme(s), creating a new post and deploying it:</description>
     </item>
     
     <item>
       <title>bash</title>
-      <link>https://wews.co.zw/kb/bash/</link>
+      <link>https://spaghettiwews.github.io/kb/bash/</link>
       <pubDate>Mon, 25 Mar 2019 09:03:04 +0200</pubDate>
       
-      <guid>https://wews.co.zw/kb/bash/</guid>
-      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/  Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/  Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and write it to the file recovered.txt. Option -C 200 will include 200 lines before and after each match, while option -B 200 will only include the 200 before it.</description>
+      <guid>https://spaghettiwews.github.io/kb/bash/</guid>
+      <description>Move files and subdirectories using mv mv /path/source_directory/* /path/target_directory/ Unzip ZIP file into another directory unzip -o filename.zip -d /path/target_directory/ Recover deleted text data/files grep -a -C 200 &amp;#39;Unique string in text file&amp;#39; /dev/sdX &amp;gt; /mnt/c/Users/Welington/Downloads/recovered.txt This will search partition sdX for data containing the unique string specified and write it to the file recovered.txt. Option -C 200 will include 200 lines before and after each match, while option -B 200 will only include the 200 before it.</description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://wews.co.zw/kb/ssh/</link>
+      <link>https://spaghettiwews.github.io/kb/ssh/</link>
       <pubDate>Wed, 13 Mar 2019 23:24:21 +0200</pubDate>
       
-      <guid>https://wews.co.zw/kb/ssh/</guid>
+      <guid>https://spaghettiwews.github.io/kb/ssh/</guid>
       <description>Log into remote server ssh -l username example.com </description>
     </item>
     
     <item>
       <title>Creating a personal knowledgebase</title>
-      <link>https://wews.co.zw/2019/03/13/creating-personal-knowledgebase/</link>
+      <link>https://spaghettiwews.github.io/2019/03/13/creating-personal-knowledgebase/</link>
       <pubDate>Wed, 13 Mar 2019 20:42:05 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2019/03/13/creating-personal-knowledgebase/</guid>
+      <guid>https://spaghettiwews.github.io/2019/03/13/creating-personal-knowledgebase/</guid>
       <description>I recently got this fleeting idea that I should probably start keeping a repository of all the little random tidbits of technical knowledge that I learn on a daily - mostly through reading blogs and doing stuff at work - as a way of remembering these things for future use/reference. The contents would range from code snippets, bash commands that I always seem to forget, definitions (glossary of terms), ideas, concepts, really just anything I thought useful at the time.</description>
     </item>
     
     <item>
       <title>Using the C# Compiler at the Command Line</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/compiler/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/compiler/</link>
       <pubDate>Tue, 12 Mar 2019 19:05:54 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/compiler/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/compiler/</guid>
       <description>C:\&amp;gt;csc /t:library /out:reslib.dll mysource.cs csc /t:winexe /r:ctls1.dll /r:ctls2.dll winapp.cs csc /keyfile:strongkey.snk secure.cs </description>
     </item>
     
     <item>
       <title>Using the System.Text.RegularExpressions.Regex class</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/regex/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/regex/</link>
       <pubDate>Tue, 12 Mar 2019 18:52:23 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/regex/</guid>
-      <description>string zipexp = @&amp;#34;\d{5}((-|\s)?\d{4})?$&amp;#34;; string addr = &amp;#34;W.44th St, New York, NY 10017-0233&amp;#34;; Match m = Regex.Match(addr,zipexp); // Static method Regex zipRegex = new Regex(zipexp); m = zipRegex.Match(addr); // Use Regex Object Console.WriteLine(m.Value); // 10017-0233    Pattern Description Example     |Match one or more occurrence |ab+c matches abc, abbc   |Match zero or more occurrences |ab*c matches ac, abbc ? |Matches zero or one occurrence |ab?</description>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/regex/</guid>
+      <description>string zipexp = @&amp;#34;\d{5}((-|\s)?\d{4})?$&amp;#34;; string addr = &amp;#34;W.44th St, New York, NY 10017-0233&amp;#34;; Match m = Regex.Match(addr,zipexp); // Static method Regex zipRegex = new Regex(zipexp); m = zipRegex.Match(addr); // Use Regex Object Console.WriteLine(m.Value); // 10017-0233 Pattern Description Example |Match one or more occurrence |ab+c matches abc, abbc |Match zero or more occurrences |abc matches ac, abbc ? |Matches zero or one occurrence |ab?c matches ac, abc \d \D |Match decimal digit or non-digit (\D) |\d\d matches 01, 55 \w \W |Match any word character or non-char |\w equals [a-zA-Z0-9_] \s \S |Match whitespace or non-whitespace |\d\s\d+ matches 246 98 |Match any character in set |[aeiou]n matches in, on [^ ] |Match any character not in set |[^aeiou] matches r or 2 a | b |Either a or b |jpg|jpeg|gif matches .</description>
     </item>
     
     <item>
       <title>Formatting Date Values</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/formattingdatevalues/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/formattingdatevalues/</link>
       <pubDate>Tue, 12 Mar 2019 14:27:08 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/formattingdatevalues/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/formattingdatevalues/</guid>
       <description>DateTime Formatting: (January 19, 2005 16:05:20) en-US
-   Format Value Displayed Format Value Displayed     d 1/19/2005 Y or y January, 2005   D Wednesday, January 19, 2005 t 4:05 PM   f Wednesday, January 19, 2005 4:05:20 PM T 4:05:20 PM   F Wednesday, January 19, 2005 4:05 PM s 2005-01-19T16:05:20   g 1/19/2005 4:05 PM u 2005-01-19 16:05:20Z   G 1/19/2005 4:05:20 PM U Wednesday, January 19, 2005 21:05:20PM   M or m January 19      </description>
+Format Value Displayed Format Value Displayed d 1/19/2005 Y or y January, 2005 D Wednesday, January 19, 2005 t 4:05 PM f Wednesday, January 19, 2005 4:05:20 PM T 4:05:20 PM F Wednesday, January 19, 2005 4:05 PM s 2005-01-19T16:05:20 g 1/19/2005 4:05 PM u 2005-01-19 16:05:20Z G 1/19/2005 4:05:20 PM U Wednesday, January 19, 2005 21:05:20PM M or m January 19 </description>
     </item>
     
     <item>
       <title>Formatting Numeric Values</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/formattingnumericvalues/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/formattingnumericvalues/</link>
       <pubDate>Sun, 10 Mar 2019 18:04:04 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/formattingnumericvalues/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/formattingnumericvalues/</guid>
       <description>Format Item Syntax: {index[,alignment] [:format string]}
-index – Specifies element in list of values to which format is applied.alignment – Indicates minimum width (in characters) to display value.format string – Contains the code that specifies the format of the displayed value.
-// Example: String.Format(&amp;#34;Price is: {0:C2}&amp;#34;, 49.95); // output: Price is: $ 49.95    Format Specifier Pattern Value Description     C or c {0:C2}, 1388.55 $ 1388.</description>
+index – Specifies element in list of values to which format is applied. alignment – Indicates minimum width (in characters) to display value. format string – Contains the code that specifies the format of the displayed value.
+// Example: String.Format(&amp;#34;Price is: {0:C2}&amp;#34;, 49.95); // output: Price is: $ 49.95 Format Specifier Pattern Value Description C or c {0:C2}, 1388.55 $ 1388.55 Currency. D or d {0:D5}, 45 00045 Must be integer value.</description>
     </item>
     
     <item>
       <title>DateTime and TimeSpan</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/datetime/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/datetime/</link>
       <pubDate>Sun, 10 Mar 2019 12:32:31 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/datetime/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/datetime/</guid>
       <description>DateTime Constructor
 DateTime(yr, mo, day); DateTime(yr, mo, day, hr, min, sec); DateTime bday = new DateTime(1964,12,20,11,2,0); DateTime newyr= DateTime.Parse(&amp;#34;1/1/2005&amp;#34;); DateTime currdt = DateTime.Now; // also AddHours, AddMonths, AddYears DateTime tomorrow = currdt.AddDays(1); TimeSpan diff = currdt.Subtract(bday); // 14795 days from 12/20/64 to 6/24/05 Console.WriteLine(&amp;#34;{0}&amp;#34;, diff.Days); // TimeSpan(hrs, min, sec) TimeSpan ts = new TimeSpan(6, 30, 10); // also FromMinutes, FromHours, FromDays TimeSpan ts = TimeSpan.FromSeconds(120); TimeSpan ts = ts2 – ts1; // +,-,&amp;gt;,&amp;lt;,==, !</description>
     </item>
     
     <item>
       <title>System.Text.StringBuilder</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/stringbuilder/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/stringbuilder/</link>
       <pubDate>Sun, 10 Mar 2019 12:03:26 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/stringbuilder/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/stringbuilder/</guid>
       <description>Constructor
-StringBuilder sb = new StringBuilder(); StringBuilder sb = new StringBuilder(mystring); StringBuilder sb = new StringBuilder(mystring,capacity); mystring – Initial value of StringBuilder objectcapacity – Initial size (characters) of buffer.
+StringBuilder sb = new StringBuilder(); StringBuilder sb = new StringBuilder(mystring); StringBuilder sb = new StringBuilder(mystring,capacity); mystring – Initial value of StringBuilder object capacity – Initial size (characters) of buffer.
 Using StringBuilderMembers
 decimal bmi = 22.2M; int wt = 168; StringBuilder sb = new StringBuilder(&amp;#34;My weight is &amp;#34;); sb = sb.Append(wt); // can append number sb = sb.Append(&amp;#34; and my bmi is &amp;#34;).Append(bmi); // my weight is 168 and my bmi is 22.</description>
     </item>
     
     <item>
       <title>String Operations</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/stringops/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/stringops/</link>
       <pubDate>Sat, 09 Mar 2019 07:44:37 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/stringops/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/stringops/</guid>
       <description>Compare
 String.Compare(stra, strb, case, ci) bool case – true for case insensitiveci – new CultureInfo(&amp;ldquo;en-US&amp;rdquo;)returns: &amp;lt; 0 if a &amp;lt; b, 0 if a = b, 1 if a &amp;gt; b
 IndexOf
@@ -247,70 +243,69 @@ Char[] delim = {‘ ‘, ‘,’}; string w = &amp;#34;Kim, Joanna Leslie&amp;#3
     
     <item>
       <title>Arrays</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/arrays/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/arrays/</link>
       <pubDate>Sat, 09 Mar 2019 07:32:21 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/arrays/</guid>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/arrays/</guid>
       <description>Declaration
 int[] numArray = {1903, 1907, 1910}; int[] numArray = new int[3]; // 3 rows and 2 columns int[ , ] nums = {{1907, 1990}, {1904, 1986}, {1910, 1980}}; Array Operations
-Array.Sort(numArray); // sort ascending  // Sort begins at element 4 and sorts 10 elements Array.Sort(numArray, 4,10); // Use one array as a key and sort two arrays string[] values = {&amp;#34;Cary&amp;#34;, &amp;#34;Gary&amp;#34;, &amp;#34;Barbara&amp;#34;}; string[] keys = {&amp;#34;Grant&amp;#34;, &amp;#34;Cooper&amp;#34;, &amp;#34;Stanwyck&amp;#34;}; Array.</description>
+Array.Sort(numArray); // sort ascending // Sort begins at element 4 and sorts 10 elements Array.Sort(numArray, 4,10); // Use one array as a key and sort two arrays string[] values = {&amp;#34;Cary&amp;#34;, &amp;#34;Gary&amp;#34;, &amp;#34;Barbara&amp;#34;}; string[] keys = {&amp;#34;Grant&amp;#34;, &amp;#34;Cooper&amp;#34;, &amp;#34;Stanwyck&amp;#34;}; Array.</description>
     </item>
     
     <item>
       <title>Data Types</title>
-      <link>https://wews.co.zw/cheatsheet/csharp/datatypes/</link>
+      <link>https://spaghettiwews.github.io/cheatsheet/csharp/datatypes/</link>
       <pubDate>Thu, 07 Mar 2019 19:30:34 +0200</pubDate>
       
-      <guid>https://wews.co.zw/cheatsheet/csharp/datatypes/</guid>
-      <description>Primitive Size Example     string 2 bytes/char s = “reference”;   bool  b = true;   char 2 bytes ch = ‘a’;   byte 1 byte b = 0x78;   short 2 bytes Ival = 54;   int 4 bytes Ival = 540;   long 8 bytes ival = 5400;   float 4 bytes val = 54.</description>
+      <guid>https://spaghettiwews.github.io/cheatsheet/csharp/datatypes/</guid>
+      <description> Primitive Size Example string 2 bytes/char s = “reference”; bool b = true; char 2 bytes ch = ‘a’; byte 1 byte b = 0x78; short 2 bytes Ival = 54; int 4 bytes Ival = 540; long 8 bytes ival = 5400; float 4 bytes val = 54.0F; double 8 bytes val = 54.0D; decimal 16 bytes val = 54.0M </description>
     </item>
     
     <item>
       <title>Resume</title>
-      <link>https://wews.co.zw/resume/</link>
+      <link>https://spaghettiwews.github.io/resume/</link>
       <pubDate>Mon, 25 Feb 2019 21:29:15 +0200</pubDate>
       
-      <guid>https://wews.co.zw/resume/</guid>
-      <description>Welington Maposa  Experience Lead Developer / Webdev Pvt. Ltd, Harare / February 2015 - Present
+      <guid>https://spaghettiwews.github.io/resume/</guid>
+      <description>Welington Maposa Experience Lead Developer / Webdev Pvt. Ltd, Harare / February 2015 - Present
 In this role I lead a team of fullstack and frontend developers. My duties span all aspects of the solution development process, from early planning and design, to testing, deployment and support.
-  Led and project managed the development of various business solutions ranging from self-service portals, ecommerce stores, billing systems, and mobile applications for insurance firms, government institutions, banks, and large retailers.</description>
+Led and project managed the development of various business solutions ranging from self-service portals, ecommerce stores, billing systems, and mobile applications for insurance firms, government institutions, banks, and large retailers.</description>
     </item>
     
     <item>
       <title>On starting a new decade</title>
-      <link>https://wews.co.zw/2019/02/18/11110/</link>
+      <link>https://spaghettiwews.github.io/2019/02/18/11110/</link>
       <pubDate>Mon, 18 Feb 2019 01:15:45 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2019/02/18/11110/</guid>
-      <description>  bring it source: matrix revolutions | giphy
-  </description>
+      <guid>https://spaghettiwews.github.io/2019/02/18/11110/</guid>
+      <description>bring it source: matrix revolutions | giphy</description>
     </item>
     
     <item>
       <title>Open source software and tools I like</title>
-      <link>https://wews.co.zw/2019/02/17/open-source/</link>
+      <link>https://spaghettiwews.github.io/2019/02/17/open-source/</link>
       <pubDate>Sun, 17 Feb 2019 15:32:47 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2019/02/17/open-source/</guid>
-      <description>Grafana - The open platform for analytics and monitoring  https://grafana.com/   Wekan - open-source kanban  https://wekan.github.io/   decidim - Free Open-Source participatory democracy for cities and organizations  https://decidim.org/   Discourse - modern forum software for your community  https://discourse.org/   Binder - Turn a Git repo into a collection of interactive notebooks  https://mybinder.org/   Mailtrain - Self Hosted Newsletter App  https://mailtrain.</description>
+      <guid>https://spaghettiwews.github.io/2019/02/17/open-source/</guid>
+      <description>Grafana - The open platform for analytics and monitoring https://grafana.com/ Wekan - open-source kanban https://wekan.github.io/ decidim - Free Open-Source participatory democracy for cities and organizations https://decidim.org/ Discourse - modern forum software for your community https://discourse.org/ Binder - Turn a Git repo into a collection of interactive notebooks https://mybinder.org/ Mailtrain - Self Hosted Newsletter App https://mailtrain.org/ Zulip - powerful open source team chat https://zulipchat.com/ Open edX - Open edX is the massively scalable learning software platform behind edX https://open.</description>
     </item>
     
     <item>
       <title>Using a reverse proxy to provide a secure connection to a WordPress site</title>
-      <link>https://wews.co.zw/2018/06/22/sucuri-wordpress-ssl/</link>
+      <link>https://spaghettiwews.github.io/2018/06/22/sucuri-wordpress-ssl/</link>
       <pubDate>Fri, 22 Jun 2018 22:10:28 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2018/06/22/sucuri-wordpress-ssl/</guid>
-      <description>What&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say:  In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
-In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware.</description>
+      <guid>https://spaghettiwews.github.io/2018/06/22/sucuri-wordpress-ssl/</guid>
+      <description>What&amp;rsquo;s a reverse proxy? well, in this context, wikipedia has this to say: In computer networks, a reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers.
+In the case of secure websites, a web server may not perform SSL encryption itself, but instead offloads the task to a reverse proxy that may be equipped with SSL acceleration hardware. — https://en.</description>
     </item>
     
     <item>
       <title>Hello Hugo</title>
-      <link>https://wews.co.zw/2018/05/12/hello-hugo/</link>
+      <link>https://spaghettiwews.github.io/2018/05/12/hello-hugo/</link>
       <pubDate>Sat, 12 May 2018 12:28:05 +0200</pubDate>
       
-      <guid>https://wews.co.zw/2018/05/12/hello-hugo/</guid>
+      <guid>https://spaghettiwews.github.io/2018/05/12/hello-hugo/</guid>
       <description>Well hello there. This here, is how this started:
 hugo -t black-and-light cd public git add . git commmit -m &amp;#34;initial commit&amp;#34; git push </description>
     </item>
